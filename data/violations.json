@@ -1,0 +1,24 @@
+[
+    {
+      "id": "Loi_001",
+      "hanh_vi_chung": "Vượt đèn đỏ xe máy",
+      "mo_ta_luat": "Không tuân thủ hiệu lệnh của đèn tín hiệu giao thông",
+      "loai_xe": "xe_may",
+      "phat_min": 800000,
+      "phat_max": 1000000,
+      "dieu_luat": "Điều 6, Khoản 4, Điểm e",
+      "nghi_dinh": "100/2019/NĐ-CP",
+      "bo_sung": "Tước GPLX 1-3 tháng"
+    },
+    {
+      "id": "Loi_002",
+      "hanh_vi_chung": "Vượt đèn đỏ ô tô",
+      "mo_ta_luat": "Không tuân thủ hiệu lệnh của đèn tín hiệu giao thông",
+      "loai_xe": "o_to",
+      "phat_min": 6000000,
+      "phat_max": 8000000,
+      "dieu_luat": "Điều 5, Khoản 6, Điểm a",
+      "nghi_dinh": "100/2019/NĐ-CP",
+      "bo_sung": "Tước GPLX 2-4 tháng"
+    }
+  ]
