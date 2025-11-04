@@ -3,22 +3,31 @@ from typing import Optional, List
 
 # Dùng Pydantic (hoặc dataclasses) để định nghĩa cấu trúc dữ liệu
 class Fine(BaseModel):
-    min_amount: int
-    max_amount: int
+    min_amount: Optional[float] = None
+    max_amount: Optional[float] = None
 
 class SupplementaryPenalty(BaseModel):
-    description: str
+    description: Optional[str] = None
 
 class LegalBasis(BaseModel):
-    decree: str  # Nghị định
-    article: str # Điều
-    clause: str  # Khoản
-    point: str   # Điểm
+    decree: Optional[str] = None  # Nghị định
+    article: Optional[str] = None # Điều
+    clause: Optional[str] = None  # Khoản
+    point: Optional[str] = None   # Điểm
 
 class Violation(BaseModel):
     id: str
     description: str # Mô tả theo luật
-    vehicle_type: str
+    vehicle_type: Optional[str] = None
+    action: Optional[str] = None
+
+class ParsedQuery(BaseModel):
+    """Result of query analysis - intent classification and entity extraction"""
+    intent: str  # "find_penalty", "find_legal_basis", "find_supplementary"
+    action: str  # e.g., "vượt đèn vàng"
+    vehicle_type: Optional[str] = None  # e.g., "ô tô", "xe máy"
+    location: Optional[str] = None  # e.g., "Hà Nội" -> "nội thành"
+    original_query: str
 
 class QueryResponse(BaseModel):
     answer: str
@@ -26,4 +35,4 @@ class QueryResponse(BaseModel):
     fine: Optional[Fine] = None
     legal_basis: Optional[LegalBasis] = None
     supplementary: Optional[SupplementaryPenalty] = None
-    citation: str # Trích dẫn
+    citation: str = "" # Trích dẫn

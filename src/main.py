@@ -1,32 +1,37 @@
-from domain.models import QueryResponse
-from fastapi import FastAPI, Depends
-from pydantic import BaseModel
+"""
+Main application entry point for the Traffic QA System.
+
+This module initializes the FastAPI application and wires dependency injection.
+"""
+from fastapi import FastAPI
 from src.presentation.di_container import Container
-from src.application.use_cases.ask_question_use_case import AskQuestionUseCase
-from dependency_injector.wiring import inject, Provide
+from src.presentation.api.qa_endpoint import router
 
-app = FastAPI()
+# Initialize FastAPI application
+app = FastAPI(
+    title="Traffic QA System",
+    description="Question answering system for traffic violations",
+    version="1.0.0"
+)
+
+# Initialize dependency injection container
 container = Container()
-app.container = container # Gắn container vào app
+app.container = container
 
-class QueryRequest(BaseModel):
-    question: str
+# Wire dependency injection on application startup
+@app.on_event("startup")
+def startup_event():
+    """Wire dependency injection for modules using @inject decorator."""
+    container.wire(modules=[__name__, "src.presentation.api.qa_endpoint"])
 
-# API endpoint
-@app.post("/ask", response_model=QueryResponse) # Dùng model từ Domain
-@inject # Tự động tiêm dependency
-def ask_endpoint(
-    request: QueryRequest,
-    use_case: AskQuestionUseCase = Depends(Provide[Container.ask_question_use_case])
-):
-    # Lớp Presentation chỉ việc gọi `execute` của use case
-    response = use_case.execute(request.question)
-    return response
+@app.on_event("shutdown")
+def shutdown_event():
+    """Unwire dependency injection on application shutdown."""
+    container.unwire()
 
-# (Có thể thêm endpoint để chạy import_data)
+# Register API routes
+app.include_router(router)
 
 if __name__ == "__main__":
     import uvicorn
-    # Phải gọi wire để DI hoạt động
-    container.wire(modules=[__name__]) 
     uvicorn.run(app, host="0.0.0.0", port=8000)
