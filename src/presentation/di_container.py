@@ -8,7 +8,7 @@ from dependency_injector import containers, providers
 from src.application.use_cases.ask_question_use_case import AskQuestionUseCase
 from src.infrastructure.adapters.neo4j_kg_adapter import Neo4jKGAdapter
 from src.infrastructure.adapters.chroma_vs_adapter import ChromaVSAdapter
-from src.infrastructure.adapters.gemma_llm_adapter import GemmaLLMAdapter
+from src.infrastructure.adapters.llm_adapter import GeneralLLMAdapter
 from src.infrastructure.adapters.hf_embedding_adapter import HFEmbeddingAdapter
 from src.infrastructure.config import settings
 
@@ -26,6 +26,7 @@ class Container(containers.DeclarativeContainer):
     # Configuration provider - loads settings from environment
     config = providers.Configuration()
     config.from_dict(settings.dict())
+    print("Loaded configuration:", settings.dict())
 
     # Infrastructure adapters (singletons - created once, reused across requests)
     kg_adapter = providers.Singleton(
@@ -42,9 +43,12 @@ class Container(containers.DeclarativeContainer):
     )
 
     llm_adapter = providers.Singleton(
-        GemmaLLMAdapter,
+        GeneralLLMAdapter,
+        backend_type=config.BACKEND_TYPE,
         model_name=config.LLM_MODEL_NAME,
-        device=config.LLM_DEVICE
+        device=config.LLM_DEVICE,
+        api_key=config.LLM_API_KEY,
+        base_url=config.LLM_BASE_URL
     )
 
     embed_adapter = providers.Singleton(

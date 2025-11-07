@@ -10,8 +10,11 @@ class Settings(BaseSettings):
     NEO4J_PASS: str = "password"
 
     # LLM Configuration
-    LLM_MODEL_NAME: str = "google/gemma-2b-it"
+    BACKEND_TYPE: str = "huggingface"  # "openai" or "huggingface"
+    LLM_MODEL_NAME: str = ""
     LLM_DEVICE: str = "cpu"  # "cpu" or "cuda"
+    LLM_API_KEY: Optional[str] = None
+    LLM_BASE_URL: Optional[str] = None
 
     # Embedding Configuration
     EMBEDDING_MODEL_NAME: str = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
