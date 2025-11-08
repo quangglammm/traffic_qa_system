@@ -8,7 +8,7 @@ logger = logging.getLogger(__name__)
 class OpenAIEmbeddingBackend(IEmbeddingService):
     """Backend for OpenAI-compatible embedding APIs"""
     
-    def __init__(self, api_key: str, base_url: Optional[str] = None, model_name: str = "text-embedding-ada-002"):
+    def __init__(self, api_key: str, base_url: Optional[str] = None, model_name: str = "Vietnamese_Embedding"):
         """
         Initialize OpenAI-compatible embedding backend.
         

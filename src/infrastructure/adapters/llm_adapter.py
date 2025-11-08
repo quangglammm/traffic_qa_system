@@ -11,7 +11,7 @@ logger = logging.getLogger(__name__)
 class OpenAICompatibleBackend(BaseLLMBackend):
     """Backend for OpenAI-compatible APIs (OpenAI, vLLM, etc.)"""
     
-    def __init__(self, api_key: str, base_url: Optional[str] = None, model_name: str = "gpt-3.5-turbo"):
+    def __init__(self, api_key: str, base_url: Optional[str] = None, model_name: str = "gpt-oss-120b"):
         """
         Initialize OpenAI-compatible backend.
         
