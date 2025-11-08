@@ -1,26 +1,65 @@
-from typing import Dict, Any
+from typing import Dict, Any, Optional
 import json
 import logging
 from src.application.interfaces.i_llm_service import ILLMService
+from src.application.interfaces.i_llm_backend import BaseLLMBackend
 from src.domain.models import ParsedQuery
 
 logger = logging.getLogger(__name__)
 
-class GemmaLLMAdapter(ILLMService):
-    """LLM Adapter using Gemma model for query parsing and response generation"""
 
-    def __init__(self, model_name: str = "google/gemma-2b-it", device: str = "cpu"):
+class OpenAICompatibleBackend(BaseLLMBackend):
+    """Backend for OpenAI-compatible APIs (OpenAI, vLLM, etc.)"""
+    
+    def __init__(self, api_key: str, base_url: Optional[str] = None, model_name: str = "gpt-oss-120b"):
         """
-        Initialize Gemma LLM Adapter.
-
+        Initialize OpenAI-compatible backend.
+        
         Args:
-            model_name: Name of the Gemma model to use
+            api_key: API key for authentication
+            base_url: Base URL for API (None for official OpenAI, custom for vLLM/others)
+            model_name: Model name to use
+        """
+        try:
+            from openai import OpenAI
+            
+            self.client = OpenAI(api_key=api_key, base_url=base_url)
+            self.model_name = model_name
+            logger.info(f"Initialized OpenAI-compatible backend with model: {model_name}")
+        except ImportError:
+            logger.error("openai package not installed. Install with: pip install openai")
+            raise
+    
+    def generate_text(self, prompt: str, max_length: int = 512) -> str:
+        """Generate text using OpenAI-compatible API"""
+        try:
+            response = self.client.chat.completions.create(
+                model=self.model_name,
+                messages=[{"role": "user", "content": prompt}],
+                max_tokens=max_length,
+                temperature=0.7
+            )
+            return response.choices[0].message.content.strip()
+        except Exception as e:
+            logger.error(f"Error generating text with OpenAI-compatible API: {e}")
+            return ""
+
+
+class HuggingFaceBackend(BaseLLMBackend):
+    """Backend for local HuggingFace models"""
+    
+    def __init__(self, model_name: str, device: str = "cpu"):
+        """
+        Initialize HuggingFace backend.
+        
+        Args:
+            model_name: HuggingFace model name or path
             device: Device to run model on ('cpu' or 'cuda')
         """
         try:
             from transformers import AutoTokenizer, AutoModelForCausalLM
             import torch
-
+            
             self.device = device
             self.tokenizer = AutoTokenizer.from_pretrained(model_name)
             self.model = AutoModelForCausalLM.from_pretrained(
@@ -30,19 +69,14 @@ class GemmaLLMAdapter(ILLMService):
             )
             if device == "cpu":
                 self.model = self.model.to(device)
-
-            logger.info(f"Initialized Gemma LLM adapter with model: {model_name}")
+            
+            logger.info(f"Initialized HuggingFace backend with model: {model_name}")
         except ImportError:
-            logger.warning("transformers not installed, using fallback JSON parsing")
-            self.model = None
-            self.tokenizer = None
-
-    def _generate_text(self, prompt: str, max_length: int = 512) -> str:
-        """Generate text using the model"""
-        if self.model is None or self.tokenizer is None:
-            # Fallback: return empty string if model not available
-            return ""
-
+            logger.error("transformers not installed. Install with: pip install transformers torch")
+            raise
+    
+    def generate_text(self, prompt: str, max_length: int = 512) -> str:
+        """Generate text using HuggingFace model"""
         try:
             import torch
             inputs = self.tokenizer(prompt, return_tensors="pt").to(self.device)
@@ -59,6 +93,56 @@ class GemmaLLMAdapter(ILLMService):
             if prompt in response:
                 response = response.replace(prompt, "").strip()
             return response
+        except Exception as e:
+            logger.error(f"Error generating text with HuggingFace: {e}")
+            return ""
+
+
+class GeneralLLMAdapter(ILLMService):
+    """General LLM Adapter supporting multiple backends"""
+
+    def __init__(
+        self,
+        backend_type: str,
+        model_name: str,
+        device: str = "cpu",
+        api_key: Optional[str] = None,
+        base_url: Optional[str] = None
+    ):
+        """
+        Initialize General LLM Adapter.
+
+        Args:
+            backend_type: Type of backend ('openai', 'huggingface', 'gemma')
+            model_name: Name of the model to use
+            device: Device for local models ('cpu' or 'cuda')
+            api_key: API key for OpenAI-compatible backends
+            base_url: Base URL for custom OpenAI-compatible APIs
+        """
+        self.backend_type = backend_type.lower()
+        
+        try:
+            if self.backend_type in ["openai", "vllm", "api"]:
+                if not api_key:
+                    raise ValueError("api_key is required for OpenAI-compatible backends")
+                self.backend = OpenAICompatibleBackend(api_key, base_url, model_name)
+            elif self.backend_type in ["huggingface", "gemma", "local"]:
+                self.backend = HuggingFaceBackend(model_name, device)
+            else:
+                raise ValueError(f"Unsupported backend type: {backend_type}")
+            
+            logger.info(f"Initialized General LLM adapter with backend: {backend_type}")
+        except Exception as e:
+            logger.warning(f"Failed to initialize LLM backend: {e}. Using fallback parsing only.")
+            self.backend = None
+
+    def _generate_text(self, prompt: str, max_length: int = 512) -> str:
+        """Generate text using the configured backend"""
+        if self.backend is None:
+            return ""
+        
+        try:
+            return self.backend.generate_text(prompt, max_length)
         except Exception as e:
             logger.error(f"Error generating text: {e}")
             return ""
@@ -260,4 +344,3 @@ JSON:"""
             )
 
         return "\n".join(response_parts) if response_parts else "Không có thông tin để trả lời."
-

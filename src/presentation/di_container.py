@@ -8,8 +8,8 @@ from dependency_injector import containers, providers
 from src.application.use_cases.ask_question_use_case import AskQuestionUseCase
 from src.infrastructure.adapters.neo4j_kg_adapter import Neo4jKGAdapter
 from src.infrastructure.adapters.chroma_vs_adapter import ChromaVSAdapter
-from src.infrastructure.adapters.gemma_llm_adapter import GemmaLLMAdapter
-from src.infrastructure.adapters.hf_embedding_adapter import HFEmbeddingAdapter
+from src.infrastructure.adapters.llm_adapter import GeneralLLMAdapter
+from src.infrastructure.adapters.embedding_adapter import EmbeddingAdapter
 from src.infrastructure.config import settings
 
 
@@ -25,7 +25,8 @@ class Container(containers.DeclarativeContainer):
 
     # Configuration provider - loads settings from environment
     config = providers.Configuration()
-    config.from_dict(settings.dict())
+    config.from_dict(settings.model_dump())
+    print("Loaded configuration:", settings.model_dump())
 
     # Infrastructure adapters (singletons - created once, reused across requests)
     kg_adapter = providers.Singleton(
@@ -42,14 +43,20 @@ class Container(containers.DeclarativeContainer):
     )
 
     llm_adapter = providers.Singleton(
-        GemmaLLMAdapter,
+        GeneralLLMAdapter,
+        backend_type=config.LLM_BACKEND_TYPE,
         model_name=config.LLM_MODEL_NAME,
-        device=config.LLM_DEVICE
+        device=config.LLM_DEVICE,
+        api_key=config.API_KEY,
+        base_url=config.BASE_URL
     )
 
     embed_adapter = providers.Singleton(
-        HFEmbeddingAdapter,
-        model_name=config.EMBEDDING_MODEL_NAME
+        EmbeddingAdapter,
+        backend_type=config.EMBEDDING_BACKEND_TYPE,
+        model_name=config.EMBEDDING_MODEL_NAME,
+        api_key=config.API_KEY,
+        base_url=config.BASE_URL
     )
 
     # Use cases (factories - new instance per request for stateless operations)
