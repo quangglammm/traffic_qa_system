@@ -15,7 +15,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 from src.infrastructure.config import settings
 from src.infrastructure.adapters.neo4j_kg_adapter import Neo4jKGAdapter
 from src.infrastructure.adapters.chroma_vs_adapter import ChromaVSAdapter
-from src.infrastructure.adapters.hf_embedding_adapter import HFEmbeddingAdapter
+from src.infrastructure.adapters.embedding_adapter import EmbeddingAdapter
 import logging
 
 logging.basicConfig(level=logging.INFO)
@@ -37,8 +37,11 @@ def load_data():
         persist_directory=settings.CHROMA_PERSIST_DIRECTORY
     )
 
-    embedding_adapter = HFEmbeddingAdapter(
-        model_name=settings.EMBEDDING_MODEL_NAME
+    embedding_adapter = EmbeddingAdapter(
+        backend_type=settings.EMBEDDING_BACKEND_TYPE,
+        model_name=settings.EMBEDDING_MODEL_NAME,
+        api_key=settings.API_KEY,
+        base_url=settings.BASE_URL
     )
 
     # Load traffic violations data

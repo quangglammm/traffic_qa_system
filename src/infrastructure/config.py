@@ -9,15 +9,18 @@ class Settings(BaseSettings):
     NEO4J_USER: str = "neo4j"
     NEO4J_PASS: str = "password"
 
+    # API Configuration
+    API_KEY: Optional[str] = None
+    BASE_URL: Optional[str] = None
+
     # LLM Configuration
-    BACKEND_TYPE: str = "huggingface"  # "openai" or "huggingface"
+    LLM_BACKEND_TYPE: str = "huggingface"  # "openai" or "huggingface"
     LLM_MODEL_NAME: str = ""
     LLM_DEVICE: str = "cpu"  # "cpu" or "cuda"
-    LLM_API_KEY: Optional[str] = None
-    LLM_BASE_URL: Optional[str] = None
 
     # Embedding Configuration
-    EMBEDDING_MODEL_NAME: str = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+    EMBEDDING_BACKEND_TYPE: str = "openai"  # "openai" or "huggingface"
+    EMBEDDING_MODEL_NAME: str = "Vienamese_Embedding"
 
     # Vector Store Configuration
     CHROMA_COLLECTION_NAME: str = "traffic_violations"
