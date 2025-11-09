@@ -2,7 +2,7 @@
   {
     "id": "Loi_001",
     "hanh_vi_chung": "Vượt đèn đỏ xe máy",
-    "mo_ta_luat": "Người điều khiển xe mô tô, xe gắn máy không chấp hành hiệu lệnh đèn tín hiệu giao thông là hành vi vi phạm nghiêm trọng.",
+    "mo_ta_luat": "Hành vi vượt đèn đỏ khi điều khiển xe mô tô, xe gắn máy là hành vi vi phạm nghiêm trọng quy định về tín hiệu giao thông đường bộ. Người điều khiển phương tiện phải dừng trước vạch khi đèn tín hiệu chuyển đỏ, trừ trường hợp đã vượt vạch dừng và không thể dừng lại an toàn. Việc cố tình vượt đèn đỏ có thể dẫn đến va chạm, gây tai nạn cho bản thân và người khác. Theo Điểm e Khoản 4 Điều 6 Nghị định 100/2019/NĐ-CP, hành vi này bị phạt tiền từ 4.000.000 đến 5.000.000 đồng và có thể bị tước giấy phép lái xe từ 1 đến 3 tháng.",
     "loai_xe": "xe_may",
     "phat_min": 4000000,
     "phat_max": 5000000,
@@ -13,7 +13,7 @@
   {
     "id": "Loi_002",
     "hanh_vi_chung": "Vượt đèn đỏ ô tô",
-    "mo_ta_luat": "Người điều khiển ô tô vượt đèn đỏ là hành vi không tuân thủ hiệu lệnh tín hiệu giao thông, gây nguy cơ tai nạn nghiêm trọng.",
+    "mo_ta_luat": "Người điều khiển ô tô vượt đèn đỏ là hành vi không tuân thủ hiệu lệnh của đèn tín hiệu giao thông, làm gián đoạn trật tự lưu thông và có thể gây ra tai nạn đặc biệt nghiêm trọng. Luật quy định người lái xe phải dừng trước vạch khi đèn đỏ sáng và chỉ được đi khi đèn xanh bật. Việc cố tình vượt đèn đỏ thể hiện sự coi thường pháp luật và an toàn của người khác. Theo Điểm a Khoản 6 Điều 5 Nghị định 100/2019/NĐ-CP, mức phạt từ 6.000.000 đến 8.000.000 đồng và bị tước giấy phép lái xe từ 2 đến 4 tháng.",
     "loai_xe": "o_to",
     "phat_min": 6000000,
     "phat_max": 8000000,
@@ -24,7 +24,7 @@
   {
     "id": "Loi_003",
     "hanh_vi_chung": "Không đội mũ bảo hiểm xe máy",
-    "mo_ta_luat": "Người điều khiển xe mô tô, xe gắn máy không đội mũ bảo hiểm đạt chuẩn hoặc không cài quai đúng cách là vi phạm.",
+    "mo_ta_luat": "Việc không đội mũ bảo hiểm khi điều khiển xe mô tô, xe gắn máy là hành vi vi phạm quy định về an toàn cá nhân. Mũ bảo hiểm đạt chuẩn giúp giảm thiểu chấn thương đầu trong các vụ va chạm. Người điều khiển và người ngồi sau phải đội mũ đúng quy cách, cài quai chắc chắn trong suốt hành trình. Theo Điểm i Khoản 2 Điều 6 Nghị định 100/2019/NĐ-CP, hành vi này bị phạt tiền từ 200.000 đến 300.000 đồng.",
     "loai_xe": "xe_may",
     "phat_min": 200000,
     "phat_max": 300000,
@@ -35,7 +35,7 @@
   {
     "id": "Loi_004",
     "hanh_vi_chung": "Không thắt dây an toàn ô tô",
-    "mo_ta_luat": "Người điều khiển ô tô không thắt dây an toàn tại vị trí có trang bị là vi phạm quy định an toàn giao thông.",
+    "mo_ta_luat": "Người điều khiển ô tô không thắt dây an toàn khi xe đang chạy là hành vi vi phạm quy định về an toàn giao thông. Dây an toàn là thiết bị bắt buộc nhằm giảm chấn thương khi xảy ra va chạm. Luật yêu cầu cả người lái và hành khách ngồi hàng ghế trước phải thắt dây an toàn đúng cách. Theo Điểm p Khoản 3 Điều 5 Nghị định 100/2019/NĐ-CP, hành vi này bị phạt tiền từ 800.000 đến 1.000.000 đồng.",
     "loai_xe": "o_to",
     "phat_min": 800000,
     "phat_max": 1000000,
@@ -46,7 +46,7 @@
   {
     "id": "Loi_005",
     "hanh_vi_chung": "Chạy quá tốc độ xe máy",
-    "mo_ta_luat": "Người điều khiển xe mô tô, xe gắn máy chạy vượt tốc độ quy định từ 10 đến 20 km/h là hành vi vi phạm.",
+    "mo_ta_luat": "Người điều khiển xe mô tô, xe gắn máy chạy vượt quá tốc độ tối đa cho phép từ 10 đến 20 km/h là hành vi vi phạm an toàn giao thông. Việc chạy nhanh hơn quy định làm giảm khả năng xử lý tình huống và tăng nguy cơ gây tai nạn. Mức phạt theo Điểm g Khoản 3 Điều 6 Nghị định 100/2019/NĐ-CP là từ 800.000 đến 1.000.000 đồng.",
     "loai_xe": "xe_may",
     "phat_min": 800000,
     "phat_max": 1000000,
@@ -57,7 +57,7 @@
   {
     "id": "Loi_006",
     "hanh_vi_chung": "Chạy quá tốc độ ô tô",
-    "mo_ta_luat": "Người điều khiển ô tô chạy vượt tốc độ tối đa từ 10 đến 20 km/h là hành vi vi phạm nghiêm trọng.",
+    "mo_ta_luat": "Người điều khiển ô tô chạy vượt tốc độ tối đa cho phép là hành vi vi phạm nghiêm trọng. Tốc độ cao làm giảm khả năng phản ứng và tăng khoảng cách phanh, dẫn đến hậu quả nguy hiểm. Theo Điểm c Khoản 5 Điều 5 Nghị định 100/2019/NĐ-CP, mức phạt từ 4.000.000 đến 6.000.000 đồng và có thể bị tước GPLX 1–3 tháng.",
     "loai_xe": "o_to",
     "phat_min": 4000000,
     "phat_max": 6000000,
@@ -68,7 +68,7 @@
   {
     "id": "Loi_007",
     "hanh_vi_chung": "Sử dụng điện thoại khi lái xe máy",
-    "mo_ta_luat": "Người điều khiển xe mô tô sử dụng điện thoại khi lái gây mất tập trung là hành vi bị cấm.",
+    "mo_ta_luat": "Hành vi sử dụng điện thoại khi điều khiển xe mô tô, xe gắn máy là nguyên nhân phổ biến gây mất tập trung và tai nạn giao thông. Người điều khiển xe phải tập trung quan sát, không sử dụng thiết bị cầm tay trong khi lái. Theo Điểm h Khoản 4 Điều 6 Nghị định 100/2019/NĐ-CP, mức phạt áp dụng là từ 1.000.000 đến 2.000.000 đồng.",
     "loai_xe": "xe_may",
     "phat_min": 1000000,
     "phat_max": 2000000,
@@ -79,7 +79,7 @@
   {
     "id": "Loi_008",
     "hanh_vi_chung": "Sử dụng điện thoại khi lái ô tô",
-    "mo_ta_luat": "Người điều khiển ô tô sử dụng điện thoại hoặc thiết bị cầm tay khi lái xe là hành vi vi phạm an toàn giao thông.",
+    "mo_ta_luat": "Người điều khiển ô tô sử dụng điện thoại, thiết bị cầm tay hoặc thiết bị âm thanh khi lái xe là hành vi vi phạm luật giao thông. Hành vi này gây mất tập trung, tăng khả năng xảy ra va chạm. Theo Điểm c Khoản 4 Điều 5 Nghị định 100/2019/NĐ-CP, mức phạt từ 2.000.000 đến 3.000.000 đồng.",
     "loai_xe": "o_to",
     "phat_min": 2000000,
     "phat_max": 3000000,
@@ -90,7 +90,7 @@
   {
     "id": "Loi_009",
     "hanh_vi_chung": "Chở người không đội mũ bảo hiểm xe máy",
-    "mo_ta_luat": "Người điều khiển xe mô tô chở người không đội mũ bảo hiểm đạt chuẩn là hành vi vi phạm.",
+    "mo_ta_luat": "Người điều khiển xe mô tô chở người không đội mũ bảo hiểm đạt chuẩn là hành vi vi phạm. Cả người lái và người ngồi sau đều phải đội mũ bảo hiểm khi lưu thông trên đường. Theo Điểm i Khoản 2 Điều 6 Nghị định 100/2019/NĐ-CP, hành vi này bị phạt từ 200.000 đến 300.000 đồng.",
     "loai_xe": "xe_may",
     "phat_min": 200000,
     "phat_max": 300000,
@@ -101,7 +101,7 @@
   {
     "id": "Loi_010",
     "hanh_vi_chung": "Không nhường đường cho xe ưu tiên ô tô",
-    "mo_ta_luat": "Người điều khiển ô tô không nhường đường cho xe ưu tiên đang phát tín hiệu là hành vi vi phạm.",
+    "mo_ta_luat": "Khi gặp xe ưu tiên (cứu thương, cứu hỏa, công an...) đang làm nhiệm vụ, người điều khiển ô tô phải nhường đường ngay khi có tín hiệu. Việc không nhường đường gây cản trở xe ưu tiên là hành vi vi phạm pháp luật. Theo Điểm b Khoản 4 Điều 5 Nghị định 100/2019/NĐ-CP, mức phạt từ 3.000.000 đến 5.000.000 đồng.",
     "loai_xe": "o_to",
     "phat_min": 3000000,
     "phat_max": 5000000,
@@ -112,7 +112,7 @@
   {
     "id": "Loi_011",
     "hanh_vi_chung": "Không nhường đường cho xe ưu tiên xe máy",
-    "mo_ta_luat": "Người điều khiển xe mô tô, xe gắn máy không nhường đường cho xe ưu tiên đang làm nhiệm vụ là hành vi vi phạm.",
+    "mo_ta_luat": "Người điều khiển xe mô tô, xe gắn máy không nhường đường cho xe ưu tiên đang phát tín hiệu (như cứu hỏa, công an, cứu thương) là hành vi vi phạm. Theo Điểm k Khoản 3 Điều 6 Nghị định 100/2019/NĐ-CP, mức phạt áp dụng từ 1.000.000 đến 2.000.000 đồng.",
     "loai_xe": "xe_may",
     "phat_min": 1000000,
     "phat_max": 2000000,
@@ -123,7 +123,7 @@
   {
     "id": "Loi_012",
     "hanh_vi_chung": "Không có bảo hiểm trách nhiệm dân sự ô tô",
-    "mo_ta_luat": "Người điều khiển ô tô không có hoặc không mang theo giấy chứng nhận bảo hiểm trách nhiệm dân sự còn hiệu lực là vi phạm.",
+    "mo_ta_luat": "Mọi chủ xe ô tô bắt buộc phải có giấy chứng nhận bảo hiểm trách nhiệm dân sự còn hiệu lực khi tham gia giao thông. Việc không mang hoặc không có bảo hiểm là hành vi vi phạm. Theo Điểm a Khoản 4 Điều 21 Nghị định 100/2019/NĐ-CP, phạt tiền từ 400.000 đến 600.000 đồng.",
     "loai_xe": "o_to",
     "phat_min": 400000,
     "phat_max": 600000,
@@ -134,7 +134,7 @@
   {
     "id": "Loi_013",
     "hanh_vi_chung": "Không có bảo hiểm trách nhiệm dân sự xe máy",
-    "mo_ta_luat": "Người điều khiển xe mô tô, xe gắn máy không có hoặc không mang theo giấy chứng nhận bảo hiểm trách nhiệm dân sự còn hiệu lực là hành vi vi phạm.",
+    "mo_ta_luat": "Người điều khiển xe mô tô, xe gắn máy bắt buộc phải có Giấy chứng nhận bảo hiểm trách nhiệm dân sự (TNDS) còn hiệu lực khi tham gia giao thông. Việc không mang hoặc không có bảo hiểm làm giảm khả năng bồi thường thiệt hại cho bên thứ ba khi xảy ra tai nạn. Đây là nghĩa vụ pháp lý nhằm bảo vệ nạn nhân và đảm bảo trách nhiệm dân sự tối thiểu của người điều khiển. Theo Điểm a Khoản 2 Điều 21 Nghị định 100/2019/NĐ-CP, hành vi bị xử phạt tiền và có thể bị yêu cầu xuất trình bổ sung trong thời hạn nhất định.",
     "loai_xe": "xe_may",
     "phat_min": 100000,
     "phat_max": 200000,
@@ -145,7 +145,7 @@
   {
     "id": "Loi_014",
     "hanh_vi_chung": "Chạy vào đường ngược chiều ô tô",
-    "mo_ta_luat": "Người điều khiển ô tô đi vào đường ngược chiều hoặc đường một chiều là hành vi vi phạm nghiêm trọng.",
+    "mo_ta_luat": "Đi vào đường ngược chiều hoặc đi sai hướng trên đường một chiều là vi phạm quy tắc đi đúng phần đường, làn đường và hướng đi. Hành vi này tiềm ẩn nguy cơ va chạm trực diện, đặc biệt tại các đoạn cong, khuất tầm nhìn hoặc giao lộ không đèn tín hiệu. Người lái phải quan sát biển báo, vạch kẻ đường và tuân thủ hướng lưu thông. Theo Điểm b Khoản 5 Điều 5 Nghị định 100/2019/NĐ-CP, áp dụng mức phạt tiền cao và tước GPLX trong thời hạn tương ứng để răn đe.",
     "loai_xe": "o_to",
     "phat_min": 10000000,
     "phat_max": 12000000,
@@ -156,7 +156,7 @@
   {
     "id": "Loi_015",
     "hanh_vi_chung": "Đi ngược chiều xe máy",
-    "mo_ta_luat": "Người điều khiển xe mô tô, xe gắn máy đi ngược chiều trên đường một chiều là hành vi vi phạm nghiêm trọng.",
+    "mo_ta_luat": "Đi ngược chiều trên đường một chiều hoặc đi vào đường cấm là hành vi gây mất trật tự an toàn giao thông, dễ dẫn đến tai nạn đối đầu. Người điều khiển phải tuân thủ biển báo hướng đi, vạch kẻ và sự điều tiết của người điều khiển giao thông. Hành vi này thường đi kèm nguy cơ lấn làn, vượt ẩu để quay đầu. Theo Điểm e Khoản 4 Điều 6 Nghị định 100/2019/NĐ-CP, bị xử phạt tiền kèm tước GPLX trong một số trường hợp.",
     "loai_xe": "xe_may",
     "phat_min": 2000000,
     "phat_max": 3000000,
@@ -167,7 +167,7 @@
   {
     "id": "Loi_016",
     "hanh_vi_chung": "Không mang Giấy phép lái xe ô tô",
-    "mo_ta_luat": "Người điều khiển ô tô không mang theo Giấy phép lái xe khi lưu thông là hành vi vi phạm.",
+    "mo_ta_luat": "Khi điều khiển ô tô, người lái phải mang theo Giấy phép lái xe còn hiệu lực để chứng minh năng lực pháp lý điều khiển phương tiện. Dù có GPLX hợp lệ nhưng không mang theo vẫn bị xử phạt vi phạm hành chính. Yêu cầu mang giấy tờ giúp cơ quan chức năng xác minh nhanh thông tin khi kiểm tra hoặc xử lý sự cố. Theo Điểm b Khoản 2 Điều 5 Nghị định 100/2019/NĐ-CP, áp dụng mức phạt phù hợp.",
     "loai_xe": "o_to",
     "phat_min": 200000,
     "phat_max": 400000,
@@ -178,7 +178,7 @@
   {
     "id": "Loi_017",
     "hanh_vi_chung": "Không mang Giấy phép lái xe máy",
-    "mo_ta_luat": "Người điều khiển xe mô tô không mang theo Giấy phép lái xe hợp lệ là hành vi vi phạm.",
+    "mo_ta_luat": "Người điều khiển xe mô tô phải mang theo GPLX đúng hạng và còn hiệu lực để chứng minh đủ điều kiện điều khiển. Việc không mang theo khiến quá trình kiểm tra, xác minh nguồn gốc và trách nhiệm pháp lý gặp khó khăn. Dù chưa phải hành vi không có GPLX, vẫn bị xử phạt theo quy định thủ tục hành chính. Theo Điểm c Khoản 2 Điều 6 Nghị định 100/2019/NĐ-CP, xử phạt ở mức tương ứng.",
     "loai_xe": "xe_may",
     "phat_min": 100000,
     "phat_max": 200000,
@@ -189,7 +189,7 @@
   {
     "id": "Loi_018",
     "hanh_vi_chung": "Chở hàng rơi vãi xe tải",
-    "mo_ta_luat": "Người điều khiển xe tải chở vật liệu xây dựng, hàng hóa không che chắn để rơi vãi là hành vi vi phạm nghiêm trọng.",
+    "mo_ta_luat": "Xe tải chở vật liệu xây dựng hoặc hàng rời phải có biện pháp che chắn để không rơi vãi ra mặt đường. Hành vi để rơi vãi gây nguy cơ trơn trượt, bụi bẩn, ô nhiễm và cản trở giao thông. Chủ xe và lái xe có trách nhiệm khắc phục hậu quả, vệ sinh mặt đường khi được yêu cầu. Theo Điểm b Khoản 5 Điều 24 Nghị định 100/2019/NĐ-CP, áp dụng mức phạt tiền đáng kể nhằm đảm bảo tính răn đe.",
     "loai_xe": "xe_tai",
     "phat_min": 8000000,
     "phat_max": 10000000,
@@ -200,7 +200,7 @@
   {
     "id": "Loi_019",
     "hanh_vi_chung": "Không có gương chiếu hậu xe máy",
-    "mo_ta_luat": "Người điều khiển xe mô tô, xe gắn máy không có gương chiếu hậu bên trái là hành vi vi phạm điều kiện an toàn kỹ thuật.",
+    "mo_ta_luat": "Xe mô tô lưu thông bắt buộc phải có tối thiểu gương chiếu hậu bên trái để đảm bảo quan sát phía sau. Thiếu gương làm giảm khả năng đánh giá khoảng cách khi chuyển hướng hoặc vượt xe khác. Người điều khiển phải thường xuyên kiểm tra, thay thế khi gương hỏng hoặc lỏng lẻo. Theo Điểm a Khoản 1 Điều 17 Nghị định 100/2019/NĐ-CP, bị xử phạt tiền ở mức tương ứng.",
     "loai_xe": "xe_may",
     "phat_min": 100000,
     "phat_max": 200000,
@@ -211,7 +211,117 @@
   {
     "id": "Loi_020",
     "hanh_vi_chung": "Không có gương chiếu hậu ô tô",
-    "mo_ta_luat": "Hành vi điều khiển ô tô không có gương chiếu hậu bên trái hoặc bên phải là vi phạm điều kiện an toàn kỹ thuật.",
+    "mo_ta_luat": "Ô tô phải được trang bị đầy đủ gương chiếu hậu để đảm bảo tầm nhìn hai bên và phía sau, hỗ trợ chuyển làn, lùi, vượt an toàn. Thiếu gương hoặc gương không hoạt động làm tăng nguy cơ va chạm do điểm mù. Chủ xe và lái xe có trách nhiệm bảo dưỡng và thay thế kịp thời. Theo Điểm s Khoản 3 Điều 5 Nghị định 100/2019/NĐ-CP, hành vi bị xử phạt tiền.",
+    "loai_xe": "o_to",
+    "phat_min": 800000,
+    "phat_max": 1000000,
+    "dieu_luat": "Điều 5, Khoản 3, Điểm s",
+    "nghi_dinh": "100/2019/NĐ-CP",
+    "bo_sung": ""
+  },
+  {
+    "id": "Loi_021",
+    "hanh_vi_chung": "Chở quá số người xe máy",
+    "mo_ta_luat": "Chở quá số người quy định làm tăng tải trọng và giảm ổn định phương tiện, đặc biệt khi phanh gấp hoặc ôm cua. Quy định cho phép tối đa một người ngồi sau (kèm ngoại lệ với trẻ em, người bệnh). Người lái phải bảo đảm người ngồi sau đội mũ bảo hiểm và ngồi đúng vị trí. Theo Điểm b Khoản 3 Điều 6 Nghị định 100/2019/NĐ-CP, bị xử phạt hành chính tương ứng.",
+    "loai_xe": "xe_may",
+    "phat_min": 400000,
+    "phat_max": 600000,
+    "dieu_luat": "Điều 6, Khoản 3, Điểm b",
+    "nghi_dinh": "100/2019/NĐ-CP",
+    "bo_sung": ""
+  },
+  {
+    "id": "Loi_022",
+    "hanh_vi_chung": "Chở quá số người ô tô",
+    "mo_ta_luat": "Ô tô chở quá số người cho phép ghi trên giấy đăng kiểm làm tăng nguy cơ tai nạn và ảnh hưởng hiệu suất phanh, lái. Chủ xe và lái xe phải kiểm soát số chỗ ngồi và phân bổ hành khách hợp lý. Việc chở quá tải cũng gây khó khăn cho thoát hiểm khi xảy ra sự cố. Theo Điểm b Khoản 2 Điều 23 Nghị định 100/2019/NĐ-CP, bị phạt tiền và có thể tước GPLX.",
+    "loai_xe": "o_to",
+    "phat_min": 1000000,
+    "phat_max": 2000000,
+    "dieu_luat": "Điều 23, Khoản 2, Điểm b",
+    "nghi_dinh": "100/2019/NĐ-CP",
+    "bo_sung": "Tước GPLX 1–3 tháng"
+  },
+  {
+    "id": "Loi_023",
+    "hanh_vi_chung": "Vượt phải xe máy",
+    "mo_ta_luat": "Vượt bên phải khi không đủ điều kiện an toàn hoặc tại nơi cấm vượt làm tăng rủi ro va chạm do điểm mù và bất ngờ với xe phía trước. Người lái phải chỉ vượt bên trái (trừ vài trường hợp đặc biệt được phép), bật tín hiệu, giữ khoảng cách và tốc độ phù hợp. Tại nơi tầm nhìn hạn chế, cầu, hầm, giao lộ, tuyệt đối không vượt. Theo Điểm c Khoản 4 Điều 6 Nghị định 100/2019/NĐ-CP, áp dụng phạt tiền và tước GPLX trong một số trường hợp.",
+    "loai_xe": "xe_may",
+    "phat_min": 1000000,
+    "phat_max": 2000000,
+    "dieu_luat": "Điều 6, Khoản 4, Điểm c",
+    "nghi_dinh": "100/2019/NĐ-CP",
+    "bo_sung": "Tước GPLX 1–3 tháng"
+  },
+  {
+    "id": "Loi_024",
+    "hanh_vi_chung": "Vượt phải ô tô",
+    "mo_ta_luat": "Ô tô vượt bên phải không đúng quy định làm tăng xác suất chèn ép làn và va chạm với xe đang đi thẳng hoặc rẽ phải. Chỉ vượt khi có đủ điều kiện an toàn, tín hiệu báo trước và tại nơi cho phép. Cần đặc biệt chú ý tại làn sát lề phải nơi có nhiều xe máy, xe thô sơ. Theo Điểm c Khoản 5 Điều 5 Nghị định 100/2019/NĐ-CP, áp dụng mức phạt nặng kèm tước GPLX tương ứng.",
+    "loai_xe": "o_to",
+    "phat_min": 10000000,
+    "phat_max": 12000000,
+    "dieu_luat": "Điều 5, Khoản 5, Điểm c",
+    "nghi_dinh": "100/2019/NĐ-CP",
+    "bo_sung": "Tước GPLX 2–4 tháng"
+  },
+  {
+    "id": "Loi_025",
+    "hanh_vi_chung": "Sử dụng rượu bia khi lái xe máy",
+    "mo_ta_luat": "Sử dụng rượu, bia làm suy giảm khả năng quan sát, phản xạ và điều khiển thăng bằng của người lái xe mô tô. Pháp luật cấm tuyệt đối điều khiển phương tiện khi có nồng độ cồn trong máu hoặc hơi thở. Ngoài phạt tiền, người vi phạm còn bị tước GPLX thời gian dài để ngăn ngừa tái phạm. Theo Điểm e Khoản 8 Điều 6 Nghị định 100/2019/NĐ-CP, áp dụng khung xử phạt rất nghiêm.",
+    "loai_xe": "xe_may",
+    "phat_min": 6000000,
+    "phat_max": 8000000,
+    "dieu_luat": "Điều 6, Khoản 8, Điểm e",
+    "nghi_dinh": "100/2019/NĐ-CP",
+    "bo_sung": "Tước GPLX 22–24 tháng"
+  },
+  {
+    "id": "Loi_026",
+    "hanh_vi_chung": "Sử dụng rượu bia khi lái ô tô",
+    "mo_ta_luat": "Điều khiển ô tô khi có nồng độ cồn là hành vi bị nghiêm cấm với khung phạt rất cao do hậu quả tiềm ẩn nghiêm trọng. Người vi phạm có thể bị áp dụng biện pháp ngăn chặn, tước GPLX dài hạn và chịu trách nhiệm hình sự nếu gây hậu quả. Việc kiểm tra nồng độ cồn được thực hiện bằng thiết bị chuyên dụng theo quy chuẩn. Theo Điểm a Khoản 10 Điều 5 Nghị định 100/2019/NĐ-CP, áp dụng mức phạt tiền lớn và tước GPLX.",
+    "loai_xe": "o_to",
+    "phat_min": 30000000,
+    "phat_max": 40000000,
+    "dieu_luat": "Điều 5, Khoản 10, Điểm a",
+    "nghi_dinh": "100/2019/NĐ-CP",
+    "bo_sung": "Tước GPLX 22–24 tháng"
+  },
+  {
+    "id": "Loi_027",
+    "hanh_vi_chung": "Không chấp hành hiệu lệnh cảnh sát giao thông xe máy",
+    "mo_ta_luat": "Không tuân thủ hiệu lệnh của người điều khiển giao thông (thổi dừng, ra hiệu tay, gậy chỉ huy) gây cản trở quá trình điều tiết và kiểm soát trật tự. Hành vi này tiềm ẩn nguy cơ dẫn tới truy đuổi, va chạm và làm nặng thêm vi phạm khác. Người lái phải dừng, xuất trình giấy tờ và chấp hành hướng dẫn. Theo Điểm b Khoản 4 Điều 6 Nghị định 100/2019/NĐ-CP, bị phạt tiền và có thể tước GPLX.",
+    "loai_xe": "xe_may",
+    "phat_min": 1000000,
+    "phat_max": 2000000,
+    "dieu_luat": "Điều 6, Khoản 4, Điểm b",
+    "nghi_dinh": "100/2019/NĐ-CP",
+    "bo_sung": "Tước GPLX 1–3 tháng"
+  },
+  {
+    "id": "Loi_028",
+    "hanh_vi_chung": "Không chấp hành hiệu lệnh cảnh sát giao thông ô tô",
+    "mo_ta_luat": "Không chấp hành hiệu lệnh của người điều khiển giao thông khi lái ô tô là vi phạm nghiêm trọng, có thể gây ùn tắc và tai nạn. Người điều khiển phải dừng, chuyển hướng, hoặc đi theo luồng được chỉ dẫn. Việc chống đối hoặc bỏ chạy còn có thể bị xử lý theo quy định khác nếu gây hậu quả. Theo Điểm b Khoản 5 Điều 5 Nghị định 100/2019/NĐ-CP, bị phạt tiền và tước GPLX.",
+    "loai_xe": "o_to",
+    "phat_min": 3000000,
+    "phat_max": 5000000,
+    "dieu_luat": "Điều 5, Khoản 5, Điểm b",
+    "nghi_dinh": "100/2019/NĐ-CP",
+    "bo_sung": "Tước GPLX 1–3 tháng"
+  },
+  {
+    "id": "Loi_029",
+    "hanh_vi_chung": "Không bật đèn chiếu sáng khi đi ban đêm xe máy",
+    "mo_ta_luat": "Khi trời tối, sương mù, mưa lớn hoặc đi trong hầm, xe mô tô phải bật đèn chiếu sáng để đảm bảo tầm nhìn và khả năng được nhận diện. Không bật đèn làm tăng nguy cơ va chạm do các phương tiện khác khó quan sát. Người điều khiển cần kiểm tra hệ thống đèn, ắc quy và thói quen bật đèn đúng thời điểm. Theo Điểm l Khoản 2 Điều 6 Nghị định 100/2019/NĐ-CP, hành vi này bị xử phạt tiền.",
+    "loai_xe": "xe_may",
+    "phat_min": 100000,
+    "phat_max": 200000,
+    "dieu_luat": "Điều 6, Khoản 2, Điểm l",
+    "nghi_dinh": "100/2019/NĐ-CP",
+    "bo_sung": ""
+  },
+  {
+    "id": "Loi_030",
+    "hanh_vi_chung": "Không bật đèn chiếu sáng khi đi ban đêm ô tô",
+    "mo_ta_luat": "Ô tô lưu thông ban đêm, trong hầm hoặc khi tầm nhìn bị hạn chế phải bật đèn chiếu sáng phù hợp (ưu tiên đèn cốt trong đô thị để tránh gây chói). Không bật đèn làm giảm khả năng quan sát chướng ngại vật và khiến phương tiện khác khó nhận diện. Người lái phải chủ động chuyển chế độ đèn theo điều kiện thực tế và quy định. Theo Điểm s Khoản 3 Điều 5 Nghị định 100/2019/NĐ-CP, hành vi bị xử phạt tiền ở mức tương ứng.",
     "loai_xe": "o_to",
     "phat_min": 800000,
     "phat_max": 1000000,
@@ -220,3 +330,4 @@
     "bo_sung": ""
   }
 ]
+
