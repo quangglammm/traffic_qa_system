@@ -1,0 +1,222 @@
+[
+  {
+    "id": "Loi_001",
+    "hanh_vi_chung": "Vượt đèn đỏ xe máy",
+    "mo_ta_luat": "Người điều khiển xe mô tô, xe gắn máy không chấp hành hiệu lệnh đèn tín hiệu giao thông là hành vi vi phạm nghiêm trọng.",
+    "loai_xe": "xe_may",
+    "phat_min": 4000000,
+    "phat_max": 5000000,
+    "dieu_luat": "Điều 6, Khoản 4, Điểm e",
+    "nghi_dinh": "100/2019/NĐ-CP",
+    "bo_sung": "Tước GPLX 1–3 tháng"
+  },
+  {
+    "id": "Loi_002",
+    "hanh_vi_chung": "Vượt đèn đỏ ô tô",
+    "mo_ta_luat": "Người điều khiển ô tô vượt đèn đỏ là hành vi không tuân thủ hiệu lệnh tín hiệu giao thông, gây nguy cơ tai nạn nghiêm trọng.",
+    "loai_xe": "o_to",
+    "phat_min": 6000000,
+    "phat_max": 8000000,
+    "dieu_luat": "Điều 5, Khoản 6, Điểm a",
+    "nghi_dinh": "100/2019/NĐ-CP",
+    "bo_sung": "Tước GPLX 2–4 tháng"
+  },
+  {
+    "id": "Loi_003",
+    "hanh_vi_chung": "Không đội mũ bảo hiểm xe máy",
+    "mo_ta_luat": "Người điều khiển xe mô tô, xe gắn máy không đội mũ bảo hiểm đạt chuẩn hoặc không cài quai đúng cách là vi phạm.",
+    "loai_xe": "xe_may",
+    "phat_min": 200000,
+    "phat_max": 300000,
+    "dieu_luat": "Điều 6, Khoản 2, Điểm i",
+    "nghi_dinh": "100/2019/NĐ-CP",
+    "bo_sung": ""
+  },
+  {
+    "id": "Loi_004",
+    "hanh_vi_chung": "Không thắt dây an toàn ô tô",
+    "mo_ta_luat": "Người điều khiển ô tô không thắt dây an toàn tại vị trí có trang bị là vi phạm quy định an toàn giao thông.",
+    "loai_xe": "o_to",
+    "phat_min": 800000,
+    "phat_max": 1000000,
+    "dieu_luat": "Điều 5, Khoản 3, Điểm p",
+    "nghi_dinh": "100/2019/NĐ-CP",
+    "bo_sung": ""
+  },
+  {
+    "id": "Loi_005",
+    "hanh_vi_chung": "Chạy quá tốc độ xe máy",
+    "mo_ta_luat": "Người điều khiển xe mô tô, xe gắn máy chạy vượt tốc độ quy định từ 10 đến 20 km/h là hành vi vi phạm.",
+    "loai_xe": "xe_may",
+    "phat_min": 800000,
+    "phat_max": 1000000,
+    "dieu_luat": "Điều 6, Khoản 3, Điểm g",
+    "nghi_dinh": "100/2019/NĐ-CP",
+    "bo_sung": ""
+  },
+  {
+    "id": "Loi_006",
+    "hanh_vi_chung": "Chạy quá tốc độ ô tô",
+    "mo_ta_luat": "Người điều khiển ô tô chạy vượt tốc độ tối đa từ 10 đến 20 km/h là hành vi vi phạm nghiêm trọng.",
+    "loai_xe": "o_to",
+    "phat_min": 4000000,
+    "phat_max": 6000000,
+    "dieu_luat": "Điều 5, Khoản 5, Điểm c",
+    "nghi_dinh": "100/2019/NĐ-CP",
+    "bo_sung": "Tước GPLX 1–3 tháng"
+  },
+  {
+    "id": "Loi_007",
+    "hanh_vi_chung": "Sử dụng điện thoại khi lái xe máy",
+    "mo_ta_luat": "Người điều khiển xe mô tô sử dụng điện thoại khi lái gây mất tập trung là hành vi bị cấm.",
+    "loai_xe": "xe_may",
+    "phat_min": 1000000,
+    "phat_max": 2000000,
+    "dieu_luat": "Điều 6, Khoản 4, Điểm h",
+    "nghi_dinh": "100/2019/NĐ-CP",
+    "bo_sung": ""
+  },
+  {
+    "id": "Loi_008",
+    "hanh_vi_chung": "Sử dụng điện thoại khi lái ô tô",
+    "mo_ta_luat": "Người điều khiển ô tô sử dụng điện thoại hoặc thiết bị cầm tay khi lái xe là hành vi vi phạm an toàn giao thông.",
+    "loai_xe": "o_to",
+    "phat_min": 2000000,
+    "phat_max": 3000000,
+    "dieu_luat": "Điều 5, Khoản 4, Điểm c",
+    "nghi_dinh": "100/2019/NĐ-CP",
+    "bo_sung": ""
+  },
+  {
+    "id": "Loi_009",
+    "hanh_vi_chung": "Chở người không đội mũ bảo hiểm xe máy",
+    "mo_ta_luat": "Người điều khiển xe mô tô chở người không đội mũ bảo hiểm đạt chuẩn là hành vi vi phạm.",
+    "loai_xe": "xe_may",
+    "phat_min": 200000,
+    "phat_max": 300000,
+    "dieu_luat": "Điều 6, Khoản 2, Điểm i",
+    "nghi_dinh": "100/2019/NĐ-CP",
+    "bo_sung": ""
+  },
+  {
+    "id": "Loi_010",
+    "hanh_vi_chung": "Không nhường đường cho xe ưu tiên ô tô",
+    "mo_ta_luat": "Người điều khiển ô tô không nhường đường cho xe ưu tiên đang phát tín hiệu là hành vi vi phạm.",
+    "loai_xe": "o_to",
+    "phat_min": 3000000,
+    "phat_max": 5000000,
+    "dieu_luat": "Điều 5, Khoản 4, Điểm b",
+    "nghi_dinh": "100/2019/NĐ-CP",
+    "bo_sung": ""
+  },
+  {
+    "id": "Loi_011",
+    "hanh_vi_chung": "Không nhường đường cho xe ưu tiên xe máy",
+    "mo_ta_luat": "Người điều khiển xe mô tô, xe gắn máy không nhường đường cho xe ưu tiên đang làm nhiệm vụ là hành vi vi phạm.",
+    "loai_xe": "xe_may",
+    "phat_min": 1000000,
+    "phat_max": 2000000,
+    "dieu_luat": "Điều 6, Khoản 3, Điểm k",
+    "nghi_dinh": "100/2019/NĐ-CP",
+    "bo_sung": ""
+  },
+  {
+    "id": "Loi_012",
+    "hanh_vi_chung": "Không có bảo hiểm trách nhiệm dân sự ô tô",
+    "mo_ta_luat": "Người điều khiển ô tô không có hoặc không mang theo giấy chứng nhận bảo hiểm trách nhiệm dân sự còn hiệu lực là vi phạm.",
+    "loai_xe": "o_to",
+    "phat_min": 400000,
+    "phat_max": 600000,
+    "dieu_luat": "Điều 21, Khoản 4, Điểm a",
+    "nghi_dinh": "100/2019/NĐ-CP",
+    "bo_sung": ""
+  },
+  {
+    "id": "Loi_013",
+    "hanh_vi_chung": "Không có bảo hiểm trách nhiệm dân sự xe máy",
+    "mo_ta_luat": "Người điều khiển xe mô tô, xe gắn máy không có hoặc không mang theo giấy chứng nhận bảo hiểm trách nhiệm dân sự còn hiệu lực là hành vi vi phạm.",
+    "loai_xe": "xe_may",
+    "phat_min": 100000,
+    "phat_max": 200000,
+    "dieu_luat": "Điều 21, Khoản 2, Điểm a",
+    "nghi_dinh": "100/2019/NĐ-CP",
+    "bo_sung": ""
+  },
+  {
+    "id": "Loi_014",
+    "hanh_vi_chung": "Chạy vào đường ngược chiều ô tô",
+    "mo_ta_luat": "Người điều khiển ô tô đi vào đường ngược chiều hoặc đường một chiều là hành vi vi phạm nghiêm trọng.",
+    "loai_xe": "o_to",
+    "phat_min": 10000000,
+    "phat_max": 12000000,
+    "dieu_luat": "Điều 5, Khoản 5, Điểm b",
+    "nghi_dinh": "100/2019/NĐ-CP",
+    "bo_sung": "Tước GPLX 1–3 tháng"
+  },
+  {
+    "id": "Loi_015",
+    "hanh_vi_chung": "Đi ngược chiều xe máy",
+    "mo_ta_luat": "Người điều khiển xe mô tô, xe gắn máy đi ngược chiều trên đường một chiều là hành vi vi phạm nghiêm trọng.",
+    "loai_xe": "xe_may",
+    "phat_min": 2000000,
+    "phat_max": 3000000,
+    "dieu_luat": "Điều 6, Khoản 4, Điểm e",
+    "nghi_dinh": "100/2019/NĐ-CP",
+    "bo_sung": "Tước GPLX 1–3 tháng"
+  },
+  {
+    "id": "Loi_016",
+    "hanh_vi_chung": "Không mang Giấy phép lái xe ô tô",
+    "mo_ta_luat": "Người điều khiển ô tô không mang theo Giấy phép lái xe khi lưu thông là hành vi vi phạm.",
+    "loai_xe": "o_to",
+    "phat_min": 200000,
+    "phat_max": 400000,
+    "dieu_luat": "Điều 5, Khoản 2, Điểm b",
+    "nghi_dinh": "100/2019/NĐ-CP",
+    "bo_sung": ""
+  },
+  {
+    "id": "Loi_017",
+    "hanh_vi_chung": "Không mang Giấy phép lái xe máy",
+    "mo_ta_luat": "Người điều khiển xe mô tô không mang theo Giấy phép lái xe hợp lệ là hành vi vi phạm.",
+    "loai_xe": "xe_may",
+    "phat_min": 100000,
+    "phat_max": 200000,
+    "dieu_luat": "Điều 6, Khoản 2, Điểm c",
+    "nghi_dinh": "100/2019/NĐ-CP",
+    "bo_sung": ""
+  },
+  {
+    "id": "Loi_018",
+    "hanh_vi_chung": "Chở hàng rơi vãi xe tải",
+    "mo_ta_luat": "Người điều khiển xe tải chở vật liệu xây dựng, hàng hóa không che chắn để rơi vãi là hành vi vi phạm nghiêm trọng.",
+    "loai_xe": "xe_tai",
+    "phat_min": 8000000,
+    "phat_max": 10000000,
+    "dieu_luat": "Điều 24, Khoản 5, Điểm b",
+    "nghi_dinh": "100/2019/NĐ-CP",
+    "bo_sung": ""
+  },
+  {
+    "id": "Loi_019",
+    "hanh_vi_chung": "Không có gương chiếu hậu xe máy",
+    "mo_ta_luat": "Người điều khiển xe mô tô, xe gắn máy không có gương chiếu hậu bên trái là hành vi vi phạm điều kiện an toàn kỹ thuật.",
+    "loai_xe": "xe_may",
+    "phat_min": 100000,
+    "phat_max": 200000,
+    "dieu_luat": "Điều 17, Khoản 1, Điểm a",
+    "nghi_dinh": "100/2019/NĐ-CP",
+    "bo_sung": ""
+  },
+  {
+    "id": "Loi_020",
+    "hanh_vi_chung": "Không có gương chiếu hậu ô tô",
+    "mo_ta_luat": "Hành vi điều khiển ô tô không có gương chiếu hậu bên trái hoặc bên phải là vi phạm điều kiện an toàn kỹ thuật.",
+    "loai_xe": "o_to",
+    "phat_min": 800000,
+    "phat_max": 1000000,
+    "dieu_luat": "Điều 5, Khoản 3, Điểm s",
+    "nghi_dinh": "100/2019/NĐ-CP",
+    "bo_sung": ""
+  }
+]
