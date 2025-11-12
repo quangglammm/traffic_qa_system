@@ -44,16 +44,16 @@ def load_data():
         base_url=settings.BASE_URL
     )
 
-    # Load traffic violations data
+    # Load violations data
     data_dir = Path(__file__).parent.parent / "data"
-    traffic_file = data_dir / "traffic.json"
+    violations_file = data_dir / "violations.json"
 
-    if not traffic_file.exists():
-        logger.error(f"Traffic data file not found: {traffic_file}")
+    if not violations_file.exists():
+        logger.error(f"Violations data file not found: {violations_file}")
         return
 
-    logger.info(f"Loading data from {traffic_file}...")
-    with open(traffic_file, 'r', encoding='utf-8') as f:
+    logger.info(f"Loading data from {violations_file}...")
+    with open(violations_file, 'r', encoding='utf-8') as f:
         violations_data = json.load(f)
 
     logger.info(f"Found {len(violations_data)} violations to import")
