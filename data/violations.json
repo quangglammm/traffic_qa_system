@@ -324,5 +324,485 @@
             "không gương trái",
             "gương chiếu hậu hỏng"
         ]
+    },
+    {
+        "id": "021",
+        "canonical_action": "Chở quá số người",
+        "legal_description": "Chở người trên xe vượt quá số người quy định theo thiết kế của phương tiện hoặc chở người trên cabin xe tải, sơ mi rơ-moóc không đúng quy định;",
+        "vehicle_type": "o_to",
+        "fine_min_vnd": 800000,
+        "fine_max_vnd": 1000000,
+        "law_article": "Điều 23, Khoản 3, Điểm a",
+        "decree_reference": "100/2019/NĐ-CP",
+        "additional_penalty": "Tước GPLX theo quy định (nếu gây hậu quả nghiêm trọng)",
+        "casual_aliases": [
+            "chở quá người",
+            "chở quá số ghế",
+            "chở quá tải người"
+        ]
+    },
+    {
+        "id": "022",
+        "canonical_action": "Điều khiển phương tiện khi say rượu",
+        "legal_description": "Điều khiển xe ô tô, máy kéo, các loại xe tương tự có nồng độ cồn vượt quá mức cho phép;",
+        "vehicle_type": "o_to",
+        "fine_min_vnd": 30000000,
+        "fine_max_vnd": 40000000,
+        "law_article": "Điều 5, Khoản 9",
+        "decree_reference": "100/2019/NĐ-CP",
+        "additional_penalty": "Tước GPLX 22–24 tháng; có thể bị cưỡng chế thi hành theo quy định",
+        "casual_aliases": [
+            "lái xe say rượu",
+            "chạy xe khi uống rượu",
+            "nồng độ cồn vượt mức"
+        ]
+    },
+    {
+        "id": "023",
+        "canonical_action": "Chở quá số người",
+        "legal_description": "Chở người trên xe máy vượt quá quy định (số người ngồi trên xe máy, chở thêm người trên yên không đúng quy định);",
+        "vehicle_type": "xe_may",
+        "fine_min_vnd": 300000,
+        "fine_max_vnd": 500000,
+        "law_article": "Điều 8, Khoản 3",
+        "decree_reference": "100/2019/NĐ-CP",
+        "additional_penalty": "",
+        "casual_aliases": [
+            "chở quá chỗ",
+            "chở quá số người trên xe máy",
+            "chở thêm người"
+        ]
+    },
+    {
+        "id": "024",
+        "canonical_action": "Không gắn biển số",
+        "legal_description": "Lưu hành phương tiện không có biển số, biển số không đúng quy định hoặc cố tình tháo, che khuất biển số;",
+        "vehicle_type": "o_to",
+        "fine_min_vnd": 4000000,
+        "fine_max_vnd": 6000000,
+        "law_article": "Điều 30, Khoản 1-2",
+        "decree_reference": "100/2019/NĐ-CP",
+        "additional_penalty": "Tước GPLX nếu thuộc trường hợp quy định",
+        "casual_aliases": [
+            "không có biển số",
+            "tháo biển số",
+            "che biển số"
+        ]
+    },
+    {
+        "id": "025",
+        "canonical_action": "Không có đăng ký/giấy tờ xe",
+        "legal_description": "Lưu hành xe không có Giấy đăng ký, giấy chứng nhận kiểm định hoặc không mang theo các giấy tờ theo quy định;",
+        "vehicle_type": "xe_may",
+        "fine_min_vnd": 100000,
+        "fine_max_vnd": 200000,
+        "law_article": "Điều 6, Khoản 2, Điểm c",
+        "decree_reference": "100/2019/NĐ-CP",
+        "additional_penalty": "",
+        "casual_aliases": [
+            "không mang đăng ký xe",
+            "quên giấy tờ",
+            "không xuất trình đăng ký"
+        ]
+    },
+    {
+        "id": "026",
+        "canonical_action": "Sử dụng thiết bị âm thanh quá lớn",
+        "legal_description": "Sử dụng thiết bị âm thanh gắn trên phương tiện gây ô nhiễm, gây mất trật tự an toàn giao thông;",
+        "vehicle_type": "o_to",
+        "fine_min_vnd": 1000000,
+        "fine_max_vnd": 2000000,
+        "law_article": "Điều 17, Khoản 1 (các quy định về thiết bị phương tiện)",
+        "decree_reference": "100/2019/NĐ-CP",
+        "additional_penalty": "",
+        "casual_aliases": [
+            "âm thanh quá to",
+            "gắn loa ầm ỹ",
+            "hút công suất lớn"
+        ]
+    },
+    {
+        "id": "027",
+        "canonical_action": "Tăng, sửa kết cấu xe trái phép",
+        "legal_description": "Thay đổi, cải tạo, lắp đặt thiết bị làm thay đổi kết cấu, tính năng kỹ thuật của phương tiện không đúng quy định;",
+        "vehicle_type": "o_to",
+        "fine_min_vnd": 5000000,
+        "fine_max_vnd": 7000000,
+        "law_article": "Điều 60, Khoản 2-4",
+        "decree_reference": "100/2019/NĐ-CP",
+        "additional_penalty": "Tịch thu thiết bị/khôi phục hiện trạng; đình chỉ lưu hành",
+        "casual_aliases": [
+            "độ xe",
+            "thay kết cấu xe",
+            "biến dạng xe"
+        ]
+    },
+    {
+        "id": "028",
+        "canonical_action": "Không chằng buộc hàng hóa",
+        "legal_description": "Chở hàng không đảm bảo, hàng hóa rơi vãi, không che chắn, gây mất an toàn giao thông và vệ sinh môi trường;",
+        "vehicle_type": "o_to",
+        "fine_min_vnd": 800000,
+        "fine_max_vnd": 1000000,
+        "law_article": "Điều 24, Khoản 5, Điểm b",
+        "decree_reference": "100/2019/NĐ-CP",
+        "additional_penalty": "",
+        "casual_aliases": [
+            "hàng rơi vãi",
+            "không che chắn hàng",
+            "chở hàng không an toàn"
+        ]
+    },
+    {
+        "id": "029",
+        "canonical_action": "Chở hàng quá tải trọng",
+        "legal_description": "Vận chuyển hàng vượt quá tải trọng hoặc vượt quá tỉ lệ cho phép quy định trong Giấy phép lưu hành hoặc Giấy chứng nhận kiểm định;",
+        "vehicle_type": "o_to",
+        "fine_min_vnd": 5000000,
+        "fine_max_vnd": 7000000,
+        "law_article": "Điều 33, Khoản 3-5",
+        "decree_reference": "100/2019/NĐ-CP",
+        "additional_penalty": "Tước GPLX, đình chỉ phương tiện trong trường hợp nghiêm trọng",
+        "casual_aliases": [
+            "xe quá tải",
+            "chở vượt tải",
+            "vượt trọng tải cho phép"
+        ]
+    },
+    {
+        "id": "030",
+        "canonical_action": "Đi sai làn, chuyển hướng không có tín hiệu",
+        "legal_description": "Chuyển hướng, chuyển làn không quan sát, không có tín hiệu hoặc chuyển làn vượt tuyến ở nơi không được phép;",
+        "vehicle_type": "o_to",
+        "fine_min_vnd": 600000,
+        "fine_max_vnd": 800000,
+        "law_article": "Điều 5, Khoản 3, Điểm h",
+        "decree_reference": "100/2019/NĐ-CP",
+        "additional_penalty": "",
+        "casual_aliases": [
+            "đổi làn không báo",
+            "chuyển làn đột ngột",
+            "rẽ không xi-nhan"
+        ]
+    },
+    {
+        "id": "031",
+        "canonical_action": "Không đội mũ bảo hiểm đạt chuẩn (người đi xe máy chở trẻ em)",
+        "legal_description": "Chở người (trẻ em) không đội mũ bảo hiểm theo quy định hoặc đội mũ không cài quai;",
+        "vehicle_type": "xe_may",
+        "fine_min_vnd": 200000,
+        "fine_max_vnd": 300000,
+        "law_article": "Điều 6, Khoản 2, Điểm i",
+        "decree_reference": "100/2019/NĐ-CP",
+        "additional_penalty": "",
+        "casual_aliases": [
+            "chở trẻ không mũ",
+            "đội mũ không cài quai",
+            "không đội nón"
+        ]
+    },
+    {
+        "id": "032",
+        "canonical_action": "Sử dụng đèn chiếu gần/xa sai quy định",
+        "legal_description": "Sử dụng đèn chiếu xa, đèn không đúng quy định (chiếu thẳng vào xe ngược chiều) gây nguy hiểm;",
+        "vehicle_type": "o_to",
+        "fine_min_vnd": 400000,
+        "fine_max_vnd": 600000,
+        "law_article": "Điều 5, Khoản 3, Điểm s (thiết bị phương tiện)",
+        "decree_reference": "100/2019/NĐ-CP",
+        "additional_penalty": "",
+        "casual_aliases": [
+            "bật đèn pha chói",
+            "đèn pha lóa",
+            "đèn chiếu sai"
+        ]
+    },
+    {
+        "id": "033",
+        "canonical_action": "Bấm còi, rú ga nơi đông dân cư",
+        "legal_description": "Sử dụng còi, rú ga liên tục ở khu vực đông dân cư, khu vực có biển cấm gây mất trật tự;",
+        "vehicle_type": "o_to",
+        "fine_min_vnd": 800000,
+        "fine_max_vnd": 1200000,
+        "law_article": "Điều 5, Khoản 3 (hành vi gây mất trật tự an toàn)",
+        "decree_reference": "100/2019/NĐ-CP",
+        "additional_penalty": "",
+        "casual_aliases": [
+            "bấm còi liên tục",
+            "rú ga ầm ĩ",
+            "làm ồn khi lái"
+        ]
+    },
+    {
+        "id": "034",
+        "canonical_action": "Không tuân thủ quy định bảo dưỡng/kiểm định",
+        "legal_description": "Lái xe/đơn vị không thực hiện kiểm định an toàn kỹ thuật, hoặc sử dụng phương tiện đã hết hạn kiểm định;",
+        "vehicle_type": "o_to",
+        "fine_min_vnd": 2000000,
+        "fine_max_vnd": 3000000,
+        "law_article": "Điều 20, Khoản 4-5",
+        "decree_reference": "100/2019/NĐ-CP",
+        "additional_penalty": "Tịch thu giấy tờ liên quan tới kiểm định trong trường hợp quy định",
+        "casual_aliases": [
+            "hết hạn kiểm định",
+            "không kiểm định",
+            "xe chưa kiểm định"
+        ]
+    },
+    {
+        "id": "035",
+        "canonical_action": "Không nhường đường xe ưu tiên",
+        "legal_description": "Không nhường đường hoặc gây cản trở xe đang phát tín hiệu ưu tiên theo quy định;",
+        "vehicle_type": "o_to",
+        "fine_min_vnd": 3000000,
+        "fine_max_vnd": 5000000,
+        "law_article": "Điều 5, Khoản 4, Điểm b",
+        "decree_reference": "100/2019/NĐ-CP",
+        "additional_penalty": "",
+        "casual_aliases": [
+            "cản trở xe ưu tiên",
+            "không tránh xe cứu hộ",
+            "không nhường xe cứu thương"
+        ]
+    },
+    {
+        "id": "036",
+        "canonical_action": "Đi bộ, nằm trên đường gây cản trở",
+        "legal_description": "Người đi bộ, ngồi, nằm trên đường gây cản trở giao thông;",
+        "vehicle_type": "o_to",
+        "fine_min_vnd": 200000,
+        "fine_max_vnd": 400000,
+        "law_article": "Điều 10 (vi phạm người đi bộ/đi lại trên đường)",
+        "decree_reference": "100/2019/NĐ-CP",
+        "additional_penalty": "",
+        "casual_aliases": [
+            "đi bộ giữa đường",
+            "ngồi nằm giữa đường",
+            "cản trở giao thông"
+        ]
+    },
+    {
+        "id": "037",
+        "canonical_action": "Lái xe quá tốc độ trên đường cao tốc",
+        "legal_description": "Điều khiển xe chạy quá tốc độ quy định trên đường cao tốc, vượt mức cho phép;",
+        "vehicle_type": "o_to",
+        "fine_min_vnd": 7000000,
+        "fine_max_vnd": 8000000,
+        "law_article": "Điều 5, Khoản 7",
+        "decree_reference": "100/2019/NĐ-CP",
+        "additional_penalty": "Tước GPLX 1–3 tháng",
+        "casual_aliases": [
+            "chạy quá cao tốc",
+            "vượt tốc cao tốc",
+            "phóng nhanh trên cao tốc"
+        ]
+    },
+    {
+        "id": "038",
+        "canonical_action": "Để phương tiện nổ máy rú ga gây ồn, mất an toàn",
+        "legal_description": "Để động cơ nổ, rú ga, tạo khói, gây mất trật tự hoặc nguy hiểm cho người khác;",
+        "vehicle_type": "xe_may",
+        "fine_min_vnd": 400000,
+        "fine_max_vnd": 600000,
+        "law_article": "Điều 8 (vi phạm xử lý người điều khiển xe máy)",
+        "decree_reference": "100/2019/NĐ-CP",
+        "additional_penalty": "",
+        "casual_aliases": [
+            "rú ga",
+            "nổ máy ầm ĩ",
+            "làm ồn bằng xe"
+        ]
+    },
+    {
+        "id": "039",
+        "canonical_action": "Sử dụng điện thoại",
+        "legal_description": "Dùng tay sử dụng điện thoại di động khi đang điều khiển xe trên đường (hành vi có mức phạt khác phụ thuộc tính chất);",
+        "vehicle_type": "o_to",
+        "fine_min_vnd": 2000000,
+        "fine_max_vnd": 3000000,
+        "law_article": "Điều 5, Khoản 4, Điểm c",
+        "decree_reference": "100/2019/NĐ-CP",
+        "additional_penalty": "",
+        "casual_aliases": [
+            "cầm điện thoại khi lái xe",
+            "vừa lái vừa gọi",
+            "dùng dt khi đang lái"
+        ]
+    },
+    {
+        "id": "040",
+        "canonical_action": "Không thắt dây an toàn",
+        "legal_description": "Người ngồi trên ô tô không thắt dây an toàn khi phương tiện đang chạy;",
+        "vehicle_type": "o_to",
+        "fine_min_vnd": 800000,
+        "fine_max_vnd": 1000000,
+        "law_article": "Điều 5, Khoản 3, Điểm p",
+        "decree_reference": "100/2019/NĐ-CP",
+        "additional_penalty": "",
+        "casual_aliases": [
+            "hành khách không thắt dây",
+            "bỏ dây an toàn",
+            "không cài dây an toàn"
+        ]
+    },
+    {
+        "id": "041",
+        "canonical_action": "Không nhường đường",
+        "legal_description": "Không tuân thủ quy định nhường đường tại nút giao, gây cản trở, tăng nguy cơ tai nạn;",
+        "vehicle_type": "o_to",
+        "fine_min_vnd": 400000,
+        "fine_max_vnd": 600000,
+        "law_article": "Điều 5, Khoản 3",
+        "decree_reference": "100/2019/NĐ-CP",
+        "additional_penalty": "",
+        "casual_aliases": [
+            "không nhường đường giao lộ",
+            "phớt lờ biển nhường đường",
+            "đi ẩu ở ngã tư"
+        ]
+    },
+    {
+        "id": "042",
+        "canonical_action": "Chở hàng nguy hiểm không đúng quy định",
+        "legal_description": "Vận chuyển hàng nguy hiểm, vật liệu nổ, chất dễ cháy… không đúng quy trình, không có biển cảnh báo;",
+        "vehicle_type": "o_to",
+        "fine_min_vnd": 4000000,
+        "fine_max_vnd": 6000000,
+        "law_article": "Điều 26, Khoản 1-3",
+        "decree_reference": "100/2019/NĐ-CP",
+        "additional_penalty": "Tước GPLX/đình chỉ phương tiện theo mức độ",
+        "casual_aliases": [
+            "chở hàng nguy hiểm sai quy định",
+            "không treo biển hàng nguy hiểm",
+            "vận chuyển chất dễ cháy không an toàn"
+        ]
+    },
+    {
+        "id": "043",
+        "canonical_action": "Không tuân thủ hiệu lệnh CSGT",
+        "legal_description": "Không chấp hành hiệu lệnh, chỉ dẫn của người kiểm soát giao thông, cảnh sát giao thông;",
+        "vehicle_type": "o_to",
+        "fine_min_vnd": 3000000,
+        "fine_max_vnd": 5000000,
+        "law_article": "Điều 5, Khoản 5, Điểm a",
+        "decree_reference": "100/2019/NĐ-CP",
+        "additional_penalty": "Tước GPLX theo quy định",
+        "casual_aliases": [
+            "không chấp hành CSGT",
+            "bỏ chạy khi kiểm tra",
+            "phớt lờ hiệu lệnh"
+        ]
+    },
+    {
+        "id": "044",
+        "canonical_action": "Điều khiển xe khi mệt, buồn ngủ",
+        "legal_description": "Điều khiển xe trong trạng thái mệt mỏi, buồn ngủ gây nguy hiểm cho giao thông;",
+        "vehicle_type": "o_to",
+        "fine_min_vnd": 600000,
+        "fine_max_vnd": 800000,
+        "law_article": "Điều 5 (quy định chung về điều khiển phương tiện an toàn)",
+        "decree_reference": "100/2019/NĐ-CP",
+        "additional_penalty": "",
+        "casual_aliases": [
+            "lái xe buồn ngủ",
+            "mệt vẫn lái xe",
+            "đi ngủ khi lái"
+        ]
+    },
+    {
+        "id": "045",
+        "canonical_action": "Đỗ xe nơi có biển cấm",
+        "legal_description": "Dừng, đỗ xe nơi có biển cấm dừng, cấm đỗ hoặc trong khu vực cấm gây ùn tắc;",
+        "vehicle_type": "o_to",
+        "fine_min_vnd": 400000,
+        "fine_max_vnd": 600000,
+        "law_article": "Điều 5, Khoản 3, Điểm d",
+        "decree_reference": "100/2019/NĐ-CP",
+        "additional_penalty": "",
+        "casual_aliases": [
+            "đỗ xe nơi cấm",
+            "dừng đỗ sai chỗ",
+            "đậu xe nơi biển cấm"
+        ]
+    },
+    {
+        "id": "046",
+        "canonical_action": "Không có giấy tờ",
+        "legal_description": "Không có hoặc không mang theo Giấy chứng nhận bảo hiểm trách nhiệm dân sự của chủ xe cơ giới còn hiệu lực;",
+        "vehicle_type": "o_to",
+        "fine_min_vnd": 400000,
+        "fine_max_vnd": 600000,
+        "law_article": "Điều 21, Khoản 4, Điểm a",
+        "decree_reference": "100/2019/NĐ-CP",
+        "additional_penalty": "",
+        "casual_aliases": [
+            "không mang bảo hiểm TNDS",
+            "quên bảo hiểm xe",
+            "không có bảo hiểm xe"
+        ]
+    },
+    {
+        "id": "047",
+        "canonical_action": "Không bật đèn",
+        "legal_description": "Không bật đèn chiếu sáng trong điều kiện trời tối, sương mù hoặc nơi yêu cầu phải bật đèn theo quy định;",
+        "vehicle_type": "o_to",
+        "fine_min_vnd": 400000,
+        "fine_max_vnd": 600000,
+        "law_article": "Điều 5, Khoản 3 (thiết bị, đèn chiếu sáng)",
+        "decree_reference": "100/2019/NĐ-CP",
+        "additional_penalty": "",
+        "casual_aliases": [
+            "không bật đèn ban đêm",
+            "lái xe không đèn",
+            "không bật đèn trong sương mù"
+        ]
+    },
+    {
+        "id": "048",
+        "canonical_action": "Đậu, đỗ xe chắn lối đi",
+        "legal_description": "Dừng, đỗ xe tại nơi gây cản trở giao thông, chắn lối ra vào công trình, cổng, bến bãi;",
+        "vehicle_type": "o_to",
+        "fine_min_vnd": 800000,
+        "fine_max_vnd": 1200000,
+        "law_article": "Điều 5, Khoản 3 (dừng, đỗ sai quy định)",
+        "decree_reference": "100/2019/NĐ-CP",
+        "additional_penalty": "",
+        "casual_aliases": [
+            "đỗ chắn cổng",
+            "đỗ chắn lối",
+            "đỗ chắn đường"
+        ]
+    },
+    {
+        "id": "049",
+        "canonical_action": "Không mang giấy tờ",
+        "legal_description": "Người điều khiển phương tiện không mang theo Giấy phép lái xe khi tham gia giao thông;",
+        "vehicle_type": "xe_may",
+        "fine_min_vnd": 100000,
+        "fine_max_vnd": 200000,
+        "law_article": "Điều 6, Khoản 2, Điểm c",
+        "decree_reference": "100/2019/NĐ-CP",
+        "additional_penalty": "",
+        "casual_aliases": [
+            "quên bằng lái",
+            "không mang GPLX",
+            "không xuất trình GPLX"
+        ]
+    },
+    {
+        "id": "050",
+        "canonical_action": "Đi sai làn, chuyển hướng không có tín hiệu",
+        "legal_description": "Đi vào làn đường dành riêng cho xe buýt, xe ưu tiên, hoặc làn cấm mà không có lý do chính đáng;",
+        "vehicle_type": "o_to",
+        "fine_min_vnd": 600000,
+        "fine_max_vnd": 800000,
+        "law_article": "Điều 5, Khoản 3 (vi phạm quy định làn đường)",
+        "decree_reference": "100/2019/NĐ-CP",
+        "additional_penalty": "",
+        "casual_aliases": [
+            "chéo làn buýt",
+            "đi vào làn cấm",
+            "đi sai làn"
+        ]
     }
 ]
