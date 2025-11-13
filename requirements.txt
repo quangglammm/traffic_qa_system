@@ -1,22 +1,22 @@
 # Database
-neo4j==5.28.0
+neo4j
 
 # Vector Store
-chromadb>=0.4.0
+chromadb
 
 # LLM and Embeddings
-transformers>=4.30.0
-torch>=2.0.0
-sentence-transformers>=2.2.0
-openai>=2.7.1
+transformers
+torch
+sentence-transformers
+openai
 
 # API Framework
-fastapi>=0.100.0
-uvicorn[standard]>=0.23.0
+fastapi
+uvicorn[standard]
 
 # Dependency Injection
-dependency-injector>=4.41.0
+dependency-injector
 
 # Configuration and Data Models
-pydantic>=2.0.0
-pydantic-settings>=2.0.0
+pydantic
+pydantic-settings
