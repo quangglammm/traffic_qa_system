@@ -197,7 +197,7 @@
     },
     {
         "id": "D100-A5-C2-Pa",
-        "canonical_action": "Chuyển làn sai",
+        "canonical_action": "Chuyển làn sai quy dinh",
         "legal_description": "Chuyển làn đường không đúng nơi cho phép hoặc không có tín hiệu báo trước, trừ các hành vi vì phạm quy định tại điểm g khoản 5 Điều này;",
         "detailed_description": "Chuyển làn đường không đúng nơi cho phép hoặc không có tín hiệu báo trước;",
         "vehicle_type": "ô tô",
@@ -1760,6 +1760,1905 @@
                     "article": "Điều 5",
                     "clause": "Khoản 11",
                     "point": "Điểm h"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D100-A6-C1-Pa",
+        "canonical_action": "Không tuân thủ tín hiệu biển báo, vạch kẻ đường",
+        "legal_description": "Không chấp hành hiệu lệnh, chỉ dẫn của biển báo hiệu, vạch kẻ đường, trù các hành vi vi phạm quy định tại điểm c, điểm đ, điểm e, điểm hkhoản 2; điểm d, điểm g, điểm i, điểm m khoản 3; điểm a, điểm b, điểm c, điểm d, điểm e khoản 4; khoản 5; điểm b khoản 6; điểm a, điểm b khoản 7; điểm d khoản 8 Điều này;",
+        "detailed_description": "Không chấp hành hiệu lệnh, chỉ dẫn của biển báo hiệu, vạch kẻ đường;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "100_000",
+            "fine_max_vnd": "200_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 1",
+            "point": "Điểm a"
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "Gây tai nạn giao thông",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 02 tháng đến 04 tháng",
+                "duration_min_months": "02",
+                "duration_max_months": "04",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm c"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D100-A6-C1-Pb",
+        "canonical_action": "Chuyển hướng sai quy định",
+        "legal_description": "Không có báo hiệu xin vượt trước khi vượt;",
+        "detailed_description": "Không có báo hiệu xin vượt trước khi vượt;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "100_000",
+            "fine_max_vnd": "200_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 1",
+            "point": "Điểm b"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D100-A6-C1-Pc",
+        "canonical_action": "Không giữ khoảng cách an toàn",
+        "legal_description": "Không giữ khoảng cách an toàn để xảy ra va chạm với xe chạy liền trước hoặc không giữ khoảng cách theo quy định của biển báo hiệu 'Cự ly tối thiểu giữa hai xe';",
+        "detailed_description": "Không giữ khoảng cách an toàn để xảy ra va chạm với xe chạy liền trước hoặc không giữ khoảng cách theo quy định của biển báo hiệu 'Cự ly tối thiểu giữa hai xe';",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "100_000",
+            "fine_max_vnd": "100_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 1",
+            "point": "Điểm c"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D100-A6-C1-Pd",
+        "canonical_action": "Nhường đường sai quy định",
+        "legal_description": "Chuyền hướng không nhường quyền đi trước cho: Người đi bộ, xe lăn của người khuyết tật qua đường tại nơi có vạch kẻ đường dành cho người đi bộ; xe thô sơ đang đi trên phần đường dành cho xe thô sơ;",
+        "detailed_description": "Chuyền hướng không nhường quyền đi trước cho: Người đi bộ, xe lăn của người khuyết tật qua đường tại nơi có vạch kẻ đường dành cho người đi bộ; xe thô sơ đang đi trên phần đường dành cho xe thô sơ;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "100_000",
+            "fine_max_vnd": "200_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 1",
+            "point": "Điểm d"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D100-A6-C1-Pđ",
+        "canonical_action": "Nhường đường sai quy định",
+        "legal_description": "Chuyển hướng không nhường đường cho: Các xe đi ngược chiều; người đi bộ, xe lăn của người khuyết tật đang qua đường tại nơi không có vạch kẻ đường cho người đi bộ;",
+        "detailed_description": "Chuyển hướng không nhường đường cho: Các xe đi ngược chiều; người đi bộ, xe lăn của người khuyết tật đang qua đường tại nơi không có vạch kẻ đường cho người đi bộ;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "100_000",
+            "fine_max_vnd": "200_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 1",
+            "point": "Điểm đ"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D100-A6-C1-Pe",
+        "canonical_action": "Lùi xe sai quy định",
+        "legal_description": "Lùi xe mô tô ba bánh không quan sát hoặc không có tín hiệu báo trước;",
+        "detailed_description": "Lùi xe mô tô ba bánh không quan sát hoặc không có tín hiệu báo trước;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "100_000",
+            "fine_max_vnd": "200_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 1",
+            "point": "Điểm e"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D100-A6-C1-Pg",
+        "canonical_action": "Chở người sai quy định",
+        "legal_description": "Chở người ngồi trên xe sử dụng ô (dù);",
+        "detailed_description": "Chở người ngồi trên xe sử dụng ô (dù);",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "100_000",
+            "fine_max_vnd": "200_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 1",
+            "point": "Điểm g"
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "Gây tai nạn giao thông",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 02 tháng đến 04 tháng",
+                "duration_min_months": "02",
+                "duration_max_months": "04",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm c"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D100-A6-C1-Ph",
+        "canonical_action": "Nhường đường sai quy định",
+        "legal_description": "Không tuân thủ các quy định về nhường đường tại nơi đường giao nhau, trừ các hành vi vi phạm quy định tại điểm b, điểm e khoản 2 Điều này;",
+        "detailed_description": "Không tuân thủ các quy định về nhường đường tại nơi đường giao nhau",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "100_000",
+            "fine_max_vnd": "200_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 1",
+            "point": "Điểm h"
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "Gây tai nạn giao thông",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 02 tháng đến 04 tháng",
+                "duration_min_months": "02",
+                "duration_max_months": "04",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm c"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D100-A6-C1-Pi",
+        "canonical_action": "Chuyển làn sai quy dinh",
+        "legal_description": "Chuyển làn đường không đúng nơi được phép hoặc không có tín hiệu báo trước;",
+        "detailed_description": "Chuyển làn đường không đúng nơi được phép hoặc không có tín hiệu báo trước;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "100_000",
+            "fine_max_vnd": "200_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 1",
+            "point": "Điểm i"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D100-A6-C1-Pk",
+        "canonical_action": "Điều khiển xe sai quy định",
+        "legal_description": "Điều khiển xe chạy dàn hàng ngang từ 03 xe trở lên;",
+        "detailed_description": "Điều khiển xe chạy dàn hàng ngang từ 03 xe trở lên;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "100_000",
+            "fine_max_vnd": "200_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 1",
+            "point": "Điểm k"
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "Gây tai nạn giao thông",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 02 tháng đến 04 tháng",
+                "duration_min_months": "02",
+                "duration_max_months": "04",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm c"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D100-A6-C1-Pl",
+        "canonical_action": "Sử dụng đèn chiếu sáng sai quy định",
+        "legal_description": "Không sử dụng đèn chiếu sáng trong thời gian từ 19 giờ ngày hôm trước đến 05 giờ ngày hôm sau hoặc khi sương mù, thời tiết xấu hạn chế tầm nhìn;",
+        "detailed_description": "Không sử dụng đèn chiếu sáng trong thời gian từ 19 giờ ngày hôm trước đến 05 giờ ngày hôm sau hoặc khi sương mù, thời tiết xấu hạn chế tầm nhìn;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "100_000",
+            "fine_max_vnd": "200_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 1",
+            "point": "Điểm l"
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "Gây tai nạn giao thông",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 02 tháng đến 04 tháng",
+                "duration_min_months": "02",
+                "duration_max_months": "04",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm c"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D100-A6-C1-Pm",
+        "canonical_action": "Nhường đường sai quy định",
+        "legal_description": "Tránh xe không đúng quy định; sử dụng đèn chiếu xa khi tránh xe đi ngược chiều; không nhường đường cho xe đi ngược chiều theo quy định tại nơi đường hẹp, đường dốc, nơi có chướng ngại vật;",
+        "detailed_description": "Tránh xe không đúng quy định; sử dụng đèn chiếu xa khi tránh xe đi ngược chiều; không nhường đường cho xe đi ngược chiều theo quy định tại nơi đường hẹp, đường dốc, nơi có chướng ngại vật;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "100_000",
+            "fine_max_vnd": "200_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 1",
+            "point": "Điểm m"
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "Gây tai nạn giao thông",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 02 tháng đến 04 tháng",
+                "duration_min_months": "02",
+                "duration_max_months": "04",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm c"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D100-A6-C1-Pn",
+        "canonical_action": "Bấm còi trong khu đô thị",
+        "legal_description": "Bấm còi trong thời gian từ 22 giờ ngày hôm trước đến 05 giờ ngày hôm sau, sử dụng đèn chiếu xa trong đô thị, khu đông dân cư, trừ các xe ưu tiên đang đi làm nhiệm vụ theo quy định;",
+        "detailed_description": "Bấm còi trong thời gian từ 22 giờ ngày hôm trước đến 05 giờ ngày hôm sau, sử dụng đèn chiếu xa trong đô thị, khu đông dân cư, trừ các xe uu tiên đang đi làm nhiệm vụ theo quy định;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "100_000",
+            "fine_max_vnd": "200_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 1",
+            "point": "Điểm n"
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "Gây tai nạn giao thông",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 02 tháng đến 04 tháng",
+                "duration_min_months": "02",
+                "duration_max_months": "04",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm c"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D100-A6-C1-Po",
+        "canonical_action": "Sử dụng tín hiệu ưu tiên sai quy định",
+        "legal_description": "Xe được quyền ưu tiên lắp đặt, sử dụng thiết bị phát tín hiệu ưu tiên không đúng quy định hoặc sử dụng thiết bị phát tín hiệu ưu tiên mà không có Giấy phép của cơ quan có thẩm quyền cấp hoặc có Giấy phép của cơ quan có thẩm quyền cấp nhưng không còn giá trị sử dụng theo quy định;",
+        "detailed_description": "Xe được quyền ưu tiên lắp đặt, sử dụng thiết bị phát tín hiệu ưu tiên không đúng quy định hoặc sử dụng thiết bị phát tín hiệu ưu tiên mà không có Giấy phép của cơ quan có thẩm quyền cấp hoặc có Giấy phép của cơ quan có thẩm quyền cấp nhưng không còn giá trị sử dụng theo quy định;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "100_000",
+            "fine_max_vnd": "100_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 1",
+            "point": "Điểm o"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D100-A6-C1-Pp",
+        "canonical_action": "Quay đầu xe sai quy định",
+        "legal_description": "Quay đầu xe tại nơi không được quay đầu xe, trừ hành vi vi phạm quy định tại điểm d khoản 4 Điều này;",
+        "detailed_description": "Quay đầu xe tại nơi không được quay đầu xe, trừ hành vi vi phạm quy định tại điểm d khoản 4 Điều này;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "100_000",
+            "fine_max_vnd": "200_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 1",
+            "point": "Điểm p"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D100-A6-C1-Pq",
+        "canonical_action": "Vi phạm tốc độ tối thiểu",
+        "legal_description": "Điều khiển xe chạy dưới tốc độ tối thiểu trên những đoạn đường bộ có quy định tốc độ tối thiểu cho phép.",
+        "detailed_description": "Điều khiển xe chạy dưới tốc độ tối thiểu trên những đoạn đường bộ có quy định tốc độ tối thiểu cho phép.",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "100_000",
+            "fine_max_vnd": "200_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 1",
+            "point": "Điểm q"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D100-A6-C2-Pa",
+        "canonical_action": "Dừng xe, đỗ xe sai quy định",
+        "legal_description": "Dừng xe, đỗ xe trên phần đường xe chạy ở đoạn đường ngoài đô thị nơi có lề đường;",
+        "detailed_description": "Dừng xe, đỗ xe trên phần đường xe chạy ở đoạn đường ngoài đô thị nơi có lề đường;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "200_000",
+            "fine_max_vnd": "300_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 2",
+            "point": "Điểm a"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D100-A6-C2-Pb",
+        "canonical_action": "Đi không đúng tốc độ với làn đường",
+        "legal_description": "Không giảm tốc độ và nhường đường khi điều khiển xe chạy từ trong ngõ, đường nhánh ra đường chính;",
+        "detailed_description": "Không giảm tốc độ và nhường đường khi điều khiển xe chạy từ trong ngõ, đường nhánh ra đường chính;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "200_000",
+            "fine_max_vnd": "300_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 2",
+            "point": "Điểm b"
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "Gây tai nạn giao thông",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 02 tháng đến 04 tháng",
+                "duration_min_months": "02",
+                "duration_max_months": "04",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm c"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D100-A6-C2-Pc",
+        "canonical_action": "Bắn tốc độ",
+        "legal_description": "Điều khiển xe chạy quá tốc độ quy định từ 05 km/h đến dưới 10 km/h;",
+        "detailed_description": "Điều khiển xe chạy quá tốc độ quy định từ 05 km/h đến dưới 10 km/h;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "200_000",
+            "fine_max_vnd": "300_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 2",
+            "point": "Điểm c"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D100-A6-C2-Pd",
+        "canonical_action": "",
+        "legal_description": "Điều khiển xe chạy tốc độ thấp mà không đi bên phải phần đường xe chạy gây cản trở giao thông;",
+        "detailed_description": "Điều khiển xe chạy tốc độ thấp mà không đi bên phải phần đường xe chạy gây cản trở giao thông;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "200_000",
+            "fine_max_vnd": "300_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 2",
+            "point": "Điểm d"
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "Gây tai nạn giao thông",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 02 tháng đến 04 tháng",
+                "duration_min_months": "02",
+                "duration_max_months": "04",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm c"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D100-A6-C2-Pđ",
+        "canonical_action": "Dừng xe, đỗ xe sai quy định",
+        "legal_description": "Dừng xe, đỗ xe ở lòng đường đô thị gây cản trở giao thông; tụ tập từ 03 xe trở lên ở lòng đường, trong hầm đường bộ; đỗ, để xe ở lòng đường đô thị, hè phố trái quy định của pháp luật;",
+        "detailed_description": "Dừng xe, đỗ xe ở lòng đường đô thị gây cản trở giao thông; tụ tập từ 03 xe trở lên ở lòng đường, trong hầm đường bộ; đỗ, để xe ở lòng đường đô thị, hè phố trái quy định của pháp luật;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "200_000",
+            "fine_max_vnd": "300_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 2",
+            "point": "Điểm đ"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D100-A6-C2-Pe",
+        "canonical_action": "Nhường đường sai quy định",
+        "legal_description": "Không nhường đường cho xe xin vượt khi có đủ điều kiện an toàn; không nhường đường cho xe đi trên đường ưu tiên, đường chính từ bất kỳ hướng nào tới tại nơi đường giao nhau;",
+        "detailed_description": "Không nhường đường cho xe xin vượt khi có đủ điều kiện an toàn; không nhường đường cho xe đi trên đường ưu tiên, đường chính từ bất kỳ hướng nào tới tại nơi đường giao nhau;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "200_000",
+            "fine_max_vnd": "300_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 2",
+            "point": "Điểm e"
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "Gây tai nạn giao thông",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 02 tháng đến 04 tháng",
+                "duration_min_months": "02",
+                "duration_max_months": "04",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm c"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D100-A6-C2-Pg",
+        "canonical_action": "Sử dụng tín hiệu ưu tiên sai quy định",
+        "legal_description": "Xe không được quyền ưu tiên lắp đặt, sử dụng thiết bị phát tín hiệu của xe được quyền uu tiên;",
+        "detailed_description": "Xe không được quyền ưu tiên lắp đặt, sử dụng thiết bị phát tín hiệu của xe được quyền uu tiên;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "200_000",
+            "fine_max_vnd": "300_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 2",
+            "point": "Điểm g"
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "Gây tai nạn giao thông",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 02 tháng đến 04 tháng",
+                "duration_min_months": "02",
+                "duration_max_months": "04",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm c"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D100-A6-C2-Ph",
+        "canonical_action": "Dừng xe, đỗ xe sai quy định",
+        "legal_description": "Dừng xe, đỗ xe trên đường xe điện, điểm dừng đón trả khách của xe buýt, nơi đường bộ giao nhau, trên phần đường dành cho người đi bộ qua đường; dừng xe nơi có biển 'Cấm dừng xe và đỗ xe'; đỗ xe tại nơi có biển 'Cấm đỗ xe' hoặc biển 'Cấm dừng xe và đỗ xe'; không tuân thủ các quy định về dừng xe, đỗ xe tại nơi đường bộ giao nhau cùng mức với đường sắt; dừng xe, đỗ xe trong phạm vi an toàn của đường sắt, trừ hành vi vi phạm quy định tại điểm b khoản 2, điểm b khoản 3 Điều 49 Nghị định này;",
+        "detailed_description": "Dừng xe, đỗ xe trên đường xe điện, điểm dừng đón trả khách của xe buýt, nơi đường bộ giao nhau, trên phần đường dành cho người đi bộ qua đường; dừng xe nơi có biển 'Cấm dừng xe và đỗ xe'; đỗ xe tại nơi có biển 'Cấm đỗ xe' hoặc biển 'Cấm dừng xe và đỗ xe'; không tuân thủ các quy định về dừng xe, đỗ xe tại nơi đường bộ giao nhau cùng mức với đường sắt; dừng xe, đỗ xe trong phạm vi an toàn của đường sắt",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "200_000",
+            "fine_max_vnd": "300_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 2",
+            "point": "Điểm h"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D100-A6-C2-Pi",
+        "canonical_action": "Không mũ bảo hiểm",
+        "legal_description": "Không đội 'mũ bảo hiểm cho người đi mô tô, xe máy' hoặc đội 'mũ bảo hiểm cho người đi mô tô, xe máy' không cài quai đúng quy cách khi điều khiển xe tham gia giao thông trên đường bộ;",
+        "detailed_description": "Không đội 'mũ bảo hiểm cho người đi mô tô, xe máy' hoặc đội 'mũ bảo hiểm cho người đi mô tô, xe máy' không cài quai đúng quy cách khi điều khiển xe tham gia giao thông trên đường bộ;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "200_000",
+            "fine_max_vnd": "300_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 2",
+            "point": "Điểm i"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D100-A6-C2-Pk",
+        "canonical_action": "Không mũ bảo hiểm",
+        "legal_description": "Chở người ngồi trên xe không đội “mũ bảo hiểm cho người đi mô tô, xe máy” hoặc đội “mũ bảo hiểm cho người đi mô tô, xe máy” không cài quai đúng quy cách, trừ trường hợp chở người bệnh đi cấp cứu, trẻ em dưới 06 tuổi, áp giải người có hành vi vi phạm pháp luật;",
+        "detailed_description": "Chở người ngồi trên xe không đội “mũ bảo hiểm cho người đi mô tô, xe máy” hoặc đội “mũ bảo hiểm cho người đi mô tô, xe máy” không cài quai đúng quy cách, trừ trường hợp chở người bệnh đi cấp cứu, trẻ em dưới 06 tuổi, áp giải người có hành vi vi phạm pháp luật;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "200_000",
+            "fine_max_vnd": "300_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 2",
+            "point": "Điểm k"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D100-A6-C2-Pl",
+        "canonical_action": "Chở người sai quy định",
+        "legal_description": "Chở theo 02 người trên xe, trừ trường hợp chở người bệnh đi cấp cứu, trẻ em dưới 14 tuổi, áp giải người có hành vi vi phạm pháp luật;",
+        "detailed_description": "Chở theo 02 người trên xe, trừ trường hợp chở người bệnh đi cấp cứu, trẻ em dưới 14 tuổi, áp giải người có hành vi vi phạm pháp luật;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "200_000",
+            "fine_max_vnd": "300_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 2",
+            "point": "Điểm l"
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "Gây tai nạn giao thông",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 02 tháng đến 04 tháng",
+                "duration_min_months": "02",
+                "duration_max_months": "04",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm c"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D100-A6-C2-Pm",
+        "canonical_action": "Chở người sai quy định",
+        "legal_description": "Ngồi phía sau vòng tay qua người ngồi trước để điều khiền xe, trừ trường hợp chở trẻ em ngồi phía trước.",
+        "detailed_description": "Ngồi phía sau vòng tay qua người ngồi trước để điều khiền xe, trừ trường hợp chở trẻ em ngồi phía trước.",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "200_000",
+            "fine_max_vnd": "300_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 2",
+            "point": "Điểm m"
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "Gây tai nạn giao thông",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 02 tháng đến 04 tháng",
+                "duration_min_months": "02",
+                "duration_max_months": "04",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm c"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D100-A6-C3-Pa",
+        "canonical_action": "Bắn tốc độ",
+        "legal_description": "Chuyển hướng không giảm tốc độ hoặc không có tín hiệu báo hướng rẽ (trừ trường hợp điều khiển xe đi theo hướng cong của đoạn đường bộ ở nơi đường không giao nhau cùng mức);",
+        "detailed_description": "Chuyển hướng không giảm tốc độ hoặc không có tín hiệu báo hướng rẽ (trừ trường hợp điều khiển xe đi theo hướng cong của đoạn đường bộ ở nơi đường không giao nhau cùng mức);",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "400_000",
+            "fine_max_vnd": "600_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 3",
+            "point": "Điểm a"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D100-A6-C3-Pb",
+        "canonical_action": "Chở quá số người quy định",
+        "legal_description": "Chở theo từ 03 người trở lên trên xe;",
+        "detailed_description": "Chở theo từ 03 người trở lên trên xe;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "400_000",
+            "fine_max_vnd": "600_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 3",
+            "point": "Điểm b"
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "",
+                "description": "tước quyền sử dụng Giấy phép lái xe từ 01 tháng đến 03 tháng;",
+                "duration_min_months": "01",
+                "duration_max_months": "03",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm b"
+                }
+            },
+            {
+                "type": "Tước GPLX",
+                "condition": "Gây tai nạn giao thông",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 02 tháng đến 04 tháng",
+                "duration_min_months": "02",
+                "duration_max_months": "04",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm c"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D100-A6-C3-Pc",
+        "canonical_action": "Bấm còi trong khu đô thị",
+        "legal_description": "Bấm còi, rú ga (nẹt pô) liên tục trong đô thị, khu đông dân cư, trừ các xe ưu tiên đang đi làm nhiệm vụ theo quy định;",
+        "detailed_description": "Bấm còi, rú ga (nẹt pô) liên tục trong đô thị, khu đông dân cư, trừ các xe ưu tiên đang đi làm nhiệm vụ theo quy định;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "400_000",
+            "fine_max_vnd": "600_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 3",
+            "point": "Điểm c"
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "Gây tai nạn giao thông",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 02 tháng đến 04 tháng",
+                "duration_min_months": "02",
+                "duration_max_months": "04",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm c"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D100-A6-C3-Pd",
+        "canonical_action": "Dừng xe, đỗ xe sai quy định",
+        "legal_description": "Dừng xe, đỗ xe trên cầu;",
+        "detailed_description": "Dừng xe, đỗ xe trên cầu;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "400_000",
+            "fine_max_vnd": "600_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 3",
+            "point": "Điểm d"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D100-A6-C3-Pđ",
+        "canonical_action": "Điều khiển xe sai quy định",
+        "legal_description": "Điều khiển xe thành đoàn gây cản trở giao thông, trừ trường hợp được cơ quan có thẩm quyền cấp phép;",
+        "detailed_description": "Điều khiển xe thành đoàn gây cản trở giao thông, trừ trường hợp được cơ quan có thẩm quyền cấp phép;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "400_000",
+            "fine_max_vnd": "600_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 3",
+            "point": "Điểm đ"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D100-A6-C3-Pe",
+        "canonical_action": "Gây tai nạn giao thông",
+        "legal_description": "Điều khiển xe có liên quan trực tiếp đến vụ tai nạn giao thông mà không dừng lại, không giữ nguyên hiện trường, không tham gia cấp cứu người bị nạn, trừ hành vi vi phạm quy định tại điểm đ khoản 8 Điều này;",
+        "detailed_description": "Điều khiển xe có liên quan trực tiếp đến vụ tai nạn giao thông mà không dừng lại, không giữ nguyên hiện trường, không tham gia cấp cứu người bị nạn",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "400_000",
+            "fine_max_vnd": "600_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 3",
+            "point": "Điểm e"
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 01 tháng đến 03 tháng",
+                "duration_min_months": "01",
+                "duration_max_months": "03",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm b"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D100-A6-C3-Pg",
+        "canonical_action": "Đi sai phần đường, làn đường",
+        "legal_description": "Điều khiển xe không đi bên phải theo chiều đi của mình; đi không đúng phần đường, làn đường quy định (làn cùng chiều hoặc làn ngược chiều); điều khiển xe đi qua dải phân cách cố định ở giữa hai phần đường xe chạy: điều khiển xe đi trên hè phố, trừ trường hợp điều khiển xe đi qua hè phố để vào nhà;",
+        "detailed_description": "Điều khiển xe không đi bên phải theo chiều đi của mình; đi không đúng phần đường, làn đường quy định (làn cùng chiều hoặc làn ngược chiều); điều khiển xe đi qua dải phân cách cố định ở giữa hai phần đường xe chạy: điều khiển xe đi trên hè phố, trừ trường hợp điều khiển xe đi qua hè phố để vào nhà;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "400_000",
+            "fine_max_vnd": "600_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 3",
+            "point": "Điểm g"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D100-A6-C3-Ph",
+        "canonical_action": "Chuyển làn sai quy dinh",
+        "legal_description": "Vượt bên phải trong trường hợp không được phép;",
+        "detailed_description": "Vượt bên phải trong trường hợp không được phép;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "400_000",
+            "fine_max_vnd": "600_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 3",
+            "point": "Điểm h"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D100-A6-C3-Pi",
+        "canonical_action": "Đi sai phần đường, làn đường",
+        "legal_description": "Đi vào khu vực cấm, đường có biển báo hiệu có nội dung cấm đi vào đối với loại phương tiện đang điều khiển, trừ các hành vi vi phạm quy định tại khoản 5, điểm b khoản 6 Điều này và các trường hợp xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định;",
+        "detailed_description": "Đi vào khu vực cấm, đường có biển báo hiệu có nội dung cấm đi vào đối với loại phương tiện đang điều khiển",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "400_000",
+            "fine_max_vnd": "600_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 3",
+            "point": "Điểm i"
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 01 tháng đến 03 tháng",
+                "duration_min_months": "01",
+                "duration_max_months": "03",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm b"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D100-A6-C3-Pk",
+        "canonical_action": "Chở người sai quy định",
+        "legal_description": "Người đang điều khiển xe hoặc chở người ngồi trên xe bám, kéo, đẩy xe khác, vật khác, dẫn dắt súc vật, mang vác vật cồng kềnh; chở người đứng trên yên, giá đèo hàng hoặc ngồi trên tay lái; xếp hàng hóa trên xe vượt quá giới hạn quy định; điều khiến xe kéo theo xe khác, vật khác;",
+        "detailed_description": "Người đang điều khiển xe hoặc chở người ngồi trên xe bám, kéo, đẩy xe khác, vật khác, dẫn dắt súc vật, mang vác vật cồng kềnh; chở người đứng trên yên, giá đèo hàng hoặc ngồi trên tay lái; xếp hàng hóa trên xe vượt quá giới hạn quy định; điều khiến xe kéo theo xe khác, vật khác;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "400_000",
+            "fine_max_vnd": "600_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 3",
+            "point": "Điểm k"
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "Gây tai nạn giao thông",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 02 tháng đến 04 tháng",
+                "duration_min_months": "02",
+                "duration_max_months": "04",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm c"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D100-A6-C3-Pl",
+        "canonical_action": "Chở người sai quy định",
+        "legal_description": "Chở hàng vượt trọng tải thiết kế được ghi trong Giấy đăng ký xe đối với loại xe có quy định về trọng tải thiết kế;",
+        "detailed_description": "Chở hàng vượt trọng tải thiết kế được ghi trong Giấy đăng ký xe đối với loại xe có quy định về trọng tải thiết kế;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "400_000",
+            "fine_max_vnd": "600_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 3",
+            "point": "Điểm l"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D100-A6-C3-Pm",
+        "canonical_action": "Sử dụng đèn chiếu sáng sai quy định",
+        "legal_description": "Chạy trong hầm đường bộ không sử dụng đèn chiếu sáng gần.",
+        "detailed_description": "Chạy trong hầm đường bộ không sử dụng đèn chiếu sáng gần.",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "400_000",
+            "fine_max_vnd": "600_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 3",
+            "point": "Điểm m"
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "Gây tai nạn giao thông",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 02 tháng đến 04 tháng",
+                "duration_min_months": "02",
+                "duration_max_months": "04",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm c"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D100-A6-C4-Pa",
+        "canonical_action": "Bắn tốc độ",
+        "legal_description": "Điều khiển xe chạy quá tốc độ quy định từ 10 km/h đến 20 km/h;",
+        "detailed_description": "Điều khiển xe chạy quá tốc độ quy định từ 10 km/h đến 20 km/h;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "600_000",
+            "fine_max_vnd": "1_000_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 4",
+            "point": "Điểm a"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D100-A6-C4-Pb",
+        "canonical_action": "Dừng xe, đỗ xe sai quy định",
+        "legal_description": "Dừng xe, đỗ xe trong hẩm đường bộ không đúng nơi quy định;",
+        "detailed_description": "Dừng xe, đỗ xe trong hẩm đường bộ không đúng nơi quy định;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "600_000",
+            "fine_max_vnd": "1_000_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 4",
+            "point": "Điểm b"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D100-A6-C4-Pc",
+        "canonical_action": "Vượt xe sai quy định",
+        "legal_description": "Vượt xe trong những trường hợp không được vượt, vượt xe tại đoạn đường có biển báo hiệu có nội dung cấm vượt đối với loại phương tiện đang điều khiển, trừ các hành vi vi phạm quy định tại điểm h khoản 3 Điều này;",
+        "detailed_description": "Vượt xe trong những trường hợp không được vượt, vượt xe tại đoạn đường có biển báo hiệu có nội dung cấm vượt đối với loại phương tiện đang điều khiển",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "600_000",
+            "fine_max_vnd": "1_000_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 4",
+            "point": "Điểm c"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D100-A6-C4-Pd",
+        "canonical_action": "Vượt xe sai quy định",
+        "legal_description": "Vượt xe trong hầm đường bộ không đúng nơi quy định; quay đầu xe trong hầm đường bộ;",
+        "detailed_description": "Vượt xe trong hầm đường bộ không đúng nơi quy định; quay đầu xe trong hầm đường bộ;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "600_000",
+            "fine_max_vnd": "1_000_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 4",
+            "point": "Điểm d"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D100-A6-C4-Pđ",
+        "canonical_action": "Nhường đường sai quy định",
+        "legal_description": "Không nhường đường hoặc gây cản trở xe được quyền ưu tiên đang phát tín hiệu ưu tiên đi làm nhiệm vụ;",
+        "detailed_description": "Không nhường đường hoặc gây cản trở xe được quyền ưu tiên đang phát tín hiệu ưu tiên đi làm nhiệm vụ;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "600_000",
+            "fine_max_vnd": "1_000_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 4",
+            "point": "Điểm đ"
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 01 tháng đến 03 tháng",
+                "duration_min_months": "01",
+                "duration_max_months": "03",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm b"
+                }
+            },
+            {
+                "type": "Tước GPLX",
+                "condition": "Gây tai nạn giao thông",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 02 tháng đến 04 tháng",
+                "duration_min_months": "02",
+                "duration_max_months": "04",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm c"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D100-A6-C4-Pe",
+        "canonical_action": "Không tuân thủ tín hiệu biển báo, vạch kẻ đường",
+        "legal_description": "Không chấp hành hiệu lệnh của đèn tín hiệu giao thông;",
+        "detailed_description": "Không chấp hành hiệu lệnh của đèn tín hiệu giao thông;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "600_000",
+            "fine_max_vnd": "1_000_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 4",
+            "point": "Điểm e"
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 01 tháng đến 03 tháng",
+                "duration_min_months": "01",
+                "duration_max_months": "03",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm b"
+                }
+            },
+            {
+                "type": "Tước GPLX",
+                "condition": "Gây tai nạn giao thông",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 02 tháng đến 04 tháng",
+                "duration_min_months": "02",
+                "duration_max_months": "04",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm c"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D100-A6-C4-Pg",
+        "canonical_action": "Không tuân thủ tín hiệu biển báo, vạch kẻ đường",
+        "legal_description": "Không chấp hành hiệu lệnh, hướng dẫn của người điều khiển giao thông hoặc người kiểm soát giao thông;",
+        "detailed_description": "Không chấp hành hiệu lệnh, hướng dẫn của người điều khiển giao thông hoặc người kiểm soát giao thông;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "600_000",
+            "fine_max_vnd": "1_000_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 4",
+            "point": "Điểm g"
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 01 tháng đến 03 tháng",
+                "duration_min_months": "01",
+                "duration_max_months": "03",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm b"
+                }
+            },
+            {
+                "type": "Tước GPLX",
+                "condition": "Gây tai nạn giao thông",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 02 tháng đến 04 tháng",
+                "duration_min_months": "02",
+                "duration_max_months": "04",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm c"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D100-A6-C4-Ph",
+        "canonical_action": "Sử dụng điện thoại khi lái xe",
+        "legal_description": "Người đang điều khiển xe sử dụng ô (dù), điện thoại di động, thiết bị âm thanh, trừ thiết bị trợ thính.",
+        "detailed_description": "Người đang điều khiển xe sử dụng ô (dù), điện thoại di động, thiết bị âm thanh, trừ thiết bị trợ thính.",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "600_000",
+            "fine_max_vnd": "1_000_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 4",
+            "point": "Điểm h"
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 01 tháng đến 03 tháng",
+                "duration_min_months": "01",
+                "duration_max_months": "03",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm b"
+                }
+            },
+            {
+                "type": "Tước GPLX",
+                "condition": "Gây tai nạn giao thông",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 02 tháng đến 04 tháng",
+                "duration_min_months": "02",
+                "duration_max_months": "04",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm c"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D100-A6-C5",
+        "canonical_action": "Đi ngược chiều",
+        "legal_description": "Phạt tiền từ 1.000.000 đồng đến 2.000.000 đồng đối với người điều khiển xe thực hiện hành vi đi ngược chiều của đường một chiều, đi ngược chiều trên đường có biển “Cấm đi ngược chiều”, trừ hành vi vi phạm quy định tại điểm b khoản 6 Điều này và các trường hợp xe ưu tiên đang đi làm nhiệm vụ khần cấp theo quy định.",
+        "detailed_description": "Phạt tiền từ 1.000.000 đồng đến 2.000.000 đồng đối với người điều khiển xe thực hiện hành vi đi ngược chiều của đường một chiều, đi ngược chiều trên đường có biển “Cấm đi ngược chiều”",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "1_000_000",
+            "fine_max_vnd": "2_000_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 5",
+            "point": ""
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 01 tháng đến 03 tháng",
+                "duration_min_months": "01",
+                "duration_max_months": "03",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm b"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D100-A6-C6-Pa",
+        "canonical_action": "Điều khiển xe sai quy định",
+        "legal_description": "Sử dụng chân chống hoặc vật khác quệt xuống đường khi xe đang chạy;",
+        "detailed_description": "Sử dụng chân chống hoặc vật khác quệt xuống đường khi xe đang chạy;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "2_000_000",
+            "fine_max_vnd": "3_000_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 6",
+            "point": "Điểm a"
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 02 tháng đến 04 tháng",
+                "duration_min_months": "02",
+                "duration_max_months": "04",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm c"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D100-A6-C6-Pb",
+        "canonical_action": "Đi sai phần đường, làn đường",
+        "legal_description": "Điều khiển xe đi vào đường cao tốc, trừ xe phục vụ việc quản lý, bảo trì đường cao tốc;",
+        "detailed_description": "Điều khiển xe đi vào đường cao tốc, trừ xe phục vụ việc quản lý, bảo trì đường cao tốc;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "2_000_000",
+            "fine_max_vnd": "3_000_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 6",
+            "point": "Điểm b"
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 03 tháng đến 05 tháng",
+                "duration_min_months": "03",
+                "duration_max_months": "05",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm d"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D100-A6-C6-Pc",
+        "canonical_action": "Vi phạm nồng độ cồn",
+        "legal_description": "Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn nhưng chưa vượt quá 50 miligam/100 mililít máu hoặc chưa vượt quá 0,25 miligam/1 lít khí thở.",
+        "detailed_description": "Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn nhưng chưa vượt quá 50 miligam/100 mililít máu hoặc chưa vượt quá 0,25 miligam/1 lít khí thở.",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "2_000_000",
+            "fine_max_vnd": "3_000_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 6",
+            "point": "Điểm c"
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 10 tháng đến 12 tháng",
+                "duration_min_months": "10",
+                "duration_max_months": "12",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm đ"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D100-A6-C7-Pa",
+        "canonical_action": "Bắn tốc độ",
+        "legal_description": "Điều khiển xe chạy quá tốc độ quy định trên 20 km/h;",
+        "detailed_description": "Điều khiển xe chạy quá tốc độ quy định trên 20 km/h;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "4_000_000",
+            "fine_max_vnd": "5_000_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 7",
+            "point": "Điểm a"
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 02 tháng đến 04 tháng",
+                "duration_min_months": "02",
+                "duration_max_months": "04",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm c"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D100-A6-C7-Pb",
+        "canonical_action": "Bắn tốc độ",
+        "legal_description": "Không chú ý quan sát, điều khiển xe chạy quá tốc độ quy định gây tai nạn giao thông; đi vào đường cao tốc, dừng xe, đỗ xe, quay đầu xe, lùi xe, tránh xe, vượt xe, chuyển hướng, chuyển làn đường không đúng quy định gây tai nạn giao thông; không đi đúng phần đường, làn đường, không giữ khoảng cách an toàn giữa hai xe theo quy định gây tai nạn giao thông hoặc đi vào đường có biển báo hiệu có nội dung cấm đi vào đổi với loại phương tiện đang điều khiển, đi ngược chiều của đường một chiều, đi ngược chiều trên đường có biển “Cấm đi ngược chiều” gây tai nạn giao thông, trừ hành vi vi phạm quy định tại điểm d khoản 8 Điều này;",
+        "detailed_description": "Không chú ý quan sát, điều khiển xe chạy quá tốc độ quy định gây tai nạn giao thông; đi vào đường cao tốc, dừng xe, đỗ xe, quay đầu xe, lùi xe, tránh xe, vượt xe, chuyển hướng, chuyển làn đường không đúng quy định gây tai nạn giao thông; không đi đúng phần đường, làn đường, không giữ khoảng cách an toàn giữa hai xe theo quy định gây tai nạn giao thông hoặc đi vào đường có biển báo hiệu có nội dung cấm đi vào đổi với loại phương tiện đang điều khiển, đi ngược chiều của đường một chiều, đi ngược chiều trên đường có biển “Cấm đi ngược chiều” gây tai nạn giao thông",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "4_000_000",
+            "fine_max_vnd": "5_000_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 7",
+            "point": "Điểm b"
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 02 tháng đến 04 tháng",
+                "duration_min_months": "02",
+                "duration_max_months": "04",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm c"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D100-A6-C7-Pc",
+        "canonical_action": "Vi phạm nồng độ cồn",
+        "legal_description": "Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn vượt quá 50 miligam đến 80 miligam/100 mililít máu hoặc vượt quá 0,25 miligam đến 0,4 miligam/1 lít khí thở.",
+        "detailed_description": "Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn vượt quá 50 miligam đến 80 miligam/100 mililít máu hoặc vượt quá 0,25 miligam đến 0,4 miligam/1 lít khí thở.",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "4_000_000",
+            "fine_max_vnd": "5_000_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 7",
+            "point": "Điểm c"
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 16 tháng đến 18 tháng",
+                "duration_min_months": "16",
+                "duration_max_months": "18",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm e"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D100-A6-C8-Pa",
+        "canonical_action": "Điều khiển xe sai quy định",
+        "legal_description": "Buông cả hại tay khi đang điều khiển xe; dùng chân điều khiển xe; ngồi về một bên điều khiển xe; nằm trên yên xe điều khiển xe; thay người điều khiển khi xe đang chạy; quay người về phía sau để điều khiển xe hoặc bịt mắt điều khiển xe;",
+        "detailed_description": "Buông cả hại tay khi đang điều khiển xe; dùng chân điều khiển xe; ngồi về một bên điều khiển xe; nằm trên yên xe điều khiển xe; thay người điều khiển khi xe đang chạy; quay người về phía sau để điều khiển xe hoặc bịt mắt điều khiển xe;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "6_000_000",
+            "fine_max_vnd": "8_000_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 8",
+            "point": "Điểm a"
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 02 tháng đến 04 tháng",
+                "duration_min_months": "02",
+                "duration_max_months": "04",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm c"
+                }
+            },
+            {
+                "type": "Tước GPLX",
+                "condition": "Tái phạm",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 03 tháng đến 05 tháng",
+                "duration_min_months": "03",
+                "duration_max_months": "05",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm c"
+                }
+            },
+            {
+                "type": "Tịch thu phương tiện",
+                "condition": "Tái phạm",
+                "description": "Tịch thu phương tiện",
+                "duration_min_months": "",
+                "duration_max_months": "",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm c"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D100-A6-C8-Pb",
+        "canonical_action": "Điều khiển xe sai quy định",
+        "legal_description": "Điều khiển xe lạng lách hoặc đánh võng trên đường bộ trong, ngoài đô thị;",
+        "detailed_description": "Điều khiển xe lạng lách hoặc đánh võng trên đường bộ trong, ngoài đô thị;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "6_000_000",
+            "fine_max_vnd": "8_000_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 8",
+            "point": "Điểm b"
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 02 tháng đến 04 tháng",
+                "duration_min_months": "02",
+                "duration_max_months": "04",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm c"
+                }
+            },
+            {
+                "type": "Tước GPLX",
+                "condition": "Tái phạm",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 03 tháng đến 05 tháng",
+                "duration_min_months": "03",
+                "duration_max_months": "05",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm c"
+                }
+            },
+            {
+                "type": "Tịch thu phương tiện",
+                "condition": "Tái phạm",
+                "description": "Tịch thu phương tiện",
+                "duration_min_months": "",
+                "duration_max_months": "",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm c"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D100-A6-C8-Pc",
+        "canonical_action": "Điều khiển xe sai quy định",
+        "legal_description": "Điều khiển xe chạy bằng một bánh đối với xe hai bánh, chạy bằng hai bánh đối với xe ba bánh;",
+        "detailed_description": "Điều khiển xe chạy bằng một bánh đối với xe hai bánh, chạy bằng hai bánh đối với xe ba bánh;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "6_000_000",
+            "fine_max_vnd": "8_000_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 9",
+            "point": "Điểm c"
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 02 tháng đến 04 tháng",
+                "duration_min_months": "02",
+                "duration_max_months": "04",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm c"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D100-A6-C8-Pd",
+        "canonical_action": "Điều khiển xe sai quy định",
+        "legal_description": "Điều khiển xe thành nhóm từ 02 xe trở lên chạy quá tốc độ quy định;",
+        "detailed_description": "Điều khiển xe thành nhóm từ 02 xe trở lên chạy quá tốc độ quy định;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "6_000_000",
+            "fine_max_vnd": "8_000_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 8",
+            "point": "Điểm d"
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 02 tháng đến 04 tháng",
+                "duration_min_months": "02",
+                "duration_max_months": "04",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm c"
+                }
+            },
+            {
+                "type": "Tước GPLX",
+                "condition": "Tái phạm",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 03 tháng đến 05 tháng",
+                "duration_min_months": "03",
+                "duration_max_months": "05",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm c"
+                }
+            },
+            {
+                "type": "Tịch thu phương tiện",
+                "condition": "Tái phạm",
+                "description": "Tịch thu phương tiện",
+                "duration_min_months": "",
+                "duration_max_months": "",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm c"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D100-A6-C8-Pđ",
+        "canonical_action": "Gây tai nạn giao thông",
+        "legal_description": "Gây tai nạn giao thông không dừng lại, không giữ nguyên hiện trường, bỏ trốn không đến trình báo với cơ quan có thẩm quyền, không tham gia cấp cứu người bị nạn;",
+        "detailed_description": "Gây tai nạn giao thông không dừng lại, không giữ nguyên hiện trường, bỏ trốn không đến trình báo với cơ quan có thẩm quyền, không tham gia cấp cứu người bị nạn;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "6_000_000",
+            "fine_max_vnd": "8_000_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 8",
+            "point": "Điểm đ"
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 03 tháng đến 05 tháng",
+                "duration_min_months": "03",
+                "duration_max_months": "05",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm d"
+                }
+            },
+            {
+                "type": "Tước GPLX",
+                "condition": "Tái phạm",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 03 tháng đến 05 tháng",
+                "duration_min_months": "03",
+                "duration_max_months": "05",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm c"
+                }
+            },
+            {
+                "type": "Tịch thu phương tiện",
+                "condition": "Tái phạm",
+                "description": "Tịch thu phương tiện",
+                "duration_min_months": "",
+                "duration_max_months": "",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm c"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D100-A6-C8-Pe",
+        "canonical_action": "Vi phạm nồng độ cồn",
+        "legal_description": "Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn vượt quá 80 miligam/100 mililít máu hoặc vượt quá 0,4 miligam/1 lít khí thở;",
+        "detailed_description": "Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn vượt quá 80 miligam/100 mililít máu hoặc vượt quá 0,4 miligam/1 lít khí thở;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "6_000_000",
+            "fine_max_vnd": "8_000_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 8",
+            "point": "Điểm e"
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 22 tháng đến 24 tháng",
+                "duration_min_months": "22",
+                "duration_max_months": "24",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm g"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D100-A6-C8-Pg",
+        "canonical_action": "Vi phạm nồng độ cồn",
+        "legal_description": "Không chấp hành yêu cầu kiểm tra về nồng độ cồn của người thi hành công vụ;",
+        "detailed_description": "Không chấp hành yêu cầu kiểm tra về nồng độ cồn của người thi hành công vụ;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "6_000_000",
+            "fine_max_vnd": "8_000_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 8",
+            "point": "Điểm g"
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 22 tháng đến 24 tháng",
+                "duration_min_months": "22",
+                "duration_max_months": "24",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm g"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D100-A6-C8-Ph",
+        "canonical_action": "Tàng trữ chất ma tuý",
+        "legal_description": "Điều khiển xe trên đường mà trong cơ thể có chất ma túy;",
+        "detailed_description": "Điều khiển xe trên đường mà trong cơ thể có chất ma túy;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "6_000_000",
+            "fine_max_vnd": "8_000_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 8",
+            "point": "Điểm h"
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 22 tháng đến 24 tháng",
+                "duration_min_months": "22",
+                "duration_max_months": "24",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm g"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D100-A6-C8-Pi",
+        "canonical_action": "Tàng trữ chất ma tuý",
+        "legal_description": "Không chấp hành yêu cầu kiểm tra về chất ma túy của người thi hành công vụ.",
+        "detailed_description": "Không chấp hành yêu cầu kiểm tra về chất ma túy của người thi hành công vụ.",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "6_000_000",
+            "fine_max_vnd": "8_000_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 8",
+            "point": "Điểm i"
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 22 tháng đến 24 tháng",
+                "duration_min_months": "22",
+                "duration_max_months": "24",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm g"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D100-A6-C9",
+        "canonical_action": "Gây tai nạn giao thông",
+        "legal_description": "Phạt tiền từ 10.000.000 đồng đến 14.000.000 đồng đối với hành vi vi phạm quy định tại điểm a, điểm b, điểm c, điểm d khoản 8 Điều này mà gây tai nạn giao thông hoặc không chấp hành hiệu lệnh dừng xe của người thi hành công vụ.",
+        "detailed_description": "Gây tai nạn giao thông khi buông cả hại tay khi đang điều khiển xe; dùng chân điều khiển xe; ngồi về một bên điều khiển xe; nằm trên yên xe điều khiển xe; thay người điều khiển khi xe đang chạy; quay người về phía sau để điều khiển xe hoặc bịt mắt điều khiển xe; Điều khiển xe lạng lách hoặc đánh võng trên đường bộ trong, ngoài đô thị;Điều khiển xe chạy bằng một bánh đối với xe hai bánh, chạy bằng hai bánh đối với xe ba bánh; Điều khiển xe thành nhóm từ 02 xe trở lên chạy quá tốc độ quy định;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "10_000_000",
+            "fine_max_vnd": "14_000_000"
+        },
+        "law_reference": {
+            "decree": "100/2019/NĐ-CP",
+            "article": "Điều 6",
+            "clause": "Khoản 9",
+            "point": ""
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 03 tháng đến 05 tháng",
+                "duration_min_months": "03",
+                "duration_max_months": "05",
+                "law_reference": {
+                    "decree": "100/2019/NĐ-CP",
+                    "article": "Điều 6",
+                    "clause": "Khoản 10",
+                    "point": "Điểm d"
                 }
             }
         ]
