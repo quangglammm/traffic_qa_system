@@ -7,7 +7,7 @@
   {
     "test_id": "TEST_002",
     "question": "Lái xe máy không đội mũ bảo hiểm thì phạt bao nhiêu?",
-    "violation_id": "D168-A7-C7-Pc"
+    "violation_id": "D168-A7-C2-Ph"
   },
   {
     "test_id": "TEST_003",
@@ -27,7 +27,7 @@
   {
     "test_id": "TEST_006",
     "question": "Chở 3 người trên xe máy có bị phạt không?",
-    "violation_id": "D168-A7-C7-Pđ"
+    "violation_id": "D168-A7-C3-Pb"
   },
   {
     "test_id": "TEST_007",
@@ -137,7 +137,7 @@
   {
     "test_id": "TEST_028",
     "question": "Ô tô chạy trong hầm mà bật đèn chiếu xa bị phạt bao nhiêu?",
-    "violation_id": "D168-A6-C3-Pb"
+    "violation_id": "D100-A6-C3-Pm"
   },
   {
     "test_id": "TEST_029",
@@ -197,7 +197,7 @@
   {
     "test_id": "TEST_040",
     "question": "Không chấp hành đèn tín hiệu giao thông khi lái ô tô bị phạt ra sao?",
-    "violation_id": "D168-A6-C1-Pa"
+    "violation_id": "D168-A6-C9-Pb"
   },
   {
     "test_id": "TEST_041",
@@ -212,12 +212,12 @@
   {
     "test_id": "TEST_043",
     "question": "Không tuân thủ hiệu lệnh của CSGT khi lái ô tô thì phạt nặng không?",
-    "violation_id": "D168-A6-C1-Pa"
+    "violation_id": "D168-A6-C9-Pc"
   },
   {
     "test_id": "TEST_044",
     "question": "Lái xe máy say xỉn thổi nồng độ cồn cao nhất thì bị tước bằng bao lâu?",
-    "violation_id": "D168-A7-C9-Pd"
+    "violation_id": "D100-A6-C8-Pe"
   },
   {
     "test_id": "TEST_045",
