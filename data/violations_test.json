@@ -137,7 +137,7 @@
   {
     "test_id": "TEST_028",
     "question": "Ô tô chạy trong hầm mà bật đèn chiếu xa bị phạt bao nhiêu?",
-    "violation_id": "D100-A6-C3-Pm"
+    "violation_id": "D168-A6-C3-Pn"
   },
   {
     "test_id": "TEST_029",
@@ -217,7 +217,7 @@
   {
     "test_id": "TEST_044",
     "question": "Lái xe máy say xỉn thổi nồng độ cồn cao nhất thì bị tước bằng bao lâu?",
-    "violation_id": "D100-A6-C8-Pe"
+    "violation_id": "D168-A7-C9-Pd"
   },
   {
     "test_id": "TEST_045",
