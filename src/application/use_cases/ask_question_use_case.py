@@ -1,213 +1,187 @@
-from src.domain.models import QueryResponse, Violation, Fine, LegalBasis, SupplementaryPenalty
+from src.domain.models import (
+    QueryResponse,
+    Violation,
+    Fine,
+    LegalBasis,
+    SupplementaryPenalty,
+)
 from src.application.interfaces.i_llm_service import ILLMService
 from src.application.interfaces.i_vector_store import IVectorStore
 from src.application.interfaces.i_knowledge_graph import IKnowledgeGraph
 from src.application.interfaces.i_embedding_service import IEmbeddingService
+from typing import List, Dict, Any
 import logging
 
 logger = logging.getLogger(__name__)
 
+
 class AskQuestionUseCase:
     """
-    Use case implementing the advanced 5-step question answering flow:
-    1. Query Analysis (LLM) - Intent classification and entity extraction
-    2. Semantic Search (Vector) - Find similar violations using embeddings
-    3. Filtering & Ranking (KG) - Filter by vehicle type and other entities
-    4. Knowledge Retrieval (KG) - Get detailed violation information
-    5. Response Generation (LLM) - Generate natural language answer with citations
+    Production-ready Top-K Reasoning QA System (Clean & User-Focused)
+    No technical details about decree changes or similarity scores shown to user
     """
 
-    def __init__(self,
-                 llm_service: ILLMService,
-                 vector_store: IVectorStore,
-                 kg: IKnowledgeGraph,
-                 embedding_service: IEmbeddingService):
+    def __init__(
+        self,
+        llm_service: ILLMService,
+        vector_store: IVectorStore,
+        kg: IKnowledgeGraph,
+        embedding_service: IEmbeddingService,
+    ):
         self.llm_service = llm_service
         self.vector_store = vector_store
         self.kg = kg
         self.embedding_service = embedding_service
-        # Threshold can be configured via config, default is 0.7
+
         try:
             from src.infrastructure.config import settings
-            self.min_similarity_threshold = settings.MIN_SIMILARITY_THRESHOLD
+
+            self.min_similarity = getattr(settings, "MIN_SIMILARITY_THRESHOLD", 0.72)
+            self.top_k_vector = getattr(settings, "TOP_K_VECTOR", 8)
+            self.top_k_final = getattr(settings, "TOP_K_FINAL", 3)
         except:
-            self.min_similarity_threshold = 0.7  # Default threshold
+            self.min_similarity = 0.72
+            self.top_k_vector = 8
+            self.top_k_final = 3
 
     def execute(self, user_query: str) -> QueryResponse:
-        """
-        Execute the complete question answering flow.
-
-        Args:
-            user_query: Natural language question from user
-
-        Returns:
-            QueryResponse with answer and citation
-        """
         try:
-            # ===== BƯỚC 1: PHÂN TÍCH TRUY VẤN (Query Analysis) - Dùng LLM =====
-            logger.info("Step 1: Query Analysis - Parsing user query")
-            parsed_query = self.llm_service.parse_query(user_query)
-            logger.info(f"Parsed query: intent={parsed_query.intent}, action={parsed_query.action}, "
-                       f"vehicle_type={parsed_query.vehicle_type}, location={parsed_query.location}")
+            # Step 1: Parse query
+            logger.info("Step 1: Parsing user question")
+            parsed = self.llm_service.parse_query(user_query)
 
-            if not parsed_query.action:
-                logger.warning("No action extracted from query")
+            if not parsed.action:
                 return QueryResponse(
-                    answer="Không thể xác định hành vi vi phạm từ câu hỏi. Vui lòng cung cấp thêm thông tin.",
-                    citation=""
+                    answer="Tôi chưa hiểu rõ bạn đang hỏi về hành vi nào. Bạn có thể mô tả cụ thể hơn được không ạ?",
+                    citation="",
                 )
 
-            # ===== BƯỚC 2: TÌM KIẾM NGỮ NGHĨA (Semantic Search) - Dùng Vector =====
-            logger.info("Step 2: Semantic Search - Finding similar violations")
+            # Step 2: Hybrid retrieval
+            query_vector = self.embedding_service.embed_text(parsed.action)
 
-            # Create embedding for the action or full query
-            query_text = parsed_query.action if parsed_query.action else user_query
-            query_vector = self.embedding_service.embed_text(query_text)
+            metadata_filter = {}
+            if parsed.vehicle_type:
+                vt = parsed.vehicle_type.lower()
+                if any(x in vt for x in ["ô tô", "xe hơi", "xe con", "oto"]):
+                    metadata_filter["vehicle_type"] = "ô tô"
+                elif any(x in vt for x in ["xe máy", "mô tô", "xe gắn máy"]):
+                    metadata_filter["vehicle_type"] = "xe máy"
 
-            # Search for k-NN violations (k=5)
-            similar_results = self.vector_store.search_similar(
-                query_vector,
-                k=5,
-                min_similarity=self.min_similarity_threshold
+            candidates = self.vector_store.search_similar(
+                query_embedding=query_vector,
+                k=self.top_k_vector,
+                min_similarity=self.min_similarity,
+                filter_metadata=metadata_filter or None,
             )
 
-            if not similar_results:
-                logger.warning(f"No similar violations found above threshold {self.min_similarity_threshold}")
+            if not candidates:
                 return QueryResponse(
-                    answer="Không có dữ liệu / Không tìm thấy vi phạm tương ứng.",
-                    citation=""
+                    answer="Hiện tại tôi không tìm thấy quy định nào phù hợp với mô tả của bạn. "
+                    "Bạn có thể thử diễn đạt lại không ạ?",
+                    citation="",
                 )
 
-            # Extract violation IDs from search results
-            similar_ids = [vid for vid, score in similar_results]
-            similarity_scores = {vid: score for vid, score in similar_results}
+            # Step 3: Enrich top candidates
+            enriched: List[Dict[str, Any]] = []
+            for violation_id, _, _ in candidates[: self.top_k_final]:
+                details = self.kg.get_violation_details(violation_id)
+                if details and details.get("violation"):
+                    enriched.append(details)
 
-            logger.info(f"Found {len(similar_ids)} similar violations: {similar_ids}")
-
-            # Check if highest similarity is below threshold
-            highest_similarity = similarity_scores[similar_ids[0]] if similar_ids else 0.0
-            if highest_similarity < self.min_similarity_threshold:
-                logger.warning(f"Highest similarity {highest_similarity} below threshold {self.min_similarity_threshold}")
+            if not enriched:
                 return QueryResponse(
-                    answer="Không có dữ liệu / Không tìm thấy vi phạm tương ứng.",
-                    citation=""
+                    answer="Đã tìm thấy một số trường hợp tương tự nhưng không thể hiển thị chi tiết. "
+                    "Vui lòng thử lại sau nhé!",
+                    citation="",
                 )
 
-            # ===== BƯỚC 3: LỌC VÀ XẾP HẠNG (Filtering & Ranking) - Dùng KG =====
-            logger.info("Step 3: Filtering & Ranking - Filtering by vehicle type")
-
-            # Filter violations by vehicle type if specified
-            filtered_ids = self.kg.filter_violations_by_vehicle_type(
-                similar_ids,
-                parsed_query.vehicle_type
+            # Step 4: LLM generates clean, natural answer from top-k
+            best_violation = self.llm_service.select_best_violation(
+                user_query=user_query, parsed_query=parsed, top_violations=enriched
             )
 
-            # If filtering removed all results, use original results
-            if not filtered_ids:
-                logger.warning("Filtering removed all results, using original similar violations")
-                filtered_ids = similar_ids
-            else:
-                logger.info(f"Filtered to {len(filtered_ids)} violations: {filtered_ids}")
+            # Step 5: Extract best violation for structured output
+            best_id = self._extract_best_id(best_violation, enriched)
+            best = next(
+                (v for v in enriched if v["violation"]["id"] == best_id), enriched[0]
+            )
 
-            # Select best violation (highest similarity from filtered results)
-            best_violation_id = None
-            best_similarity = 0.0
+            # Step 6
+            answer = self.llm_service.generate_natural_answer(parsed, best)
 
-            for vid in filtered_ids:
-                if vid in similarity_scores and similarity_scores[vid] > best_similarity:
-                    best_similarity = similarity_scores[vid]
-                    best_violation_id = vid
+            v = best["violation"]
+            p = best.get("penalty") or {}
+            law = best.get("law_reference") or {}
+            add_penalties = best.get("additional_penalties", [])
 
-            # Fallback to first filtered ID if no match found
-            if not best_violation_id and filtered_ids:
-                best_violation_id = filtered_ids[0]
-                best_similarity = similarity_scores.get(best_violation_id, 0.0)
+            # Build clean citation
+            parts = []
+            if law.get("point"):
+                parts.append(f"Điểm {law['point']}")
+            if law.get("clause"):
+                parts.append(f"Khoản {law['clause']}")
+            if law.get("article"):
+                parts.append(f"Điều {law['article']}")
+            if law.get("decree"):
+                parts.append(f"Nghị định {law['decree']}")
+            citation = ", ".join(parts) if parts else ""
 
-            if not best_violation_id:
-                logger.warning("No best violation ID found")
-                return QueryResponse(
-                    answer="Không có dữ liệu / Không tìm thấy vi phạm tương ứng.",
-                    citation=""
-                )
-
-            logger.info(f"Selected best violation: {best_violation_id} (similarity: {best_similarity:.3f})")
-
-            # ===== BƯỚC 4: TRUY XUẤT TRI THỨC (Knowledge Retrieval) - Dùng KG =====
-            logger.info(f"Step 4: Knowledge Retrieval - Getting details for violation {best_violation_id}")
-
-            violation_details = self.kg.get_violation_details(best_violation_id)
-
-            if not violation_details or not violation_details.get("violation"):
-                logger.warning(f"Could not retrieve details for violation {best_violation_id}")
-                return QueryResponse(
-                    answer="Không có dữ liệu / Không tìm thấy vi phạm tương ứng.",
-                    citation=""
-                )
-
-            # ===== BƯỚC 5: TẠO CÂU TRẢ LỜI (Response Generation) =====
-            logger.info("Step 5: Response Generation - Generating natural language answer")
-
-            # Generate natural language response using LLM
-            answer = self.llm_service.generate_response(violation_details, parsed_query)
-
-            # Build citation from legal basis
-            citation = ""
-            legal_basis = violation_details.get("legal_basis")
-            if legal_basis:
-                citation_parts = []
-                if legal_basis.get("point"):
-                    citation_parts.append(f"Điểm {legal_basis['point']}")
-                if legal_basis.get("clause"):
-                    citation_parts.append(f"Khoản {legal_basis['clause']}")
-                if legal_basis.get("article"):
-                    citation_parts.append(f"Điều {legal_basis['article']}")
-                if legal_basis.get("decree"):
-                    citation_parts.append(f"Nghị định {legal_basis['decree']}")
-
-                if citation_parts:
-                    citation = ", ".join(citation_parts)
-
-            # Build domain models for response
-            violation_data = violation_details.get("violation", {})
+            # Domain models
             violation = Violation(
-                id=violation_data.get("id", ""),
-                description=violation_data.get("description", ""),
-                vehicle_type=violation_data.get("vehicle_type"),
-                action=violation_data.get("action")
-            ) if violation_data else None
+                id=v["id"],
+                description=v.get("detailed_description", ""),
+                vehicle_type=v.get("vehicle_type"),
+                action=best.get("action"),
+            )
 
-            fine_data = violation_details.get("fine", {})
-            fine = Fine(
-                min_amount=fine_data.get("min_amount"),
-                max_amount=fine_data.get("max_amount")
-            ) if fine_data else None
+            fine = (
+                Fine(min_amount=p.get("fine_min_vnd"), max_amount=p.get("fine_max_vnd"))
+                if p
+                else None
+            )
 
-            legal_basis_model = LegalBasis(
-                decree=legal_basis.get("decree") if legal_basis else None,
-                article=legal_basis.get("article") if legal_basis else None,
-                clause=legal_basis.get("clause") if legal_basis else None,
-                point=legal_basis.get("point") if legal_basis else None
-            ) if legal_basis else None
+            legal_basis = (
+                LegalBasis(
+                    decree=law.get("decree"),
+                    article=law.get("article"),
+                    clause=law.get("clause"),
+                    point=law.get("point"),
+                )
+                if law
+                else None
+            )
 
-            supplementary_data = violation_details.get("supplementary", {})
-            supplementary = SupplementaryPenalty(
-                description=supplementary_data.get("description")
-            ) if supplementary_data and supplementary_data.get("description") else None
-
-            logger.info("Successfully generated response")
+            supp = add_penalties[0] if add_penalties else {}
+            supplementary = (
+                SupplementaryPenalty(
+                    description=supp.get("description", ""),
+                    type=supp.get("type"),
+                    condition=supp.get("condition"),
+                )
+                if supp
+                else None
+            )
 
             return QueryResponse(
-                answer=answer,
+                answer=answer.strip(),
                 violation_found=violation,
                 fine=fine,
-                legal_basis=legal_basis_model,
+                legal_basis=legal_basis,
                 supplementary=supplementary,
-                citation=citation
+                citation=citation,
             )
 
         except Exception as e:
-            logger.error(f"Error in ask question use case: {e}", exc_info=True)
+            logger.error(f"Error in AskQuestionUseCase: {e}", exc_info=True)
             return QueryResponse(
-                answer=f"Đã xảy ra lỗi khi xử lý câu hỏi: {str(e)}",
-                citation=""
+                answer="Xin lỗi, hiện tại hệ thống đang gặp sự cố. Bạn vui lòng thử lại sau ít phút nhé!",
+                citation="",
             )
+
+    def _extract_best_id(self, answer: str, candidates: List[Dict]) -> str:
+        text = answer.lower()
+        for c in candidates:
+            vid = c["violation"]["id"].lower()
+            if vid in text:
+                return c["violation"]["id"]
+        return candidates[0]["violation"]["id"]

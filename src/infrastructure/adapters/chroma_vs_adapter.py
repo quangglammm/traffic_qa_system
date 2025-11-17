@@ -1,165 +1,194 @@
-from typing import List, Tuple
+from typing import List, Tuple, Optional, Dict, Any
 import logging
-import uuid
 from src.application.interfaces.i_vector_store import IVectorStore
 
 logger = logging.getLogger(__name__)
 
+
 class ChromaVSAdapter(IVectorStore):
-    """Vector store adapter using ChromaDB"""
+    """Optimized ChromaDB adapter for traffic violation semantic search"""
 
-    def __init__(self, collection_name: str = "traffic_violations", persist_directory: str = "./chroma_db"):
-        """
-        Initialize ChromaDB Vector Store Adapter.
-
-        Args:
-            collection_name: Name of the ChromaDB collection
-            persist_directory: Directory to persist the ChromaDB database
-        """
+    def __init__(
+        self,
+        collection_name: str = "traffic_violations",
+        persist_directory: str = "./chroma_db",
+    ):
         try:
             import chromadb
             from chromadb.config import Settings
 
             self.client = chromadb.PersistentClient(
                 path=persist_directory,
-                settings=Settings(anonymized_telemetry=False)
+                settings=Settings(anonymized_telemetry=False, allow_reset=True),
             )
-
-            # Get or create collection
             self.collection = self.client.get_or_create_collection(
                 name=collection_name,
-                metadata={"hnsw:space": "cosine"}  # Use cosine similarity
+                metadata={"hnsw:space": "cosine"},  # Best for semantic search
+            )
+            self._use_chroma = True
+            logger.info(
+                f"ChromaDB initialized: {collection_name} at {persist_directory}"
             )
 
-            logger.info(f"Initialized ChromaDB adapter with collection: {collection_name}")
-        except ImportError:
-            logger.warning("chromadb not installed, using in-memory fallback")
-            self.client = None
-            self.collection = None
-            self._in_memory_store = {}  # Fallback: simple in-memory store
-
-    def add_violations(self, violation_ids: List[str], embeddings: List[List[float]], descriptions: List[str]):
-        """
-        Add violation embeddings to the vector store.
-
-        Args:
-            violation_ids: List of violation IDs
-            embeddings: List of embedding vectors corresponding to violation_ids
-            descriptions: List of violation descriptions for indexing
-        """
-        if not violation_ids or not embeddings or not descriptions:
-            logger.warning("Empty input data for add_violations")
-            return
-
-        if len(violation_ids) != len(embeddings) or len(violation_ids) != len(descriptions):
-            raise ValueError("violation_ids, embeddings, and descriptions must have the same length")
-
-        try:
-            if self.collection is not None:
-                # Use ChromaDB
-                # Generate unique IDs for each document
-                ids = [f"violation_{vid}" for vid in violation_ids]
-
-                # Add to collection
-                self.collection.add(
-                    ids=ids,
-                    embeddings=embeddings,
-                    documents=descriptions,
-                    metadatas=[{"violation_id": vid} for vid in violation_ids]
-                )
-
-                logger.info(f"Added {len(violation_ids)} violations to ChromaDB")
-            else:
-                # Fallback: store in memory
-                for vid, emb, desc in zip(violation_ids, embeddings, descriptions):
-                    self._in_memory_store[vid] = {
-                        "embedding": emb,
-                        "description": desc
-                    }
-                logger.info(f"Added {len(violation_ids)} violations to in-memory store (fallback)")
+        except ImportError as e:
+            logger.warning("chromadb not installed. Falling back to in-memory store.")
+            self._use_chroma = False
+            self._in_memory: Dict[str, Dict[str, Any]] = {}
         except Exception as e:
-            logger.error(f"Error adding violations to vector store: {e}")
+            logger.error(f"Failed to initialize ChromaDB: {e}")
             raise
 
-    def search_similar(self, query_embedding: List[float], k: int = 5, min_similarity: float = 0.0) -> List[Tuple[str, float]]:
+    def add_documents(
+        self,
+        ids: List[str],
+        embeddings: List[List[float]],
+        documents: List[str],
+        metadatas: Optional[List[Dict[str, Any]]] = None,
+    ):
         """
-        Search for similar violations using vector similarity.
+        Add violations with rich metadata (vehicle_type, version, etc.)
+        """
+        if not ids or not embeddings or not documents:
+            logger.warning("Empty data passed to add_documents")
+            return
 
-        Args:
-            query_embedding: Query embedding vector
-            k: Number of results to return
-            min_similarity: Minimum similarity threshold (0.0 to 1.0)
+        if len(ids) != len(embeddings) or len(ids) != len(documents):
+            raise ValueError("ids, embeddings, and documents must have the same length")
+
+        if metadatas is None:
+            metadatas = [{} for _ in ids]
+
+        if len(metadatas) != len(ids):
+            raise ValueError("metadatas must match the number of documents")
+
+        try:
+            if self._use_chroma:
+                chroma_ids = [
+                    f"doc_{i}_{vid}" for i, vid in enumerate(ids)
+                ]  # Unique + readable
+
+                self.collection.add(
+                    ids=chroma_ids,
+                    embeddings=embeddings,
+                    documents=documents,
+                    metadatas=[
+                        {"violation_id": vid, **meta}
+                        for vid, meta in zip(ids, metadatas)
+                    ],
+                )
+                logger.info(f"Added {len(ids)} documents to ChromaDB collection")
+            else:
+                for vid, emb, doc, meta in zip(ids, embeddings, documents, metadatas):
+                    self._in_memory[vid] = {
+                        "embedding": emb,
+                        "document": doc,
+                        "metadata": meta,
+                    }
+                logger.info(f"Added {len(ids)} documents to in-memory store (fallback)")
+
+        except Exception as e:
+            logger.error(f"Error adding documents to vector store: {e}", exc_info=True)
+            raise
+
+    def search_similar(
+        self,
+        query_embedding: List[float],
+        k: int = 10,
+        min_similarity: float = 0.7,
+        filter_metadata: Optional[Dict[str, Any]] = None,
+    ) -> List[Tuple[str, float, Dict[str, Any]]]:
+        """
+        Search similar violations with metadata filtering (e.g., vehicle_type)
 
         Returns:
-            List of tuples (violation_id, similarity_score) sorted by similarity (descending)
+            List of (violation_id, similarity_score, metadata)
         """
         if not query_embedding:
             return []
 
         try:
-            if self.collection is not None:
-                # Use ChromaDB
+            if self._use_chroma:
+                where_clause = None
+                if filter_metadata:
+                    # Support exact match on metadata fields
+                    where_clause = {
+                        k: v for k, v in filter_metadata.items() if v is not None
+                    }
+
                 results = self.collection.query(
                     query_embeddings=[query_embedding],
-                    n_results=k
+                    n_results=k * 2,  # Get more, then filter/rerank
+                    where=where_clause,
+                    include=["metadatas", "distances", "documents"],
                 )
 
-                # Extract violation IDs and similarity scores
-                violation_results = []
-                if results["ids"] and len(results["ids"]) > 0:
-                    ids = results["ids"][0]
-                    metadatas = results["metadatas"][0]
-                    distances = results["distances"][0] if "distances" in results else None
+                hits = []
+                if results["ids"] and results["ids"][0]:
+                    for i, chroma_id in enumerate(results["ids"][0]):
+                        distance = results["distances"][0][i]
+                        similarity = max(
+                            0.0, 1.0 - distance
+                        )  # cosine distance → similarity
 
-                    for idx, doc_id in enumerate(ids):
-                        if metadatas and idx < len(metadatas):
-                            violation_id = metadatas[idx].get("violation_id", doc_id.replace("violation_", ""))
+                        if similarity < min_similarity:
+                            continue
 
-                            # Convert distance to similarity (ChromaDB uses cosine distance)
-                            # Cosine distance = 1 - cosine similarity
-                            # So similarity = 1 - distance
-                            if distances is not None and idx < len(distances):
-                                similarity = 1.0 - distances[idx]
-                            else:
-                                similarity = 1.0  # Default if no distance available
+                        metadata = results["metadatas"][0][i]
+                        violation_id = metadata.get("violation_id", chroma_id)
 
-                            if similarity >= min_similarity:
-                                violation_results.append((violation_id, similarity))
+                        hits.append((violation_id, round(similarity, 4), metadata))
 
-                # Sort by similarity (descending)
-                violation_results.sort(key=lambda x: x[1], reverse=True)
-                return violation_results
+                # Sort by similarity descending
+                hits.sort(key=lambda x: x[1], reverse=True)
+                return hits[:k]
+
             else:
-                # Fallback: simple cosine similarity in memory
+                # In-memory fallback
                 import numpy as np
 
-                results = []
-                for vid, data in self._in_memory_store.items():
-                    emb = data["embedding"]
-                    # Calculate cosine similarity
-                    similarity = self._cosine_similarity(query_embedding, emb)
-                    if similarity >= min_similarity:
-                        results.append((vid, similarity))
+                q = np.array(query_embedding)
+                hits = []
 
-                # Sort by similarity and return top k
-                results.sort(key=lambda x: x[1], reverse=True)
-                return results[:k]
+                for vid, data in self._in_memory.items():
+                    if filter_metadata:
+                        if not all(
+                            data["metadata"].get(k) == v
+                            for k, v in filter_metadata.items()
+                        ):
+                            continue
+
+                    emb = np.array(data["embedding"])
+                    sim = float(
+                        np.dot(q, emb)
+                        / (np.linalg.norm(q) * np.linalg.norm(emb) + 1e-10)
+                    )
+                    if sim >= min_similarity:
+                        hits.append((vid, round(sim, 4), data["metadata"]))
+
+                hits.sort(key=lambda x: x[1], reverse=True)
+                return hits[:k]
+
         except Exception as e:
-            logger.error(f"Error searching similar violations: {e}")
+            logger.error(f"Error during vector search: {e}", exc_info=True)
             return []
 
-    def _cosine_similarity(self, vec1: List[float], vec2: List[float]) -> float:
-        """Calculate cosine similarity between two vectors"""
+    def reset(self):
+        """Clear all data (useful for testing)"""
         try:
-            import numpy as np
-            vec1 = np.array(vec1)
-            vec2 = np.array(vec2)
-            dot_product = np.dot(vec1, vec2)
-            norm1 = np.linalg.norm(vec1)
-            norm2 = np.linalg.norm(vec2)
-            if norm1 == 0 or norm2 == 0:
-                return 0.0
-            return float(dot_product / (norm1 * norm2))
-        except Exception:
-            return 0.0
+            if self._use_chroma:
+                self.client.reset()
+                logger.info("ChromaDB reset successfully")
+            else:
+                self._in_memory.clear()
+        except Exception as e:
+            logger.error(f"Error resetting vector store: {e}")
 
+    def count(self) -> int:
+        """Return number of stored documents"""
+        try:
+            if self._use_chroma:
+                return self.collection.count()
+            else:
+                return len(self._in_memory)
+        except:
+            return 0
