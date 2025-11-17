@@ -152,7 +152,7 @@ class GeneralLLMAdapter(ILLMService):
             )
             self.backend = None
 
-    def _generate_text(self, prompt: str, max_length: int = 512) -> str:
+    def _generate_text(self, prompt: str, max_length: int = 1024) -> str:
         """Generate text using the configured backend"""
         if self.backend is None:
             return ""
@@ -188,9 +188,7 @@ Câu hỏi: {user_query}
 JSON:"""
 
         try:
-            response = self._generate_text(parse_prompt, max_length=256)
-
-            logger.info(f"Response: {response}")
+            response = self._generate_text(parse_prompt)
 
             # Try to extract JSON from response
             json_start = response.find("{")
@@ -287,79 +285,85 @@ JSON:"""
         )
 
     def generate_response(
-        self,
-        violation_details: Dict[str, Any],
-        parsed_query: ParsedQuery
+        self, violation_details: Dict[str, Any], parsed_query: ParsedQuery
     ) -> str:
         """
         Generate a natural, polished Vietnamese answer using the confirmed violation details.
-        
-        This is the FINAL user-facing response — clean, no technical jargon, no IDs.
+        This is the final user-facing response.
         """
+
         user_query = parsed_query.original_query or "Hành vi vi phạm giao thông"
 
-        # Extract clean data
-        v = violation_details.get("violation", {})
-        action = violation_details.get("action", "hành vi vi phạm").strip()
-        description = v.get("detailed_description", "").strip()
-        vehicle_type = v.get("vehicle_type", "")
-        vehicle_str = f" đối với {vehicle_type}" if vehicle_type else ""
+        # 1. Prepare raw JSON for LLM — give full details, avoid pre-formatting
+        violation_json = json.dumps(violation_details, ensure_ascii=False, indent=2)
 
-        # Fine
-        penalty = violation_details.get("penalty") or {}
-        fine_min = penalty.get("fine_min_vnd")
-        fine_max = penalty.get("fine_max_vnd")
-        fine_str = ""
-        if fine_min is not None and fine_max is not None:
-            fine_str = f"từ {fine_min:,} đến {fine_max:,} đồng".replace(",", ".")
-        elif fine_min is not None:
-            fine_str = f"{fine_min:,} đồng".replace(",", ".")
+        # 2. Optimized prompt: short, structured, clear
+        prompt = f"""
+    Bạn là chuyên gia tư vấn luật giao thông.
 
-        # Legal basis
-        law = violation_details.get("law_reference") or {}
-        law_parts = []
-        if law.get("point"): law_parts.append(f"Điểm {law['point']}")
-        if law.get("clause"): law_parts.append(f"Khoản {law['clause']}")
-        if law.get("article"): law_parts.append(f"Điều {law['article']}")
-        decree = law.get("decree", "168/2024/NĐ-CP")
-        law_parts.append(f"Nghị định {decree}")
-        law_citation = ", ".join(law_parts)
+    Người dùng đã hỏi: "{user_query}"
 
-        # Supplementary penalty
-        supp_text = ""
-        add_penalties = violation_details.get("additional_penalties", [])
-        if add_penalties:
-            main = add_penalties[0]
-            desc = main.get("description", "").strip()
-            if desc:
-                supp_text = f"\n\nNgoài phạt tiền, bạn còn có thể bị: {desc}"
+    Dưới đây là toàn bộ thông tin cần dùng để trả lời. Hãy đọc kỹ:
+    {violation_json}
 
-        prompt = f'''Người dùng hỏi: "{user_query}"
 
-    Thông tin vi phạm đã xác định:
-    - Hành vi: {action}
-    - Mô tả chi tiết: {description}
-    - Đối tượng: {vehicle_type or "mọi phương tiện"}
-    - Mức phạt tiền: {fine_str or "theo quy định"}
-    - Căn cứ pháp lý: {law_citation}
-    - Hình phạt bổ sung: {"có" if supp_text else "không có"}
+    Yêu cầu phản hồi:
+    - Viết câu trả lời hoàn chỉnh, rõ ràng, lịch sự bằng tiếng Việt.
+    - Giải thích Hành vi vi phạm, mức phạt, đối tượng áp dụng, căn cứ pháp lý và các hình phạt bổ sung (nếu có).
+    - Không đề cập đến ID, số thứ tự, các trường kỹ thuật hoặc hệ thống nội bộ.
+    - Không viết kiểu “theo dữ liệu”, “tôi tìm thấy”, “hệ thống cho biết”.
+    - Viết như chuyên gia giao thông đang giải thích cho người dân.
+    - Có thể rút gọn nội dung mô tả dài nhưng phải đủ ý.
 
-    Yêu cầu:
-    - Trả lời tự nhiên, rõ ràng, lịch sự bằng tiếng Việt.
-    - Không nhắc đến ID, số thứ tự, độ tương đồng, hay hệ thống.
-    - Không nói "theo hệ thống", "theo dữ liệu", "tôi tìm thấy" — hãy nói như chuyên gia giao thông.
-    - Nếu có hình phạt bổ sung → nhắc rõ ràng.
-    - Dùng giọng điệu trung lập, chuyên nghiệp.
+    Hãy trả lời trực tiếp, không chào hỏi, không mở đầu lan man:
 
-    Trả lời trực tiếp:'''
+    Trả lời:
+    """
+        # 3. Generate
+        answer = self._generate_text(prompt).strip()
 
-        answer = self._generate_text(prompt, max_length=512).strip()
+        # 4. Final fallback (nếu LLM fail)
+        try:
+            v = violation_details.get("violation", {})
+            penalty = violation_details.get("penalty", {})
+            law = violation_details.get("law_reference", {})
 
-        # Final fallback if LLM fails
-        if not answer or len(answer) < 20:
-            answer = f"Hành vi {action}{vehicle_str} sẽ bị phạt tiền {fine_str} theo {law_citation}.{supp_text or ''}"
+            action = violation_details.get("action", "hành vi vi phạm")
+            vehicle = v.get("vehicle_type", "")
+            fine_min = penalty.get("fine_min_vnd")
+            fine_max = penalty.get("fine_max_vnd")
+            law_parts = []
 
-        return answer.strip()
+            if law.get("point"):
+                law_parts.append(f"Điểm {law['point']}")
+            if law.get("clause"):
+                law_parts.append(f"Khoản {law['clause']}")
+            if law.get("article"):
+                law_parts.append(f"Điều {law['article']}")
+            decree = law.get("decree", "168/2024/NĐ-CP")
+            law_parts.append(f"Nghị định {decree}")
+
+            law_str = ", ".join(law_parts)
+            fine_str = ""
+            if fine_min and fine_max:
+                fine_str = f"từ {fine_min:,} đến {fine_max:,} đồng".replace(",", ".")
+            elif fine_min:
+                fine_str = f"{fine_min:,} đồng".replace(",", ".")
+
+            supp = violation_details.get("additional_penalties") or []
+            supp_text = f" Ngoài ra còn có hình phạt bổ sung." if supp else ""
+
+            if not answer or len(answer) < 20:
+                answer = (
+                    f"Hành vi {action}"
+                    f"{' đối với ' + vehicle if vehicle else ''} "
+                    f"bị phạt tiền {fine_str} theo {law_str}.{supp_text}"
+                )
+
+        except Exception:
+            pass
+
+        return answer
 
     def select_best_violation(
         self,
@@ -433,7 +437,7 @@ Trả về đúng định dạng JSON sau (không thêm gì khác):
 
 Chỉ chọn từ các ID có sẵn. Nếu không chắc chắn → chọn cái gần nhất và để confidence = "medium"."""
 
-        raw = self._generate_text(prompt, max_length=256)
+        raw = self._generate_text(prompt)
 
         import re, json
 
