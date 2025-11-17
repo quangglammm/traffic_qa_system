@@ -1857,5 +1857,1474 @@
                 }
             }
         ]
+    },
+    {
+        "id": "D168-A7-C1-Pa",
+        "canonical_action": "Không tuân thủ tín hiệu biển báo, vạch kẻ đường",
+        "legal_description": " Không chấp hành hiệu lệnh, chỉ dẫn của biển báo hiệu, vạch kẻ đường, trừ các hành vi vi phạm quy định tại điểm b, điểm d, điểm e khoản 2; điểm a, điểm c, điểm d, điểm h khoản 3; điểm a, điểm b, điểm c, điểm d khoản 4; điểm b, điểm d khoản 6; điểm a, điểm b, điểm c khoản 7; điểm a khoản 8; điểm b khoản 9; điểm a khoản 10 Điều này;",
+        "detailed_description": "Không chấp hành hiệu lệnh, chỉ dẫn của biển báo hiệu, vạch kẻ đường",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "200_000",
+            "fine_max_vnd": "400_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 1",
+            "point": "Điểm a"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D168-A7-C1-Pb",
+        "canonical_action": "Vượt xe sai quy định",
+        "legal_description": "Không có tín hiệu trước khi vượt hoặc có tín hiệu vượt xe nhưng không sử dụng trong suốt quá trình vượt xe;",
+        "detailed_description": "Không có tín hiệu trước khi vượt hoặc có tín hiệu vượt xe nhưng không sử dụng trong suốt quá trình vượt xe;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "200_000",
+            "fine_max_vnd": "400_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 1",
+            "point": "Điểm b"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D168-A7-C1-Pc",
+        "canonical_action": "Lùi xe sai quy định",
+        "legal_description": "Lùi xe mô tô ba bánh không quan sát hai bên, phía sau xe hoặc không có tín hiệu lùi xe;",
+        "detailed_description": "Lùi xe mô tô ba bánh không quan sát hai bên, phía sau xe hoặc không có tín hiệu lùi xe;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "200_000",
+            "fine_max_vnd": "400_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 1",
+            "point": "Điểm c"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D168-A7-C1-Pd",
+        "canonical_action": "Chở người sai quy định",
+        "legal_description": "Chở người ngồi trên xe sử dụng ô (dù);",
+        "detailed_description": "Chở người ngồi trên xe sử dụng ô (dù);",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "200_000",
+            "fine_max_vnd": "400_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 1",
+            "point": "Điểm d"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D168-A7-C1-Pđ",
+        "canonical_action": "Nhường đường sai quy định",
+        "legal_description": "Không tuân thủ các quy định về nhường đường tại nơi đường giao nhau, trừ các hành vi vi phạm quy định tại điểm c, điểm d khoản 6 Điều này;",
+        "detailed_description": "Không tuân thủ các quy định về nhường đường tại nơi đường giao nhau;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "200_000",
+            "fine_max_vnd": "400_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 1",
+            "point": "Điểm đ"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D168-A7-C1-Pe",
+        "canonical_action": "Chuyển làn sai quy định",
+        "legal_description": "Chuyển làn đường không đúng nơi cho phép hoặc không có tín hiệu báo trước hoặc chuyển làn đường không đúng quy định 'mỗi lần chuyền làn đường chỉ được phép chuyển sang một làn đường liền kề';",
+        "detailed_description": "Chuyển làn đường không đúng nơi cho phép hoặc không có tín hiệu báo trước hoặc chuyển làn đường không đúng quy định 'mỗi lần chuyền làn đường chỉ được phép chuyển sang một làn đường liền kề';",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "200_000",
+            "fine_max_vnd": "400_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 1",
+            "point": "Điểm e"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D168-A7-C1-Pg",
+        "canonical_action": "Sử dụng đèn chiếu sáng sai quy định",
+        "legal_description": "Không sử dụng đèn chiếu sáng trong thời gian từ 18 giờ ngày hôm trước đến 06 giờ ngày hôm sau hoặc khi có sương mù, khói, bụi, trời mưa, thời tiết xấu làm hạn chế tầm nhìn;",
+        "detailed_description": "Không sử dụng đèn chiếu sáng trong thời gian từ 18 giờ ngày hôm trước đến 06 giờ ngày hôm sau hoặc khi có sương mù, khói, bụi, trời mưa, thời tiết xấu làm hạn chế tầm nhìn;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "200_000",
+            "fine_max_vnd": "400_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 1",
+            "point": "Điểm g"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D168-A7-C1-Ph",
+        "canonical_action": "Sử dụng đèn chiếu sáng sai quy định",
+        "legal_description": "Tránh xe không đúng quy định; sử dụng đèn chiếu xa khi gặp người đi bộ qua đường hoặc khi đi trên đoạn đường qua khu dân cư có hệ thống chiếu sáng đang hoạt động hoặc khi gặp xe đi ngược chiều (trừ trường hợp dải phân cách có khả năng chống chói) hoặc khi chuyển hướng xe tại nơi đường giao nhau; không nhường đường cho xe đi ngược chiều theo quy định tại nơi đường hẹp, đường dốc, nơi có chướng ngại vật;",
+        "detailed_description": "Tránh xe không đúng quy định; sử dụng đèn chiếu xa khi gặp người đi bộ qua đường hoặc khi đi trên đoạn đường qua khu dân cư có hệ thống chiếu sáng đang hoạt động hoặc khi gặp xe đi ngược chiều (trừ trường hợp dải phân cách có khả năng chống chói) hoặc khi chuyển hướng xe tại nơi đường giao nhau; không nhường đường cho xe đi ngược chiều theo quy định tại nơi đường hẹp, đường dốc, nơi có chướng ngại vật;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "200_000",
+            "fine_max_vnd": "400_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 1",
+            "point": "Điểm h"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D168-A7-C1-Pi",
+        "canonical_action": "Bấm còi trong khu đô thị",
+        "legal_description": "Sử dụng còi trong thời gian từ 22 giờ ngày hôm trước đến 05 giờ ngày hôm sau trong khu đông dân cư, khu vực cơ sở khám bệnh, chữa bệnh, trừ các xe ưu tiên đang đi làm nhiệm vụ theo quy định;",
+        "detailed_description": "Sử dụng còi trong thời gian từ 22 giờ ngày hôm trước đến 05 giờ ngày hôm sau trong khu đông dân cư, khu vực cơ sở khám bệnh, chữa bệnh, trừ các xe ưu tiên đang đi làm nhiệm vụ theo quy định;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "200_000",
+            "fine_max_vnd": "400_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 1",
+            "point": "Điểm i"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D168-A7-C1-Pk",
+        "canonical_action": "Vi phạm tốc độ tối thiểu",
+        "legal_description": "Điều khiển xe chạy dưới tốc độ tối thiểu trên đoạn đường bộ có quy định tốc độ tối thiểu cho phép.",
+        "detailed_description": "Điều khiển xe chạy dưới tốc độ tối thiểu trên đoạn đường bộ có quy định tốc độ tối thiểu cho phép.",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "200_000",
+            "fine_max_vnd": "400_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 1",
+            "point": "Điểm k"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D168-A7-C2-Pa",
+        "canonical_action": "Dừng xe, đỗ xe sai quy định",
+        "legal_description": "Dừng xe, đỗ xe trên phần đường xe chạy ở đoạn đường ngoài đô thị nơi có lề đường;",
+        "detailed_description": "Dừng xe, đỗ xe trên phần đường xe chạy ở đoạn đường ngoài đô thị nơi có lề đường;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "400_000",
+            "fine_max_vnd": "600_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 2",
+            "point": "Điểm a"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D168-A7-C2-Pb",
+        "canonical_action": "Bắn tốc độ",
+        "legal_description": "Điều khiển xe chạy quá tốc độ quy định từ 05 km/h đến dưới 10 km/h;",
+        "detailed_description": "Điều khiển xe chạy quá tốc độ quy định từ 05 km/h đến dưới 10 km/h;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "400_000",
+            "fine_max_vnd": "600_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 2",
+            "point": "Điểm b"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D168-A7-C2-Pc",
+        "canonical_action": "Đi sai phần đường, làn đường",
+        "legal_description": "Điều khiển xe chạy tốc độ thấp mà không đi bên phải phần đường xe chạy gây cản trở giao thông;",
+        "detailed_description": "Điều khiển xe chạy tốc độ thấp mà không đi bên phải phần đường xe chạy gây cản trở giao thông;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "400_000",
+            "fine_max_vnd": "600_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 2",
+            "point": "Điểm c"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D168-A7-C2-Pd",
+        "canonical_action": "Dừng xe, đỗ xe sai quy định",
+        "legal_description": "Dừng xe, đỗ xe ở lòng đường gây cản trở giao thông; tụ tập từ 03 xe trở lên ở lòng đường, trong hầm đường bộ; đỗ, để xe ở lòng đường, via hè trái phép;",
+        "detailed_description": "Dừng xe, đỗ xe ở lòng đường gây cản trở giao thông; tụ tập từ 03 xe trở lên ở lòng đường, trong hầm đường bộ; đỗ, để xe ở lòng đường, via hè trái phép;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "400_000",
+            "fine_max_vnd": "600_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 2",
+            "point": "Điểm d"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D168-A7-C2-Pđ",
+        "canonical_action": "Sử dụng tín hiệu ưu tiên sai quy định",
+        "legal_description": "Xe không được quyền ưu tiên lắp đặt, sử dụng thiết bị phát tín hiệu của xe được quyền ưu tiên;",
+        "detailed_description": "Xe không được quyền ưu tiên lắp đặt, sử dụng thiết bị phát tín hiệu của xe được quyền ưu tiên;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "400_000",
+            "fine_max_vnd": "600_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 2",
+            "point": "Điểm đ"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D168-A7-C2-Pe",
+        "canonical_action": "Dừng xe, đỗ xe sai quy định",
+        "legal_description": "Dừng xe, đỗ xe trên điểm đón, trả khách, nơi đường bộ giao nhau, trên phần đường dành cho người đi bộ qua đường; dừng xe nơi có biển “Cấm dừng xe và đỗ xe”; đỗ xe tại nơi có biển 'Cấm đỗ xe' hoặc biển 'Cấm dừng xe và đỗ xe'; không tuân thủ các quy định về dừng xe, đỗ xe tại nơi đường bộ giao nhau cùng mức với đường sắt; dừng xe, đỗ xe trong phạm vi hành lang an toàn giao thông đường sắt;",
+        "detailed_description": "Dừng xe, đỗ xe trên điểm đón, trả khách, nơi đường bộ giao nhau, trên phần đường dành cho người đi bộ qua đường; dừng xe nơi có biển “Cấm dừng xe và đỗ xe”; đỗ xe tại nơi có biển 'Cấm đỗ xe' hoặc biển 'Cấm dừng xe và đỗ xe'; không tuân thủ các quy định về dừng xe, đỗ xe tại nơi đường bộ giao nhau cùng mức với đường sắt; dừng xe, đỗ xe trong phạm vi hành lang an toàn giao thông đường sắt;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "400_000",
+            "fine_max_vnd": "600_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 2",
+            "point": "Điểm e"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D168-A7-C2-Pg",
+        "canonical_action": "Chở người sai quy định",
+        "legal_description": "Chở theo 02 người trện xe, trừ trường hợp chở người bệnh đi cấp cứu, trẻ em dưới 12 tuổi, người già yếu hoặc người khuyết tật, áp giải người có hành vi vi phạm pháp luật;",
+        "detailed_description": "Chở theo 02 người trện xe, trừ trường hợp chở người bệnh đi cấp cứu, trẻ em dưới 12 tuổi, người già yếu hoặc người khuyết tật, áp giải người có hành vi vi phạm pháp luật;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "400_000",
+            "fine_max_vnd": "600_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 2",
+            "point": "Điểm g"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D168-A7-C2-Ph",
+        "canonical_action": "Không mũ bảo hiểm",
+        "legal_description": "Không đội “mũ bảo hiểm cho người đi mô tô, xe máy” hoặc đội “mũ bảo hiểm cho người đi mô tô, xe máy” không cài quai đúng quy cách khi điều khiển xe tham gia giao thông trên đường bộ;",
+        "detailed_description": "Không đội “mũ bảo hiểm cho người đi mô tô, xe máy” hoặc đội “mũ bảo hiểm cho người đi mô tô, xe máy” không cài quai đúng quy cách khi điều khiển xe tham gia giao thông trên đường bộ;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "400_000",
+            "fine_max_vnd": "600_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 2",
+            "point": "Điểm h"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D168-A7-C2-Pi",
+        "canonical_action": "Không mũ bảo hiểm",
+        "legal_description": "Chở người ngồi trên xe không đội “mũ bảo hiểm cho người đi mô tô, xe máy” hoặc đội “mũ bảo hiểm cho người di mộ tô, xe máy” không cài quai đúng quy cách, trừ trường hợp chở người bệnh đi cấp cứu, trẻ em dưới 06 tuổi, áp giải người có hành vi vi phạm pháp luật;",
+        "detailed_description": "Chở người ngồi trên xe không đội “mũ bảo hiểm cho người đi mô tô, xe máy” hoặc đội “mũ bảo hiểm cho người di mộ tô, xe máy” không cài quai đúng quy cách, trừ trường hợp chở người bệnh đi cấp cứu, trẻ em dưới 06 tuổi, áp giải người có hành vi vi phạm pháp luật;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "400_000",
+            "fine_max_vnd": "600_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 2",
+            "point": "Điểm i"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D168-A7-C2-Pk",
+        "canonical_action": "Quay đầu xe sai quy định",
+        "legal_description": "Quay đầu xe tại nơi không được quay đầu xe, trừ hành vi vi phạm quy định tại điểm d khoản 4 Điều này.",
+        "detailed_description": "Quay đầu xe tại nơi không được quay đầu xe.",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "400_000",
+            "fine_max_vnd": "600_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 2",
+            "point": "Điểm k"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D168-A7-C3-Pa",
+        "canonical_action": "Chuyển hướng sai quy định",
+        "legal_description": "Chuyển hướng không quan sát hoặc không bảo đảm khoảng cách an toàn với xe phía sau hoặc không giảm tốc độ hoặc không có tín hiệu báo hướng rẽ hoặc có tín hiệu báo hướng rẽ nhưng không sử dụng liên tục trong quá trình chuyển hướng (trừ trường hợp điều khiển xe đi theo hướng cong của đoạn đường bộ ở nơi đường không giao nhau cùng mức); điều khiển xe rẽ trái tại nơi có biển báo hiệu có nội dung cẩm rẽ trái đổi với loại phương tiện đang điều khiển; điều khiển xe rẽ phải tại nơi có biển báo hiệu có nổi dung cấm rẽ phải đối với loại phương tiện đang điều khiển;",
+        "detailed_description": "Chuyển hướng không quan sát hoặc không bảo đảm khoảng cách an toàn với xe phía sau hoặc không giảm tốc độ hoặc không có tín hiệu báo hướng rẽ hoặc có tín hiệu báo hướng rẽ nhưng không sử dụng liên tục trong quá trình chuyển hướng (trừ trường hợp điều khiển xe đi theo hướng cong của đoạn đường bộ ở nơi đường không giao nhau cùng mức); điều khiển xe rẽ trái tại nơi có biển báo hiệu có nội dung cẩm rẽ trái đổi với loại phương tiện đang điều khiển; điều khiển xe rẽ phải tại nơi có biển báo hiệu có nổi dung cấm rẽ phải đối với loại phương tiện đang điều khiển;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "600_000",
+            "fine_max_vnd": "800_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 3",
+            "point": "Điểm a"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D168-A7-C3-Pb",
+        "canonical_action": "Chở người sai quy định",
+        "legal_description": "Chở theo từ 03 người trở lên trên xe;",
+        "detailed_description": "Chở theo từ 03 người trở lên trên xe;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "600_000",
+            "fine_max_vnd": "800_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 3",
+            "point": "Điểm b"
+        },
+        "additional_penalties": [
+            {
+                "type": "Trừ điểm GPLX",
+                "condition": "",
+                "description": "Bị trừ điểm giấy phép lái xe 02 điểm",
+                "minus_point": "2",
+                "law_reference": {
+                    "decree": "168/2024/NĐ-CP",
+                    "article": "Điều 7",
+                    "clause": "Khoản 13",
+                    "point": "Điểm a"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D168-A7-C3-Pc",
+        "canonical_action": "Dừng xe, đỗ xe sai quy định",
+        "legal_description": "Dừng xe, đỗ xe trên cầu;",
+        "detailed_description": "Dừng xe, đỗ xe trên cầu;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "600_000",
+            "fine_max_vnd": "800_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 3",
+            "point": "Điểm c"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D168-A7-C3-Pd",
+        "canonical_action": "Đi sai phần đường, làn đường",
+        "legal_description": "Điều khiển xe không đi bên phải theo chiều đi của mình; đi không đúng phần đường, làn đường quy định (làn cùng chiều hoặc làn ngược chiều); điều khiển xe đi qua dải phân cách cố định ở giữa hai phần đường xe chạy;",
+        "detailed_description": "Điều khiển xe không đi bên phải theo chiều đi của mình; đi không đúng phần đường, làn đường quy định (làn cùng chiều hoặc làn ngược chiều); điều khiển xe đi qua dải phân cách cố định ở giữa hai phần đường xe chạy;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "600_000",
+            "fine_max_vnd": "800_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 3",
+            "point": "Điểm d"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D168-A7-C3-Pđ",
+        "canonical_action": "Vượt xe sai quy định",
+        "legal_description": "Vượt bên phải trong trường hợp không được phép;",
+        "detailed_description": "Vượt bên phải trong trường hợp không được phép;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "600_000",
+            "fine_max_vnd": "800_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 3",
+            "point": "Điểm đ"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D168-A7-C3-Pe",
+        "canonical_action": "Chở người sai quy định",
+        "legal_description": "Người đang điều khiển xe hoặc chở người ngồi trên xe bám, kéo, đẩy xe khác, vật khác, dẫn dắt vật nuôi, mang vác vật cồng kềnh; chở người đứng trên yên, giá đèo hàng hoặc ngồi trên tay lái của xe;",
+        "detailed_description": "Người đang điều khiển xe hoặc chở người ngồi trên xe bám, kéo, đẩy xe khác, vật khác, dẫn dắt vật nuôi, mang vác vật cồng kềnh; chở người đứng trên yên, giá đèo hàng hoặc ngồi trên tay lái của xe;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "600_000",
+            "fine_max_vnd": "800_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 3",
+            "point": "Điểm e"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D168-A7-C3-Pg",
+        "canonical_action": "Kéo xe sai quy định",
+        "legal_description": "Điều khiển xe kéo theo xe khác, vật khác;",
+        "detailed_description": "Điều khiển xe kéo theo xe khác, vật khác;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "600_000",
+            "fine_max_vnd": "800_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 3",
+            "point": "Điểm g"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D168-A7-C3-Ph",
+        "canonical_action": "Sử dụng đèn chiếu sáng sai quy định",
+        "legal_description": "Chạy trong hầm đường bộ không sử dụng đèn chiếu sáng gần;",
+        "detailed_description": "Chạy trong hầm đường bộ không sử dụng đèn chiếu sáng gần;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "600_000",
+            "fine_max_vnd": "800_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 3",
+            "point": "Điểm h"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D168-A7-C3-Pi",
+        "canonical_action": "Không giữ khoảng cách an toàn",
+        "legal_description": "Không giữ khoảng cách an toàn để xày ra va chạm với xe chạy liền trước hoặc không giữ khoảng cách theo quy định của biển báo hiệu 'Cự ly tối thiểu giữa hai xe';",
+        "detailed_description": "Không giữ khoảng cách an toàn để xày ra va chạm với xe chạy liền trước hoặc không giữ khoảng cách theo quy định của biển báo hiệu 'Cự ly tối thiểu giữa hai xe';",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "600_000",
+            "fine_max_vnd": "800_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 3",
+            "point": "Điểm i"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D168-A7-C3-Pk",
+        "canonical_action": "Điều khiển xe sai quy định",
+        "legal_description": "Điều khiển xe chạy dàn hàng ngang từ 03 xe trở lên;",
+        "detailed_description": "Điều khiển xe chạy dàn hàng ngang từ 03 xe trở lên;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "600_000",
+            "fine_max_vnd": "800_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 3",
+            "point": "Điểm k"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D168-A7-C3-Pl",
+        "canonical_action": "Sử dụng tín hiệu ưu tiên sai quy định",
+        "legal_description": "Xe được quyền ưu tiên lắp đặt, sử dụng thiết bị phát tín hiệu ưu tiên không đúng quy định hoặc sử dụng thiết bị phát tín hiệu ưu tiên mà không có giấy phép của cơ quan có thẩm quyền cấp hoắc có giấy phép của cơ quan có thẩm quyền cấp nhưng không còn giá trị sử dụng theo quy định.",
+        "detailed_description": "Xe được quyền ưu tiên lắp đặt, sử dụng thiết bị phát tín hiệu ưu tiên không đúng quy định hoặc sử dụng thiết bị phát tín hiệu ưu tiên mà không có giấy phép của cơ quan có thẩm quyền cấp hoắc có giấy phép của cơ quan có thẩm quyền cấp nhưng không còn giá trị sử dụng theo quy định.",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "600_000",
+            "fine_max_vnd": "800_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 3",
+            "point": "Điểm l"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D168-A7-C4-Pa",
+        "canonical_action": "Bắn tốc độ",
+        "legal_description": "Điều khiển xe chạy quá tốc độ quy định từ 10 km/h đến 20 km/h;",
+        "detailed_description": "Điều khiển xe chạy quá tốc độ quy định từ 10 km/h đến 20 km/h;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "800_000",
+            "fine_max_vnd": "1_000_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 4",
+            "point": "Điểm a"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D168-A7-C4-Pb",
+        "canonical_action": "Dừng xe, đỗ xe sai quy định",
+        "legal_description": "Dừng xe, đỗ xe trong hầm đường bộ không đúng nơi quy định;",
+        "detailed_description": "Dừng xe, đỗ xe trong hầm đường bộ không đúng nơi quy định;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "800_000",
+            "fine_max_vnd": "1_000_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 4",
+            "point": "Điểm b"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D168-A7-C4-Pc",
+        "canonical_action": "Vượt xe sai quy định",
+        "legal_description": "Vượt xe trong những trường hợp không được vượt, vượt xe tại đoạn đường có biển báo hiệu có nội dung cấm vượt đối với loại phương tiện đang điều khiển, trừ các hành vi vi phạm quy định tại điểm đ khoản 3 Điều này;",
+        "detailed_description": "Vượt xe trong những trường hợp không được vượt, vượt xe tại đoạn đường có biển báo hiệu có nội dung cấm vượt đối với loại phương tiện đang điều khiển;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "800_000",
+            "fine_max_vnd": "1_000_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 4",
+            "point": "Điểm c"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D168-A7-C4-Pd",
+        "canonical_action": "Quay đầu xe sai quy định",
+        "legal_description": "Quay đầu xe trong hầm đường bộ;",
+        "detailed_description": "Quay đầu xe trong hầm đường bộ;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "800_000",
+            "fine_max_vnd": "1_000_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 4",
+            "point": "Điểm d"
+        },
+        "additional_penalties": []
+    },
+    {
+        "id": "D168-A7-C4-Pđ",
+        "canonical_action": "Lùi xe sai quy định",
+        "legal_description": "Người đang điều khiển xe sử dụng ô (dù), thiết bị âm thanh (trừ thiết bị trợ thính), dùng tay cầm và sử dụng điện thoại hoặc các thiết bị điện tử khác.",
+        "detailed_description": "Người đang điều khiển xe sử dụng ô (dù), thiết bị âm thanh (trừ thiết bị trợ thính), dùng tay cầm và sử dụng điện thoại hoặc các thiết bị điện tử khác.",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "800_000",
+            "fine_max_vnd": "1_000_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 4",
+            "point": "Điểm đ"
+        },
+        "additional_penalties": [
+            {
+                "type": "Trừ điểm GPLX",
+                "condition": "",
+                "description": "Bị trừ điểm giấy phép lái xe 04 điểm",
+                "minus_point": "4",
+                "law_reference": {
+                    "decree": "168/2024/NĐ-CP",
+                    "article": "Điều 7",
+                    "clause": "Khoản 13",
+                    "point": "Điểm b"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D168-A7-C5-Pa",
+        "canonical_action": "Gây tai nạn giao thông",
+        "legal_description": "Điều khiền xe có liên quan trực tiếp đến vụ tai nạn giao thông mà không dừng ngay phương tiện, không giữ nguyên hiện trường, không trợ giúp người bị nạn, trừ hành vi vi phạm quy định tại điểm c khoản 9 Điều này;",
+        "detailed_description": "Điều khiền xe có liên quan trực tiếp đến vụ tai nạn giao thông mà không dừng ngay phương tiện, không giữ nguyên hiện trường, không trợ giúp người bị nạn;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "1_000_000",
+            "fine_max_vnd": "2_000_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 5",
+            "point": "Điểm a"
+        },
+        "additional_penalties": [
+            {
+                "type": "Trừ điểm GPLX",
+                "condition": "",
+                "description": "Bị trừ điểm giấy phép lái xe 02 điểm",
+                "minus_point": "2",
+                "law_reference": {
+                    "decree": "168/2024/NĐ-CP",
+                    "article": "Điều 7",
+                    "clause": "Khoản 13",
+                    "point": "Điểm a"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D168-A7-C5-Pb",
+        "canonical_action": "Chuyển hướng sai quy định",
+        "legal_description": "Chuyển hướng không nhường quyền đi trước cho: người đi bộ, xe lăn của người khuyết tật qua đường tại nơi có vạch kẻ đường dành cho người đi bộ; xе thô sơ đang đi trên phần đường dành cho xe thô sơ;",
+        "detailed_description": "Chuyển hướng không nhường quyền đi trước cho: người đi bộ, xe lăn của người khuyết tật qua đường tại nơi có vạch kẻ đường dành cho người đi bộ; xе thô sơ đang đi trên phần đường dành cho xe thô sơ;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "1_000_000",
+            "fine_max_vnd": "2_000_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 5",
+            "point": "Điểm b"
+        },
+        "additional_penalties": [
+            {
+                "type": "Trừ điểm GPLX",
+                "condition": "",
+                "description": "Bị trừ điểm giấy phép lái xe 02 điểm",
+                "minus_point": "2",
+                "law_reference": {
+                    "decree": "168/2024/NĐ-CP",
+                    "article": "Điều 7",
+                    "clause": "Khoản 13",
+                    "point": "Điểm a"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D168-A7-C5-Pc",
+        "canonical_action": "Đi ngược chiều",
+        "legal_description": "Chuyển hướng không nhường đường cho: các xe đi ngược chiều; người đi bộ, xe thô sơ đang qua đường tại nơi không có vạch kẻ đường cho người đi bộ.",
+        "detailed_description": "Chuyển hướng không nhường đường cho: các xe đi ngược chiều; người đi bộ, xe thô sơ đang qua đường tại nơi không có vạch kẻ đường cho người đi bộ.",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "1_000_000",
+            "fine_max_vnd": "2_000_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 5",
+            "point": "Điểm c"
+        },
+        "additional_penalties": [
+            {
+                "type": "Trừ điểm GPLX",
+                "condition": "",
+                "description": "Bị trừ điểm giấy phép lái xe 02 điểm",
+                "minus_point": "2",
+                "law_reference": {
+                    "decree": "168/2024/NĐ-CP",
+                    "article": "Điều 7",
+                    "clause": "Khoản 13",
+                    "point": "Điểm a"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D168-A7-C6-Pa",
+        "canonical_action": "Vi phạm nồng độ cồn",
+        "legal_description": "Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn nhưng chưa vượt quá 50 miligam/100 mililít máu hoặc chưa vượt quá 0,25 miligam/1 lít khí thở;",
+        "detailed_description": "Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn nhưng chưa vượt quá 50 miligam/100 mililít máu hoặc chưa vượt quá 0,25 miligam/1 lít khí thở;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "2_000_000",
+            "fine_max_vnd": "3_000_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 6",
+            "point": "Điểm a"
+        },
+        "additional_penalties": [
+            {
+                "type": "Trừ điểm GPLX",
+                "condition": "",
+                "description": "Bị trừ điểm giấy phép lái xe 04 điểm",
+                "minus_point": "4",
+                "law_reference": {
+                    "decree": "168/2024/NĐ-CP",
+                    "article": "Điều 7",
+                    "clause": "Khoản 13",
+                    "point": "Điểm b"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D168-A7-C6-Pb",
+        "canonical_action": "Đi vào đường cấm",
+        "legal_description": "Đi vào khu vực cấm, đường có biển báo hiệu có nội dung cấm đi vào đối với loại phương tiện đang điều khiển, trừ các hành vi vi phạm quy định tại điểm a, điểm b khoản 7 Điều này và các trường hợp xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định;",
+        "detailed_description": "Đi vào khu vực cấm, đường có biển báo hiệu có nội dung cấm đi vào đối với loại phương tiện đang điều khiển, trừ các trường hợp xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "2_000_000",
+            "fine_max_vnd": "3_000_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 6",
+            "point": "Điểm b"
+        },
+        "additional_penalties": [
+            {
+                "type": "Trừ điểm GPLX",
+                "condition": "",
+                "description": "Bị trừ điểm giấy phép lái xe 02 điểm",
+                "minus_point": "2",
+                "law_reference": {
+                    "decree": "168/2024/NĐ-CP",
+                    "article": "Điều 7",
+                    "clause": "Khoản 13",
+                    "point": "Điểm a"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D168-A7-C6-Pc",
+        "canonical_action": "Nhường đường sai quy định",
+        "legal_description": "Không giảm tốc độ (hoặc dừng lại) và nhường đường khi điều khiển xe đi từ đường không ưu tiên ra đường uu tiên, từ đường nhánh ra đường chính;",
+        "detailed_description": "Không giảm tốc độ (hoặc dừng lại) và nhường đường khi điều khiển xe đi từ đường không ưu tiên ra đường uu tiên, từ đường nhánh ra đường chính;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "2_000_000",
+            "fine_max_vnd": "3_000_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 6",
+            "point": "Điểm c"
+        },
+        "additional_penalties": [
+            {
+                "type": "Trừ điểm GPLX",
+                "condition": "",
+                "description": "Bị trừ điểm giấy phép lái xe 02 điểm",
+                "minus_point": "2",
+                "law_reference": {
+                    "decree": "168/2024/NĐ-CP",
+                    "article": "Điều 7",
+                    "clause": "Khoản 13",
+                    "point": "Điểm a"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D168-A7-C6-Pd",
+        "canonical_action": "Nhường đường sai quy định",
+        "legal_description": "Không giảm tốc độ và nhường đường cho xe đi đến từ bên phải tại nơi đường giao nhau không có báo hiệu đi theo vòng xuyến; không giảm tốc độ và nhường đường cho xe đi đến từ bên trái tại nơi đường giao nhau có báo hiệu đi theo vòng xuyến.",
+        "detailed_description": "Không giảm tốc độ và nhường đường cho xe đi đến từ bên phải tại nơi đường giao nhau không có báo hiệu đi theo vòng xuyến; không giảm tốc độ và nhường đường cho xe đi đến từ bên trái tại nơi đường giao nhau có báo hiệu đi theo vòng xuyến.",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "2_000_000",
+            "fine_max_vnd": "3_000_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 6",
+            "point": "Điểm d"
+        },
+        "additional_penalties": [
+            {
+                "type": "Trừ điểm GPLX",
+                "condition": "",
+                "description": "Bị trừ điểm giấy phép lái xe 02 điểm",
+                "minus_point": "2",
+                "law_reference": {
+                    "decree": "168/2024/NĐ-CP",
+                    "article": "Điều 7",
+                    "clause": "Khoản 13",
+                    "point": "Điểm a"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D168-A7-C7-Pa",
+        "canonical_action": "Đi ngược chiều",
+        "legal_description": "Đi ngược chiều của đường một chiều, đi ngược chiều trên đường có biển “Cấm đi ngược chiều”, trừ hành vi vi phạm quy định tại điểm b khoản này và các trường hợp xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định; điều khiển xe đi trên via hè, trừ trường hợp điều khiển xe đi qua via hè để vào nhà, cơ quan;",
+        "detailed_description": "Đi ngược chiều của đường một chiều, đi ngược chiều trên đường có biển “Cấm đi ngược chiều”, trừ hành vi vi phạm quy định tại điểm b khoản này và các trường hợp xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định; điều khiển xe đi trên via hè, trừ trường hợp điều khiển xe đi qua via hè để vào nhà, cơ quan;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "4_000_000",
+            "fine_max_vnd": "6_000_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 7",
+            "point": "Điểm a"
+        },
+        "additional_penalties": [
+            {
+                "type": "Trừ điểm GPLX",
+                "condition": "",
+                "description": "Bị trừ điểm giấy phép lái xe 02 điểm",
+                "minus_point": "2",
+                "law_reference": {
+                    "decree": "168/2024/NĐ-CP",
+                    "article": "Điều 7",
+                    "clause": "Khoản 13",
+                    "point": "Điểm a"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D168-A7-C7-Pb",
+        "canonical_action": "Đi sai phần đường, làn đường",
+        "legal_description": "Điều khiển xe đi vào đường cao tốc, trừ xe phục vụ việc quản lý, bảo trì đường cao tốc;",
+        "detailed_description": "Điều khiển xe đi vào đường cao tốc, trừ xe phục vụ việc quản lý, bảo trì đường cao tốc;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "4_000_000",
+            "fine_max_vnd": "6_000_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 7",
+            "point": "Điểm b"
+        },
+        "additional_penalties": [
+            {
+                "type": "Trừ điểm GPLX",
+                "condition": "",
+                "description": "Bị trừ điểm giấy phép lái xe 06 điểm",
+                "minus_point": "6",
+                "law_reference": {
+                    "decree": "168/2024/NĐ-CP",
+                    "article": "Điều 7",
+                    "clause": "Khoản 13",
+                    "point": "Điểm c"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D168-A7-C7-Pc",
+        "canonical_action": "Vượt đèn đỏ, đèn vàng",
+        "legal_description": "Không chấp hành hiệu lệnh của đèn tín hiệu giao thông;",
+        "detailed_description": "Không chấp hành hiệu lệnh của đèn tín hiệu giao thông;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "4_000_000",
+            "fine_max_vnd": "6_000_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 7",
+            "point": "Điểm c"
+        },
+        "additional_penalties": [
+            {
+                "type": "Trừ điểm GPLX",
+                "condition": "",
+                "description": "Bị trừ điểm giấy phép lái xe 04 điểm",
+                "minus_point": "4",
+                "law_reference": {
+                    "decree": "168/2024/NĐ-CP",
+                    "article": "Điều 7",
+                    "clause": "Khoản 13",
+                    "point": "Điểm b"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D168-A7-C7-Pd",
+        "canonical_action": "Không chấp hành hướng dẫn của người điều khiển giao thông",
+        "legal_description": "Không chấp hành hiệu lệnh, hướng dẫn của người điều khiển giao thông hoặc người kiểm soát giao thông;",
+        "detailed_description": "Không chấp hành hiệu lệnh, hướng dẫn của người điều khiển giao thông hoặc người kiểm soát giao thông;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "4_000_000",
+            "fine_max_vnd": "6_000_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 7",
+            "point": "Điểm d"
+        },
+        "additional_penalties": [
+            {
+                "type": "Trừ điểm GPLX",
+                "condition": "",
+                "description": "Bị trừ điểm giấy phép lái xe 04 điểm",
+                "minus_point": "4",
+                "law_reference": {
+                    "decree": "168/2024/NĐ-CP",
+                    "article": "Điều 7",
+                    "clause": "Khoản 13",
+                    "point": "Điểm b"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D168-A7-C7-Pđ",
+        "canonical_action": "Nhường đường sai quy định",
+        "legal_description": "Không nhường đường hoặc gây cản trở xe được quyền ưu tiên đang phát tín hiệu ưu tiên đi làm nhiệm vụ.",
+        "detailed_description": "Không nhường đường hoặc gây cản trở xe được quyền ưu tiên đang phát tín hiệu ưu tiên đi làm nhiệm vụ.",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "4_000_000",
+            "fine_max_vnd": "6_000_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 7",
+            "point": "Điểm đ"
+        },
+        "additional_penalties": [
+            {
+                "type": "Trừ điểm GPLX",
+                "condition": "",
+                "description": "Bị trừ điểm giấy phép lái xe 04 điểm",
+                "minus_point": "4",
+                "law_reference": {
+                    "decree": "168/2024/NĐ-CP",
+                    "article": "Điều 7",
+                    "clause": "Khoản 13",
+                    "point": "Điểm b"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D168-A7-C8-Pa",
+        "canonical_action": "Bắn tốc độ",
+        "legal_description": "Điều khiển xe chạy quá tốc độ quy định trên 20 km/h;",
+        "detailed_description": "Điều khiển xe chạy quá tốc độ quy định trên 20 km/h;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "6_000_000",
+            "fine_max_vnd": "8_000_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 8",
+            "point": "Điểm a"
+        },
+        "additional_penalties": [
+            {
+                "type": "Trừ điểm GPLX",
+                "condition": "",
+                "description": "Bị trừ điểm giấy phép lái xe 04 điểm",
+                "minus_point": "4",
+                "law_reference": {
+                    "decree": "168/2024/NĐ-CP",
+                    "article": "Điều 7",
+                    "clause": "Khoản 13",
+                    "point": "Điểm b"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D168-A7-C8-Pb",
+        "canonical_action": "Vi phạm nồng độ cồn",
+        "legal_description": "Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn vượt quá 50 miligam đến 80 miligam/100 mililít máu hoặc vượt quá 0,25 miligam đến 0,4 miligam/1 lít khí thở.",
+        "detailed_description": "Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn vượt quá 50 miligam đến 80 miligam/100 mililít máu hoặc vượt quá 0,25 miligam đến 0,4 miligam/1 lít khí thở.",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "6_000_000",
+            "fine_max_vnd": "8_000_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 8",
+            "point": "Điểm b"
+        },
+        "additional_penalties": [
+            {
+                "type": "Trừ điểm GPLX",
+                "condition": "",
+                "description": "Bị trừ điểm giấy phép lái xe 10 điểm",
+                "minus_point": "10",
+                "law_reference": {
+                    "decree": "168/2024/NĐ-CP",
+                    "article": "Điều 7",
+                    "clause": "Khoản 13",
+                    "point": "Điểm d"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D168-A7-C9-Pa",
+        "canonical_action": "Lạng lách, đánh võng",
+        "legal_description": "Điều khiển xe lạng lách, đánh võng trên đường bộ; sử dụng chân chống hoặc vật khác quệt xuống đường khi xe đang chạy;",
+        "detailed_description": "Điều khiển xe lạng lách, đánh võng trên đường bộ; sử dụng chân chống hoặc vật khác quệt xuống đường khi xe đang chạy;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "8_000_000",
+            "fine_max_vnd": "10_000_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 9",
+            "point": "Điểm a"
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 10 tháng đến 12 tháng",
+                "duration_min_months": "10",
+                "duration_max_months": "12",
+                "law_reference": {
+                    "decree": "168/2024/NĐ-CP",
+                    "article": "Điều 7",
+                    "clause": "Khoản 12",
+                    "point": "Điểm b"
+                }
+            },
+            {
+                "type": "Tịch thu phương tiện",
+                "condition": "Tái phạm",
+                "description": "Tịch thu phương tiện đối với người điều khiển xe tái phạm hành vi điều khiển xe lạng lách, đánh võng quy định tại điểm a khoản 9 Điều này.",
+                "law_reference": {
+                    "decree": "168/2024/NĐ-CP",
+                    "article": "Điều 7",
+                    "clause": "Khoản 11",
+                    "point": "Điểm c"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D168-A7-C9-Pb",
+        "canonical_action": "Đua xe trái phép",
+        "legal_description": "Điều khiển xe thành nhóm từ 02 xe trở lên chạy quá tốc độ quy định;",
+        "detailed_description": "Điều khiển xe thành nhóm từ 02 xe trở lên chạy quá tốc độ quy định;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "8_000_000",
+            "fine_max_vnd": "10_000_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 9",
+            "point": "Điểm b"
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 10 tháng đến 12 tháng",
+                "duration_min_months": "10",
+                "duration_max_months": "12",
+                "law_reference": {
+                    "decree": "168/2024/NĐ-CP",
+                    "article": "Điều 7",
+                    "clause": "Khoản 12",
+                    "point": "Điểm b"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D168-A7-C9-Pc",
+        "canonical_action": "Gây tai nạn giao thông",
+        "legal_description": "Gây tai nạn giao thông không dừng ngay phương tiện, không giữ nguyên hiện trường, không trợ giúp người bị nạn, không ở lại hiện trường hoặc không đến trình báo ngay với cơ quan công an, Ủy ban nhân dân nơi gần nhất;",
+        "detailed_description": "Gây tai nạn giao thông không dừng ngay phương tiện, không giữ nguyên hiện trường, không trợ giúp người bị nạn, không ở lại hiện trường hoặc không đến trình báo ngay với cơ quan công an, Ủy ban nhân dân nơi gần nhất;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "8_000_000",
+            "fine_max_vnd": "10_000_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 9",
+            "point": "Điểm c"
+        },
+        "additional_penalties": [
+            {
+                "type": "Trừ điểm GPLX",
+                "condition": "",
+                "description": "Bị trừ điểm giấy phép lái xe 06 điểm",
+                "minus_point": "6",
+                "law_reference": {
+                    "decree": "168/2024/NĐ-CP",
+                    "article": "Điều 7",
+                    "clause": "Khoản 13",
+                    "point": "Điểm c"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D168-A7-C9-Pd",
+        "canonical_action": "Vi phạm nồng độ cồn",
+        "legal_description": "Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn vượt quá 80 miligam/100 mililít máu hoặc vượt quá 0,4 miligam/1 lít khí thở;",
+        "detailed_description": "Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn vượt quá 80 miligam/100 mililít máu hoặc vượt quá 0,4 miligam/1 lít khí thở;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "8_000_000",
+            "fine_max_vnd": "10_000_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 9",
+            "point": "Điểm d"
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 22 tháng đến 24 tháng",
+                "duration_min_months": "22",
+                "duration_max_months": "24",
+                "law_reference": {
+                    "decree": "168/2024/NĐ-CP",
+                    "article": "Điều 7",
+                    "clause": "Khoản 12",
+                    "point": "Điểm c"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D168-A7-C9-Pđ",
+        "canonical_action": "Vi phạm nồng độ cồn",
+        "legal_description": "Không chấp hành yêu cầu kiểm tra về nồng độ cồn của người thi hành công vụ;",
+        "detailed_description": "Không chấp hành yêu cầu kiểm tra về nồng độ cồn của người thi hành công vụ;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "8_000_000",
+            "fine_max_vnd": "10_000_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 9",
+            "point": "Điểm đ"
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 22 tháng đến 24 tháng",
+                "duration_min_months": "22",
+                "duration_max_months": "24",
+                "law_reference": {
+                    "decree": "168/2024/NĐ-CP",
+                    "article": "Điều 7",
+                    "clause": "Khoản 12",
+                    "point": "Điểm c"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D168-A7-C9-Pe",
+        "canonical_action": "Tàng trữ chất ma tuý",
+        "legal_description": "Điều khiền xe trên đường mà trong cơ thể có chất ma túy hoặc chất kích thích khác mà pháp luật cấm sử dụng;",
+        "detailed_description": "Điều khiền xe trên đường mà trong cơ thể có chất ma túy hoặc chất kích thích khác mà pháp luật cấm sử dụng;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "8_000_000",
+            "fine_max_vnd": "10_000_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 9",
+            "point": "Điểm e"
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 22 tháng đến 24 tháng",
+                "duration_min_months": "22",
+                "duration_max_months": "24",
+                "law_reference": {
+                    "decree": "168/2024/NĐ-CP",
+                    "article": "Điều 7",
+                    "clause": "Khoản 12",
+                    "point": "Điểm c"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D168-A7-C9-Pg",
+        "canonical_action": "Tàng trữ chất ma tuý",
+        "legal_description": "Không chấp hành yêu cầu kiểm tra về chất ma túy hoặc chất kích thích khác mà pháp luật cấm sử dụng của người thi hành công vụ;",
+        "detailed_description": "Không chấp hành yêu cầu kiểm tra về chất ma túy hoặc chất kích thích khác mà pháp luật cấm sử dụng của người thi hành công vụ;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "8_000_000",
+            "fine_max_vnd": "10_000_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 9",
+            "point": "Điểm g"
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 22 tháng đến 24 tháng",
+                "duration_min_months": "22",
+                "duration_max_months": "24",
+                "law_reference": {
+                    "decree": "168/2024/NĐ-CP",
+                    "article": "Điều 7",
+                    "clause": "Khoản 12",
+                    "point": "Điểm c"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D168-A7-C9-Ph",
+        "canonical_action": "Chở người sai quy định",
+        "legal_description": "Ngồi phía sau vòng tay qua người ngồi trước để điều khiển xe, trừ trường hợp chở trẻ em dưới 06 tuổi ngồi phía trước;",
+        "detailed_description": "Ngồi phía sau vòng tay qua người ngồi trước để điều khiển xe, trừ trường hợp chở trẻ em dưới 06 tuổi ngồi phía trước;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "8_000_000",
+            "fine_max_vnd": "10_000_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 9",
+            "point": "Điểm h"
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 10 tháng đến 12 tháng",
+                "duration_min_months": "10",
+                "duration_max_months": "12",
+                "law_reference": {
+                    "decree": "168/2024/NĐ-CP",
+                    "article": "Điều 7",
+                    "clause": "Khoản 12",
+                    "point": "Điểm b"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D168-A7-C9-Pi",
+        "canonical_action": "Điều khiển xe sai quy định",
+        "legal_description": "Điều khiển xe thành đoàn gầy cản trở giao thông, trừ trường hợp được cơ quan có thẩm quyền cấp phép;",
+        "detailed_description": "Điều khiển xe thành đoàn gầy cản trở giao thông, trừ trường hợp được cơ quan có thẩm quyền cấp phép;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "8_000_000",
+            "fine_max_vnd": "10_000_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 9",
+            "point": "Điểm i"
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 10 tháng đến 12 tháng",
+                "duration_min_months": "10",
+                "duration_max_months": "12",
+                "law_reference": {
+                    "decree": "168/2024/NĐ-CP",
+                    "article": "Điều 7",
+                    "clause": "Khoản 12",
+                    "point": "Điểm b"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D168-A7-C9-Pk",
+        "canonical_action": "Đi ngược chiều",
+        "legal_description": "Sử dụng còi, rú ga (nẹt pô) liên tục trong khu đông dân cư, khu vực cơ sở khám bệnh, chữa bệnh, trừ các xe uu tiên đang đi làm nhiệm vụ theo quy định.",
+        "detailed_description": "Sử dụng còi, rú ga (nẹt pô) liên tục trong khu đông dân cư, khu vực cơ sở khám bệnh, chữa bệnh, trừ các xe uu tiên đang đi làm nhiệm vụ theo quy định.",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "8_000_000",
+            "fine_max_vnd": "10_000_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 9",
+            "point": "Điểm k"
+        },
+        "additional_penalties": [
+            {
+                "type": "Tước GPLX",
+                "condition": "",
+                "description": "Tước quyền sử dụng Giấy phép lái xe từ 10 tháng đến 12 tháng",
+                "duration_min_months": "10",
+                "duration_max_months": "12",
+                "law_reference": {
+                    "decree": "168/2024/NĐ-CP",
+                    "article": "Điều 7",
+                    "clause": "Khoản 12",
+                    "point": "Điểm b"
+                }
+            }
+        ]
+    },
+    {
+        "id": "D168-A7-C10-Pa",
+        "canonical_action": "Gây tai nạn giao thông",
+        "legal_description": "Điều khiển xe không quan sát, giảm tốc độ hoặc dừng lại để bảo đảm an toàn theo quy định mà gây tai nạn giao thông; điều khiển xe chạy quá tốc độ quy định gây tai nạn giao thông; đi vào đường cao tốc, dừng xe, đỗ xe, quay đầu xe, lùi xe, vượt xe, chuyển hướng, chuyển làn đường không đúng quy định gây tai nạn giao thông; không đi đúng phần đường, làn đường, không giữ khoảng cách an toàn giữa hai xe theo quy định gây tại nạn giao thông hoặc đi vào đường có biển báo hiệu có nội dung cấm đi vào đối với loại phương tiện đang điều khiển, đi ngược chiều của đường một chiều, đi ngược chiều trên đường có biển “Cấm đi ngược chiều” gây tai nạn giao thông;",
+        "detailed_description": "Điều khiển xe không quan sát, giảm tốc độ hoặc dừng lại để bảo đảm an toàn theo quy định mà gây tai nạn giao thông; điều khiển xe chạy quá tốc độ quy định gây tai nạn giao thông; đi vào đường cao tốc, dừng xe, đỗ xe, quay đầu xe, lùi xe, vượt xe, chuyển hướng, chuyển làn đường không đúng quy định gây tai nạn giao thông; không đi đúng phần đường, làn đường, không giữ khoảng cách an toàn giữa hai xe theo quy định gây tại nạn giao thông hoặc đi vào đường có biển báo hiệu có nội dung cấm đi vào đối với loại phương tiện đang điều khiển, đi ngược chiều của đường một chiều, đi ngược chiều trên đường có biển “Cấm đi ngược chiều” gây tai nạn giao thông;",
+        "vehicle_type": "xe máy",
+        "penalty": {
+            "fine_min_vnd": "10_000_000",
+            "fine_max_vnd": "14_000_000"
+        },
+        "law_reference": {
+            "decree": "168/2024/NĐ-CP",
+            "article": "Điều 7",
+            "clause": "Khoản 10",
+            "point": "Điểm a"
+        },
+        "additional_penalties": [
+            {
+                "type": "Trừ điểm GPLX",
+                "condition": "",
+                "description": "Bị trừ điểm giấy phép lái xe 10 điểm",
+                "minus_point": "10",
+                "law_reference": {
+                    "decree": "168/2024/NĐ-CP",
+                    "article": "Điều 7",
+                    "clause": "Khoản 13",
+                    "point": "Điểm d"
+                }
+            }
+        ]
     }
 ]

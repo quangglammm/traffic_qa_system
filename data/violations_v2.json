@@ -2651,7 +2651,7 @@
     },
     {
         "id": "D100-A6-C3-Pi",
-        "canonical_action": "Đi sai phần đường, làn đường",
+        "canonical_action": "Đi vào đường cấm",
         "legal_description": "Đi vào khu vực cấm, đường có biển báo hiệu có nội dung cấm đi vào đối với loại phương tiện đang điều khiển, trừ các hành vi vi phạm quy định tại khoản 5, điểm b khoản 6 Điều này và các trường hợp xe ưu tiên đang đi làm nhiệm vụ khẩn cấp theo quy định;",
         "detailed_description": "Đi vào khu vực cấm, đường có biển báo hiệu có nội dung cấm đi vào đối với loại phương tiện đang điều khiển",
         "vehicle_type": "xe máy",
