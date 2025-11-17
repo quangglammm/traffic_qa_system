@@ -107,7 +107,7 @@ class AskQuestionUseCase:
             )
 
             # Step 6
-            answer = self.llm_service.generate_natural_answer(parsed, best)
+            answer = self.llm_service.generate_response(best, parsed)
 
             v = best["violation"]
             p = best.get("penalty") or {}
@@ -163,7 +163,7 @@ class AskQuestionUseCase:
             )
 
             return QueryResponse(
-                answer=answer.strip(),
+                answer=answer,
                 violation_found=violation,
                 fine=fine,
                 legal_basis=legal_basis,
@@ -178,10 +178,32 @@ class AskQuestionUseCase:
                 citation="",
             )
 
-    def _extract_best_id(self, answer: str, candidates: List[Dict]) -> str:
-        text = answer.lower()
-        for c in candidates:
-            vid = c["violation"]["id"].lower()
-            if vid in text:
-                return c["violation"]["id"]
-        return candidates[0]["violation"]["id"]
+    def _extract_best_id(self, llm_selection: Dict[str, Any], candidates: List[Dict]) -> str:
+        """
+        Extract the best violation ID from LLM selection result.
+        
+        Args:
+            llm_selection: Dict from select_best_violation() → contains 'best_violation_id'
+            candidates: List of enriched violation dicts (for fallback)
+
+        Returns:
+            Valid violation ID (str)
+        """
+        if not isinstance(llm_selection, dict):
+            logger.warning(f"LLM selection is not a dict: {type(llm_selection)}")
+            return candidates[0]["violation"]["id"]
+
+        best_id = llm_selection.get("best_violation_id")
+
+        if not best_id:
+            logger.warning("LLM did not return best_violation_id, using fallback")
+            return candidates[0]["violation"]["id"]
+
+        # Validate that the ID actually exists in candidates
+        valid_ids = {v["violation"].get("id") for v in candidates}
+        if best_id in valid_ids:
+            logger.info(f"LLM confidently selected: {best_id} (confidence: {llm_selection.get('confidence', 'unknown')})")
+            return best_id
+        else:
+            logger.warning(f"LLM returned invalid ID: {best_id}. Available: {valid_ids}. Using top candidate.")
+            return candidates[0]["violation"]["id"]

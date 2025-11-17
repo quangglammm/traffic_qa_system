@@ -5,7 +5,7 @@ class IVectorStore(ABC):
     """Interface for vector store to perform semantic search"""
 
     @abstractmethod
-    def add_violations(self, violation_ids: List[str], embeddings: List[List[float]], descriptions: List[str]):
+    def add_documents(self, violation_ids: List[str], embeddings: List[List[float]], descriptions: List[str]):
         """
         Add violation embeddings to the vector store.
 

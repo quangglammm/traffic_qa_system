@@ -15,7 +15,7 @@ class OpenAICompatibleBackend(BaseLLMBackend):
         self,
         api_key: str,
         base_url: Optional[str] = None,
-        model_name: str = "gpt-oss-120b",
+        model_name: str = "Qwen3-32B",
     ):
         """
         Initialize OpenAI-compatible backend.
@@ -48,7 +48,7 @@ class OpenAICompatibleBackend(BaseLLMBackend):
                 max_tokens=max_length,
                 temperature=0.7,
             )
-            return response.choices[0].message.content.strip()
+            return response.choices[0].message.content
         except Exception as e:
             logger.error(f"Error generating text with OpenAI-compatible API: {e}")
             return ""
@@ -103,7 +103,7 @@ class HuggingFaceBackend(BaseLLMBackend):
             response = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
             # Remove the prompt from the response
             if prompt in response:
-                response = response.replace(prompt, "").strip()
+                response = response.replace(prompt, "")
             return response
         except Exception as e:
             logger.error(f"Error generating text with HuggingFace: {e}")
@@ -189,6 +189,8 @@ JSON:"""
 
         try:
             response = self._generate_text(parse_prompt, max_length=256)
+
+            logger.info(f"Response: {response}")
 
             # Try to extract JSON from response
             json_start = response.find("{")
@@ -285,108 +287,79 @@ JSON:"""
         )
 
     def generate_response(
-        self, violation_details: Dict[str, Any], parsed_query: ParsedQuery
+        self,
+        violation_details: Dict[str, Any],
+        parsed_query: ParsedQuery
     ) -> str:
         """
-        Generate natural language response from violation details.
-
-        Args:
-            violation_details: Dictionary containing violation, fine, legal_basis, supplementary
-            parsed_query: The parsed query information
-
-        Returns:
-            Natural language answer string with citations
+        Generate a natural, polished Vietnamese answer using the confirmed violation details.
+        
+        This is the FINAL user-facing response — clean, no technical jargon, no IDs.
         """
-        if not violation_details or not violation_details.get("violation"):
-            return "Không tìm thấy dữ liệu cho vi phạm này."
+        user_query = parsed_query.original_query or "Hành vi vi phạm giao thông"
 
-        violation = violation_details.get("violation", {})
-        fine = violation_details.get("fine", {})
-        legal_basis = violation_details.get("legal_basis", {})
-        supplementary = violation_details.get("supplementary", {})
+        # Extract clean data
+        v = violation_details.get("violation", {})
+        action = violation_details.get("action", "hành vi vi phạm").strip()
+        description = v.get("detailed_description", "").strip()
+        vehicle_type = v.get("vehicle_type", "")
+        vehicle_str = f" đối với {vehicle_type}" if vehicle_type else ""
 
-        # Build response based on intent
-        response_parts = []
+        # Fine
+        penalty = violation_details.get("penalty") or {}
+        fine_min = penalty.get("fine_min_vnd")
+        fine_max = penalty.get("fine_max_vnd")
+        fine_str = ""
+        if fine_min is not None and fine_max is not None:
+            fine_str = f"từ {fine_min:,} đến {fine_max:,} đồng".replace(",", ".")
+        elif fine_min is not None:
+            fine_str = f"{fine_min:,} đồng".replace(",", ".")
 
-        # Main answer
-        if parsed_query.intent == "find_penalty":
-            if fine and fine.get("min_amount") and fine.get("max_amount"):
-                min_fine = int(fine["min_amount"])
-                max_fine = int(fine["max_amount"])
-                response_parts.append(
-                    f"Hành vi {violation.get('description', '')} "
-                    f"({violation.get('action', '')}) sẽ bị phạt tiền từ "
-                    f"{min_fine:,} đến {max_fine:,} VNĐ."
-                )
-            else:
-                response_parts.append(
-                    f"Hành vi {violation.get('description', '')} "
-                    f"({violation.get('action', '')}) sẽ bị phạt tiền."
-                )
+        # Legal basis
+        law = violation_details.get("law_reference") or {}
+        law_parts = []
+        if law.get("point"): law_parts.append(f"Điểm {law['point']}")
+        if law.get("clause"): law_parts.append(f"Khoản {law['clause']}")
+        if law.get("article"): law_parts.append(f"Điều {law['article']}")
+        decree = law.get("decree", "168/2024/NĐ-CP")
+        law_parts.append(f"Nghị định {decree}")
+        law_citation = ", ".join(law_parts)
 
-        elif parsed_query.intent == "find_legal_basis":
-            response_parts.append(
-                f"Hành vi {violation.get('description', '')} "
-                f"({violation.get('action', '')}) được quy định tại:"
-            )
+        # Supplementary penalty
+        supp_text = ""
+        add_penalties = violation_details.get("additional_penalties", [])
+        if add_penalties:
+            main = add_penalties[0]
+            desc = main.get("description", "").strip()
+            if desc:
+                supp_text = f"\n\nNgoài phạt tiền, bạn còn có thể bị: {desc}"
 
-        elif parsed_query.intent == "find_supplementary":
-            if supplementary and supplementary.get("description"):
-                response_parts.append(
-                    f"Hành vi {violation.get('description', '')} "
-                    f"({violation.get('action', '')}) có hình phạt bổ sung:"
-                )
-            else:
-                response_parts.append(
-                    f"Hành vi {violation.get('description', '')} "
-                    f"({violation.get('action', '')}) không có hình phạt bổ sung."
-                )
+        prompt = f'''Người dùng hỏi: "{user_query}"
 
-        # Add legal basis citation
-        if legal_basis:
-            legal_parts = []
-            if legal_basis.get("point"):
-                legal_parts.append(f"Điểm {legal_basis['point']}")
-            if legal_basis.get("clause"):
-                legal_parts.append(f"Khoản {legal_basis['clause']}")
-            if legal_basis.get("article"):
-                legal_parts.append(f"Điều {legal_basis['article']}")
-            if legal_basis.get("decree"):
-                legal_parts.append(f"Nghị định {legal_basis['decree']}")
+    Thông tin vi phạm đã xác định:
+    - Hành vi: {action}
+    - Mô tả chi tiết: {description}
+    - Đối tượng: {vehicle_type or "mọi phương tiện"}
+    - Mức phạt tiền: {fine_str or "theo quy định"}
+    - Căn cứ pháp lý: {law_citation}
+    - Hình phạt bổ sung: {"có" if supp_text else "không có"}
 
-            if legal_parts:
-                response_parts.append(f"\nCăn cứ pháp lý: {', '.join(legal_parts)}.")
+    Yêu cầu:
+    - Trả lời tự nhiên, rõ ràng, lịch sự bằng tiếng Việt.
+    - Không nhắc đến ID, số thứ tự, độ tương đồng, hay hệ thống.
+    - Không nói "theo hệ thống", "theo dữ liệu", "tôi tìm thấy" — hãy nói như chuyên gia giao thông.
+    - Nếu có hình phạt bổ sung → nhắc rõ ràng.
+    - Dùng giọng điệu trung lập, chuyên nghiệp.
 
-        # Add supplementary penalty
-        if supplementary and supplementary.get("description"):
-            if parsed_query.intent != "find_supplementary":
-                response_parts.append(
-                    f"\nHình phạt bổ sung: {supplementary['description']}."
-                )
-            else:
-                response_parts.append(f" {supplementary['description']}.")
+    Trả lời trực tiếp:'''
 
-        # Add fine info if not main intent
-        if (
-            parsed_query.intent != "find_penalty"
-            and fine
-            and fine.get("min_amount")
-            and fine.get("max_amount")
-        ):
-            min_fine = int(fine["min_amount"])
-            max_fine = int(fine["max_amount"])
-            response_parts.append(
-                f"\nMức phạt tiền: từ {min_fine:,} đến {max_fine:,} VNĐ."
-            )
+        answer = self._generate_text(prompt, max_length=512).strip()
 
-        return (
-            "\n".join(response_parts)
-            if response_parts
-            else "Không có thông tin để trả lời."
-        )
+        # Final fallback if LLM fails
+        if not answer or len(answer) < 20:
+            answer = f"Hành vi {action}{vehicle_str} sẽ bị phạt tiền {fine_str} theo {law_citation}.{supp_text or ''}"
 
-        # In your LLM adapter (llm_adapter.py)
-
+        return answer.strip()
 
     def select_best_violation(
         self,
