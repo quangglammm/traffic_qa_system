@@ -1,0 +1,508 @@
+{
+  "total_tests": 50,
+  "correct": 44,
+  "incorrect": 6,
+  "accuracy": 88.0,
+  "results": [
+    {
+      "test_id": "TEST_001",
+      "question": "Chạy xe ô tô mà không để ý biển báo cấm thì bị phạt bao nhiêu tiền?",
+      "violation_id": "D168-A6-C1-Pa",
+      "correct": true,
+      "explanation": "Câu hỏi về việc chạy xe ô tô không để ý biển báo cấm liên quan trực tiếp tới hành vi 'Không chấp hành hiệu lệnh, chỉ dẫn của biển báo, vạch kẻ đường' trong thông tin vi phạm, và mức phạt được nêu là 400.000‑600.000 VNĐ.",
+      "source": "v3",
+      "canonical_action": "Không tuân thủ tín hiệu biển báo, vạch kẻ đường",
+      "penalty_info": "400_000 - 600_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_002",
+      "question": "Lái xe máy không đội mũ bảo hiểm thì phạt bao nhiêu?",
+      "violation_id": "D168-A7-C7-Ph",
+      "correct": false,
+      "explanation": "Câu hỏi hỏi về mức phạt khi lái xe máy không đội mũ bảo hiểm, trong khi thông tin vi phạm cung cấp liên quan đến hành vi vượt đèn đỏ/đèn vàng, không đề cập tới việc không đội mũ bảo hiểm.",
+      "source": "v3",
+      "canonical_action": "Vượt đèn đỏ, đèn vàng",
+      "penalty_info": "4_000_000 - 6_000_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_003",
+      "question": "Đỗ xe ô tô giữa đường không bật đèn khẩn cấp bị phạt thế nào?",
+      "violation_id": "D168-A6-C1-Pc",
+      "correct": true,
+      "explanation": "Câu hỏi đề cập tới việc đỗ xe giữa đường mà không bật đèn khẩn cấp, đúng với hành vi ‘Dừng xe, đỗ xe sai quy định’ và mô tả pháp lý về việc không báo hiệu bằng đèn khẩn cấp. Vì vậy câu hỏi phù hợp với thông tin vi phạm và mức phạt 400.000‑600.000 VNĐ.",
+      "source": "v3",
+      "canonical_action": "Dừng xe, đỗ xe sai quy định",
+      "penalty_info": "400_000 - 600_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_004",
+      "question": "Xe máy chạy vào đường cao tốc có bị phạt không, phạt bao nhiêu?",
+      "violation_id": "D168-A7-C7-Pb",
+      "correct": true,
+      "explanation": "Câu hỏi hỏi về việc xe máy chạy vào đường cao tốc và mức phạt, đúng với hành vi vi phạm 'Điều khiển xe đi vào đường cao tốc' và mức phạt 4‑6 triệu VNĐ được nêu trong thông tin.",
+      "source": "v3",
+      "canonical_action": "Đi sai phần đường, làn đường",
+      "penalty_info": "4_000_000 - 6_000_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_005",
+      "question": "Bấm còi ô tô lúc 11h đêm trong khu dân cư bị phạt bao nhiêu?",
+      "violation_id": "D168-A6-C1-Pđ",
+      "correct": true,
+      "explanation": "Câu hỏi hỏi mức phạt khi bấm còi ô tô vào lúc 23h (11h đêm) trong khu dân cư, đúng với hành vi vi phạm 'Sử dụng còi trong thời gian từ 22 giờ ngày hôm trước đến 05 giờ ngày hôm sau trong khu đông dân cư' và mức phạt được nêu là 400.000‑600.000 VNĐ.",
+      "source": "v3",
+      "canonical_action": "Bấm còi trong khu đô thị",
+      "penalty_info": "400_000 - 600_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_006",
+      "question": "Chở 3 người trên xe máy có bị phạt không?",
+      "violation_id": "D168-A7-C7-Pđ",
+      "correct": false,
+      "explanation": "Câu hỏi liên quan đến việc chở quá số người cho phép trên xe máy, còn thông tin vi phạm đề cập tới hành vi không nhường đường cho phương tiện ưu tiên. Hai nội dung vi phạm không giống nhau.",
+      "source": "v3",
+      "canonical_action": "Nhường đường sai quy định",
+      "penalty_info": "4_000_000 - 6_000_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_007",
+      "question": "Chuyển làn ô tô mà không bật xi-nhan thì phạt bao nhiêu?",
+      "violation_id": "D168-A6-C2-Pa",
+      "correct": true,
+      "explanation": "Câu hỏi hỏi mức phạt khi chuyển làn mà không bật xi‑nhan, đây là hành vi \"chuyển làn sai quy định\" – không có tín hiệu báo trước – nên phù hợp với thông tin vi phạm đã cung cấp.",
+      "source": "v3",
+      "canonical_action": "Chuyển làn sai quy định",
+      "penalty_info": "600_000 - 800_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_008",
+      "question": "Xe máy vượt đèn đỏ bị phạt bao nhiêu tiền hiện nay 2025?",
+      "violation_id": "D168-A7-C7-Pc",
+      "correct": true,
+      "explanation": "Câu hỏi hỏi mức phạt cho hành vi vượt đèn đỏ của xe máy, đúng với hành vi vi phạm và mức phạt 4‑6 triệu VNĐ được cung cấp.",
+      "source": "v3",
+      "canonical_action": "Vượt đèn đỏ, đèn vàng",
+      "penalty_info": "4_000_000 - 6_000_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_009",
+      "question": "Đỗ xe ô tô sát vỉa hè quá 25cm bị phạt không?",
+      "violation_id": "D168-A6-C3-Pe",
+      "correct": true,
+      "explanation": "Câu hỏi về việc đỗ xe ô tô cách vỉa hè hơn 0,25 m (25 cm) trực tiếp liên quan tới hành vi \"đỗ xe không sát lề đường, vỉa hè quá 0,25 m\" được nêu trong mô tả vi phạm.",
+      "source": "v3",
+      "canonical_action": "Dừng xe, đỗ xe sai quy định",
+      "penalty_info": "800_000 - 1_000_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_010",
+      "question": "Lái xe máy có nồng độ cồn chút xíu thôi có bị phạt nặng không?",
+      "violation_id": "D168-A7-C8-Pb",
+      "correct": true,
+      "explanation": "Câu hỏi đề cập đến việc lái xe máy khi có nồng độ cồn và mức phạt có thể nhận được, đúng với hành vi vi phạm \"vi phạm nồng độ cồn\" được mô tả trong thông tin.",
+      "source": "v3",
+      "canonical_action": "Vi phạm nồng độ cồn",
+      "penalty_info": "6_000_000 - 8_000_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_011",
+      "question": "Ô tô chạy quá tốc độ 7km/h thì phạt bao nhiêu?",
+      "violation_id": "D168-A6-C3-Pa",
+      "correct": true,
+      "explanation": "Câu hỏi hỏi về việc ô tô chạy quá tốc độ 7 km/h, nằm trong khoảng 5 km/h đến dưới 10 km/h được mô tả trong thông tin vi phạm, nên phù hợp.",
+      "source": "v3",
+      "canonical_action": "Bắn tốc độ",
+      "penalty_info": "800_000 - 1_000_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_012",
+      "question": "Xe máy lạng lách đánh võng trên đường bị phạt thế nào?",
+      "violation_id": "D168-A7-C9-Pa",
+      "correct": true,
+      "explanation": "Câu hỏi muốn biết mức phạt cho hành vi 'lạng lách, đánh võng' của xe máy, đúng với hành vi vi phạm và mức phạt được nêu trong thông tin cung cấp.",
+      "source": "v3",
+      "canonical_action": "Lạng lách, đánh võng",
+      "penalty_info": "8_000_000 - 10_000_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_013",
+      "question": "Không thắt dây an toàn khi lái ô tô bị phạt bao nhiêu?",
+      "violation_id": "D168-A6-C3-Pk",
+      "correct": true,
+      "explanation": "Câu hỏi yêu cầu mức phạt cho hành vi không thắt dây an toàn khi lái ô tô, đúng với hành vi vi phạm và mức phạt được cung cấp (800.000‑1.000.000 VNĐ).",
+      "source": "v3",
+      "canonical_action": "Không thắt dây an toàn",
+      "penalty_info": "800_000 - 1_000_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_014",
+      "question": "Rú ga nẹt pô xe máy trong khu dân cư lúc nửa đêm thì sao?",
+      "violation_id": "D168-A7-C9-Pk",
+      "correct": true,
+      "explanation": "Câu hỏi đề cập tới việc rú ga (nẹt pô) xe máy trong khu dân cư, ngay cả vào lúc nửa đêm, đây chính là hành vi sử dụng còi/rú ga liên tục trong khu dân cư được liệt kê trong mô tả vi phạm.",
+      "source": "v3",
+      "canonical_action": "Đi ngược chiều",
+      "penalty_info": "8_000_000 - 10_000_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_015",
+      "question": "Đỗ xe ô tô che khuất đèn giao thông bị phạt mức nào?",
+      "violation_id": "D168-A6-C3-Pđ",
+      "correct": true,
+      "explanation": "Câu hỏi hỏi về việc đỗ xe ô tô che khuất đèn giao thông, đúng với hành vi vi phạm 'che khuất biển báo hiệu đường bộ, đèn tín hiệu giao thông' trong thông tin và mức phạt được liệt kê (800.000‑1.000.000 VNĐ).",
+      "source": "v3",
+      "canonical_action": "Dừng xe, đỗ xe sai quy định",
+      "penalty_info": "800_000 - 1_000_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_016",
+      "question": "Lái xe máy mà trong người có ma túy thì bị phạt ra sao?",
+      "violation_id": "D168-A7-C9-Pe",
+      "correct": true,
+      "explanation": "Câu hỏi về việc lái xe máy trong người có ma túy trực tiếp liên quan đến hành vi 'điều khiển xe trên đường mà trong cơ thể có chất ma túy', là nội dung của vi phạm 'tàng trữ chất ma túy' được mô tả trong thông tin.",
+      "source": "v3",
+      "canonical_action": "Tàng trữ chất ma tuý",
+      "penalty_info": "8_000_000 - 10_000_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_017",
+      "question": "Chở người ngồi sau ôm eo người lái có bị phạt không?",
+      "violation_id": "D168-A6-C3-Pl",
+      "correct": true,
+      "explanation": "Câu hỏi đề cập đến việc người ngồi sau ôm eo người lái, tức là không thắt dây an toàn, nên liên quan trực tiếp tới hành vi vi phạm 'Không thắt dây an toàn' được mô tả trong thông tin.",
+      "source": "v3",
+      "canonical_action": "Không thắt dây an toàn",
+      "penalty_info": "800_000 - 1_000_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_018",
+      "question": "Xe máy chạy quá tốc độ hơn 20km/h bị phạt bao nhiêu?",
+      "violation_id": "D168-A7-C8-Pa",
+      "correct": true,
+      "explanation": "Câu hỏi hỏi mức phạt khi xe máy chạy quá tốc độ hơn 20 km/h, đúng với hành vi vi phạm 'Điều khiển xe chạy quá tốc độ quy định trên 20 km/h' và mức phạt 6‑8 triệu đồng được nêu trong thông tin.",
+      "source": "v3",
+      "canonical_action": "Bắn tốc độ",
+      "penalty_info": "6_000_000 - 8_000_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_019",
+      "question": "Kéo xe khác bằng ô tô mà không gắn biển báo hiệu thì phạt thế nào?",
+      "violation_id": "D168-A6-C1-Pd",
+      "correct": true,
+      "explanation": "Câu hỏi hỏi về việc kéo xe khác bằng ô tô mà không gắn biển báo hiệu, đúng với hành vi vi phạm 'Không có biển báo hiệu' và mức phạt 400.000‑600.000 VNĐ được nêu trong thông tin vi phạm.",
+      "source": "v3",
+      "canonical_action": "Không có biển báo hiệu",
+      "penalty_info": "400_000 - 600_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_020",
+      "question": "Gây tai nạn xe máy rồi bỏ chạy không cứu người bị phạt bao nhiêu?",
+      "violation_id": "D168-A7-C9-Pc",
+      "correct": true,
+      "explanation": "Câu hỏi của người dùng hỏi về mức phạt khi gây tai nạn xe máy rồi bỏ chạy và không cứu người, đúng với hành vi vi phạm 'gây tai nạn giao thông' và mức phạt 8‑10 triệu đồng được nêu trong thông tin.",
+      "source": "v3",
+      "canonical_action": "Gây tai nạn giao thông",
+      "penalty_info": "8_000_000 - 10_000_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_021",
+      "question": "Chở bé dưới 10 tuổi ngồi ghế trước ô tô có bị phạt không?",
+      "violation_id": "D168-A6-C3-Pm",
+      "correct": true,
+      "explanation": "Câu hỏi hỏi về việc chở bé dưới 10 tuổi ngồi ghế trước có bị phạt, đúng với hành vi vi phạm 'chở trẻ em không đúng quy định' mô tả việc trẻ dưới 10 tuổi/nghĩa cao <1,35 m ngồi cùng hàng ghế với người lái xe.",
+      "source": "v3",
+      "canonical_action": "Chở trẻ em không đúng quy định",
+      "penalty_info": "800_000 - 1_000_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_022",
+      "question": "Không chấp hành hiệu lệnh của CSGT khi lái xe máy thì phạt nặng không?",
+      "violation_id": "D168-A7-C7-Pd",
+      "correct": true,
+      "explanation": "Câu hỏi đề cập tới việc không chấp hành hiệu lệnh của CSGT khi lái xe máy, đúng với hành vi vi phạm 'Không chấp hành hướng dẫn của người điều khiển giao thông' và mức phạt 4‑6 triệu đồng được nêu trong thông tin.",
+      "source": "v3",
+      "canonical_action": "Không chấp hành hướng dẫn của người điều khiển giao thông",
+      "penalty_info": "4_000_000 - 6_000_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_023",
+      "question": "Ô tô đỗ trên miệng cống thoát nước bị phạt bao nhiêu tiền?",
+      "violation_id": "D168-A6-C3-Pe",
+      "correct": true,
+      "explanation": "Câu hỏi hỏi mức phạt khi ô tô đỗ trên miệng cống thoát nước, đúng với hành vi vi phạm 'đỗ xe trên miệng cống thoát nước' và mức phạt được liệt kê là 800.000‑1.000.000 VNĐ.",
+      "source": "v3",
+      "canonical_action": "Dừng xe, đỗ xe sai quy định",
+      "penalty_info": "800_000 - 1_000_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_024",
+      "question": "Uống rượu bia lái xe máy thổi nồng độ cồn vượt quá 0.4mg/l thì bị gì?",
+      "violation_id": "D168-A7-C9-Pd",
+      "correct": true,
+      "explanation": "Câu hỏi hỏi về hậu quả khi lái xe máy và nồng độ cồn thổi vượt quá 0.4 mg/L, đúng với hành vi vi phạm nồng độ cồn và mức phạt 8‑10 triệu đồng được mô tả trong thông tin.",
+      "source": "v3",
+      "canonical_action": "Vi phạm nồng độ cồn",
+      "penalty_info": "8_000_000 - 10_000_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_025",
+      "question": "Quên bật đèn pha ô tô lúc trời mưa to tầm nhìn kém bị phạt không?",
+      "violation_id": "D168-A6-C3-Pg",
+      "correct": true,
+      "explanation": "Câu hỏi đề cập tới việc quên bật đèn pha khi trời mưa và tầm nhìn kém, đúng với hành vi \"Sử dụng đèn chiếu sáng sai quy định\" được mô tả trong thông tin vi phạm.",
+      "source": "v3",
+      "canonical_action": "Sử dụng đèn chiếu sáng sai quy định",
+      "penalty_info": "800_000 - 1_000_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_026",
+      "question": "Từ chối thổi nồng độ cồn khi bị CSGT yêu cầu trên xe máy thì sao?",
+      "violation_id": "D168-A7-C9-Pđ",
+      "correct": true,
+      "explanation": "Câu hỏi đề cập đến việc từ chối thổi nồng độ cồn khi CSGT yêu cầu, đúng với hành vi ‘không chấp hành yêu cầu kiểm tra về nồng độ cồn của người thi hành công vụ’ được liệt kê trong thông tin vi phạm.",
+      "source": "v3",
+      "canonical_action": "Vi phạm nồng độ cồn",
+      "penalty_info": "8_000_000 - 10_000_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_027",
+      "question": "Chở người ngồi sau xe máy vòng tay qua người lái để điều khiển bị phạt thế nào?",
+      "violation_id": "D168-A7-C9-Ph",
+      "correct": true,
+      "explanation": "Câu hỏi hỏi mức phạt khi chở người ngồi sau xe máy vòng tay qua người lái để điều khiển, đúng với hành vi vi phạm 'Chở người sai quy định' mô tả là 'Ngồi phía sau vòng tay qua người ngồi trước để điều khiển xe'.",
+      "source": "v3",
+      "canonical_action": "Chở người sai quy định",
+      "penalty_info": "8_000_000 - 10_000_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_028",
+      "question": "Ô tô chạy trong hầm mà bật đèn chiếu xa bị phạt bao nhiêu?",
+      "violation_id": "D168-A6-C3-Pb",
+      "correct": false,
+      "explanation": "Câu hỏi hỏi về việc bật đèn chiếu xa trong hầm, trong khi thông tin vi phạm chỉ đề cập đến việc bấm còi và sử dụng đèn chiếu xa ở khu đô thị, khu dân cư hoặc khi gặp người đi bộ/xe ngược chiều. Không liên quan tới hành vi lái xe trong hầm.",
+      "source": "v3",
+      "canonical_action": "Bấm còi trong khu đô thị",
+      "penalty_info": "800_000 - 1_000_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_029",
+      "question": "Nhóm 3-4 xe máy chạy thành đoàn rú ga gây cản trở giao thông bị phạt ra sao?",
+      "violation_id": "D168-A7-C9-Pi",
+      "correct": true,
+      "explanation": "Câu hỏi đề cập đến việc nhóm 3-4 xe máy chạy thành đoàn, rú ga và gây cản trở giao thông, đúng với hành vi ‘điều khiển xe thành đoàn gầy cản trở giao thông’ trong thông tin vi phạm và yêu cầu mức phạt tương ứng.",
+      "source": "v3",
+      "canonical_action": "Điều khiển xe sai quy định",
+      "penalty_info": "8_000_000 - 10_000_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_030",
+      "question": "Không nhường đường cho xe cứu thương đang hú còi trên xe máy thì phạt bao nhiêu?",
+      "violation_id": "D168-A7-C7-Pđ",
+      "correct": true,
+      "explanation": "Câu hỏi đề cập tới việc không nhường đường cho xe cứu thương (được quyền ưu tiên) khi đang hú còi, đúng với hành vi vi phạm 'Nhường đường sai quy định' và mức phạt 4‑6 triệu đồng được nêu trong thông tin.",
+      "source": "v3",
+      "canonical_action": "Nhường đường sai quy định",
+      "penalty_info": "4_000_000 - 6_000_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_031",
+      "question": "Đỗ ô tô ngược chiều với dòng xe đang lưu thông bị phạt mức nào?",
+      "violation_id": "D168-A6-C2-Pd",
+      "correct": true,
+      "explanation": "Câu hỏi hỏi mức phạt khi đỗ ô tô ngược chiều với dòng xe, đúng với hành vi ‘đỗ xe ngược với chiều lưu thông của làn đường’ trong thông tin vi phạm, do đó phù hợp.",
+      "source": "v3",
+      "canonical_action": "Dừng xe, đỗ xe sai quy định",
+      "penalty_info": "600_000 - 800_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_032",
+      "question": "Gây tai nạn giao thông vì chạy quá tốc độ trên xe máy thì phạt thế nào?",
+      "violation_id": "D168-A7-C10-Pa",
+      "correct": true,
+      "explanation": "Câu hỏi hỏi về việc gây tai nạn giao thông do chạy quá tốc độ trên xe máy và mức phạt cho hành vi này, đúng với mô tả vi phạm \"điều khiển xe chạy quá tốc độ quy định gây tai nạn giao thông\" và mức phạt 10‑14 triệu VNĐ được cung cấp.",
+      "source": "v3",
+      "canonical_action": "Gây tai nạn giao thông",
+      "penalty_info": "10_000_000 - 14_000_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_033",
+      "question": "Ô tô kéo xe khác mà chở thêm người trên xe được kéo bị phạt bao nhiêu?",
+      "violation_id": "D168-A6-C3-Pi",
+      "correct": true,
+      "explanation": "Câu hỏi hỏi mức phạt khi ô tô kéo xe khác và chở người trên xe được kéo, đúng với hành vi vi phạm 'Chở người trên xe được kéo, trừ người điều khiển' và mức phạt 800.000‑1.000.000 VNĐ.",
+      "source": "v3",
+      "canonical_action": "Kéo xe sai quy định",
+      "penalty_info": "800_000 - 1_000_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_034",
+      "question": "Chuyển hướng xe ô tô mà không bật xi-nhan và không giảm tốc độ bị gì?",
+      "violation_id": "D168-A6-C3-Pc",
+      "correct": true,
+      "explanation": "Câu hỏi hỏi về việc chuyển hướng mà không bật xi‑nhan và không giảm tốc độ, đúng với mô tả vi phạm ‘Chuyển hướng sai quy định’ – không có tín hiệu báo hướng rẽ và không giảm tốc độ.",
+      "source": "v3",
+      "canonical_action": "Chuyển hướng sai quy định",
+      "penalty_info": "800_000 - 1_000_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_035",
+      "question": "Từ chối kiểm tra ma túy khi bị CSGT yêu cầu trên xe máy thì phạt ra sao?",
+      "violation_id": "D168-A7-C9-Pg",
+      "correct": true,
+      "explanation": "Câu hỏi hỏi về việc từ chối kiểm tra ma túy khi CSGT yêu cầu, đúng với mô tả pháp lý \"Không chấp hành yêu cầu kiểm tra về chất ma túy...\" trong thông tin vi phạm, vì vậy nó phù hợp với hành vi vi phạm được cung cấp.",
+      "source": "v3",
+      "canonical_action": "Tàng trữ chất ma tuý",
+      "penalty_info": "8_000_000 - 10_000_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_036",
+      "question": "Đỗ xe ô tô trên phần đường dành cho người đi bộ qua đường bị phạt bao nhiêu?",
+      "violation_id": "D168-A6-C2-Pđ",
+      "correct": true,
+      "explanation": "Câu hỏi hỏi mức phạt khi đỗ xe ô tô trên phần đường dành cho người đi bộ qua đường, đúng với hành vi vi phạm \"dừng xe, đỗ xe trên phần đường dành cho người đi bộ qua đường\" trong thông tin cung cấp.",
+      "source": "v3",
+      "canonical_action": "Dừng xe, đỗ xe sai quy định",
+      "penalty_info": "600_000 - 800_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_037",
+      "question": "Chạy xe máy thành nhóm quá tốc độ để đua bị phạt thế nào?",
+      "violation_id": "D168-A7-C9-Pb",
+      "correct": true,
+      "explanation": "Câu hỏi đề cập đến việc chạy xe máy thành nhóm và vượt quá tốc độ để đua, đúng với hành vi vi phạm \"đua xe trái phép\" mô tả trong thông tin và mức phạt 8‑10 triệu VNĐ.",
+      "source": "v3",
+      "canonical_action": "Đua xe trái phép",
+      "penalty_info": "8_000_000 - 10_000_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_038",
+      "question": "Ô tô dừng xe trên đường ray tàu hỏa bị phạt mức nào?",
+      "violation_id": "D168-A6-C3-Pd",
+      "correct": true,
+      "explanation": "Câu hỏi hỏi mức phạt khi ô tô dừng trên đường ray, đúng với hành vi vi phạm 'dừng xe, đỗ xe sai quy định' tại khu vực bảo vệ công trình đường sắt và mức phạt 800.000‑1.000.000 VNĐ được nêu trong thông tin.",
+      "source": "v3",
+      "canonical_action": "Dừng xe, đỗ xe sai quy định",
+      "penalty_info": "800_000 - 1_000_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_039",
+      "question": "Chở quá người trên buồng lái ô tô (ví dụ xe 5 chỗ chở 6 người) bị phạt bao nhiêu?",
+      "violation_id": "D168-A6-C2-Pb",
+      "correct": true,
+      "explanation": "Câu hỏi hỏi mức phạt khi chở quá người trên buồng lái, đúng với hành vi vi phạm 'Chở người trên buồng lái quá số lượng quy định' được mô tả trong thông tin.",
+      "source": "v3",
+      "canonical_action": "Chở quá số người quy định",
+      "penalty_info": "600_000 - 800_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_040",
+      "question": "Không chấp hành đèn tín hiệu giao thông khi lái ô tô bị phạt ra sao?",
+      "violation_id": "D168-A6-C1-Pa",
+      "correct": false,
+      "explanation": "Câu hỏi hỏi về việc không chấp hành đèn tín hiệu giao thông, còn thông tin vi phạm đề cập tới việc không tuân thủ biển báo, vạch kẻ đường và hiệu lệnh của biển báo, không bao gồm đèn tín hiệu. Do đó câu hỏi không khớp với hành vi vi phạm đã cho.",
+      "source": "v3",
+      "canonical_action": "Không tuân thủ tín hiệu biển báo, vạch kẻ đường",
+      "penalty_info": "400_000 - 600_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_041",
+      "question": "Đi xe máy mà trong máu có chất ma túy thì bị xử lý thế nào?",
+      "violation_id": "D168-A7-C9-Pe",
+      "correct": true,
+      "explanation": "Câu hỏi về việc lái xe máy khi trong máu có chất ma túy liên quan trực tiếp tới mô tả vi phạm 'điều khiển xe trên đường mà trong cơ thể có chất ma túy hoặc chất kích thích khác', do đó phù hợp với thông tin vi phạm được cung cấp.",
+      "source": "v3",
+      "canonical_action": "Tàng trữ chất ma tuý",
+      "penalty_info": "8_000_000 - 10_000_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_042",
+      "question": "Ô tô đỗ xe trên dốc mà không chèn bánh bị phạt bao nhiêu tiền?",
+      "violation_id": "D168-A6-C2-Pd",
+      "correct": true,
+      "explanation": "Câu hỏi hỏi mức phạt khi ô tô đỗ trên dốc không chèn bánh, đúng với hành vi vi phạm 'đỗ xe trên dốc không chèn bánh' và mức phạt 600.000‑800.000 VNĐ được liệt kê trong thông tin.",
+      "source": "v3",
+      "canonical_action": "Dừng xe, đỗ xe sai quy định",
+      "penalty_info": "600_000 - 800_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_043",
+      "question": "Không tuân thủ hiệu lệnh của CSGT khi lái ô tô thì phạt nặng không?",
+      "violation_id": "D168-A6-C1-Pa",
+      "correct": false,
+      "explanation": "Câu hỏi hỏi về việc không tuân thủ lệnh của CSGT, còn thông tin vi phạm đề cập đến không chấp hành tín hiệu biển báo, vạch kẻ đường. Hai hành vi này khác nhau, nên câu hỏi không liên quan tới thông tin vi phạm đã cho.",
+      "source": "v3",
+      "canonical_action": "Không tuân thủ tín hiệu biển báo, vạch kẻ đường",
+      "penalty_info": "400_000 - 600_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_044",
+      "question": "Lái xe máy say xỉn thổi nồng độ cồn cao nhất thì bị tước bằng bao lâu?",
+      "violation_id": "D168-A7-C9-Pd",
+      "correct": false,
+      "explanation": "Câu hỏi yêu cầu thời gian tước bằng khi lái xe máy say xỉn với nồng độ cồn cao nhất, nhưng thông tin vi phạm chỉ nêu mức nồng độ cồn và mức phạt tiền (8‑10 triệu VNĐ) mà không đề cập tới thời gian tước bằng. Do đó câu hỏi không khớp với thông tin vi phạm được cung cấp.",
+      "source": "v3",
+      "canonical_action": "Vi phạm nồng độ cồn",
+      "penalty_info": "8_000_000 - 10_000_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_045",
+      "question": "Đỗ xe ô tô ngay trước cổng cơ quan nhà nước bị phạt thế nào?",
+      "violation_id": "D168-A6-C3-Pđ",
+      "correct": true,
+      "explanation": "Câu hỏi hỏi về việc đỗ xe ô tô ngay trước cổng cơ quan nhà nước, đây là hành vi nằm trong danh mục \"đỗ xe trước cổng hoặc trong phạm vi 05 m hai bên cống trụ sở cơ quan, tổ chức có bố trí đường cho xe ra, vào\" được mô tả trong thông tin vi phạm.",
+      "source": "v3",
+      "canonical_action": "Dừng xe, đỗ xe sai quy định",
+      "penalty_info": "800_000 - 1_000_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_046",
+      "question": "Chạy xe máy nhóm đông gây cản trở giao thông mà không có phép thì sao?",
+      "violation_id": "D168-A7-C9-Pi",
+      "correct": true,
+      "explanation": "Câu hỏi đề cập đến việc chạy xe máy nhóm đông gây cản trở giao thông mà không có giấy phép, đúng với hành vi 'Điều khiển xe thành đoàn gầy cản trở giao thông, trừ trường hợp được cơ quan có thẩm quyền cấp phép' và mức phạt được nêu trong thông tin vi phạm.",
+      "source": "v3",
+      "canonical_action": "Điều khiển xe sai quy định",
+      "penalty_info": "8_000_000 - 10_000_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_047",
+      "question": "Ô tô kéo rơ-moóc mà không nối chắc chắn bị phạt bao nhiêu?",
+      "violation_id": "D168-A6-C3-Ph",
+      "correct": true,
+      "explanation": "Câu hỏi hỏi mức phạt khi ô tô kéo rơ-moóc mà không nối chắc chắn, đúng với hành vi vi phạm 'không nối chắc chắn, an toàn giữa xe kéo và xe được kéo' và mức phạt 800.000‑1.000.000 VNĐ được nêu trong thông tin.",
+      "source": "v3",
+      "canonical_action": "Kéo xe sai quy định",
+      "penalty_info": "800_000 - 1_000_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_048",
+      "question": "Không nhường đường ở ngã tư khi lái ô tô bị phạt mức nào?",
+      "violation_id": "D168-A6-C2-Pc",
+      "correct": true,
+      "explanation": "Câu hỏi hỏi mức phạt cho hành vi không nhường đường ở ngã tư khi lái ô tô, đúng với hành vi vi phạm 'Nhường đường sai quy định' và mức phạt 600.000‑800.000 VNĐ được nêu trong thông tin.",
+      "source": "v3",
+      "canonical_action": "Nhường đường sai quy định",
+      "penalty_info": "600_000 - 800_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_049",
+      "question": "Lái xe máy quẹt chân chống xuống đường khi đang chạy bị phạt ra sao?",
+      "violation_id": "D168-A7-C9-Pa",
+      "correct": true,
+      "explanation": "Câu hỏi hỏi về việc bị phạt khi lái xe máy quẹt chân chống xuống đường khi đang chạy, đúng với hành vi vi phạm 'lạng lách, đánh võng' và mô tả pháp lý về việc sử dụng chân chống quét xuống đường khi xe đang chạy.",
+      "source": "v3",
+      "canonical_action": "Lạng lách, đánh võng",
+      "penalty_info": "8_000_000 - 10_000_000 VNĐ"
+    },
+    {
+      "test_id": "TEST_050",
+      "question": "Gây tai nạn rồi bỏ trốn không trình báo công an khi lái xe máy thì phạt thế nào?",
+      "violation_id": "D168-A7-C9-Pc",
+      "correct": true,
+      "explanation": "Câu hỏi đề cập tới việc gây tai nạn rồi bỏ trốn, không dừng lại và không trình báo công an – đúng với hành vi vi phạm và mức phạt đã nêu trong thông tin.",
+      "source": "v3",
+      "canonical_action": "Gây tai nạn giao thông",
+      "penalty_info": "8_000_000 - 10_000_000 VNĐ"
+    }
+  ]
+}
