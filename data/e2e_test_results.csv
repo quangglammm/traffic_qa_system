@@ -1,0 +1,51 @@
+test_id,question,expected_violation_id,retrieved_violation_id,exact_match,expected_rank,expected_similarity,response_time_seconds
+TEST_001,Chạy xe ô tô mà không để ý biển báo cấm thì bị phạt bao nhiêu tiền?,D168-A6-C1-Pa,,False,,,5.11
+TEST_002,Lái xe máy không đội mũ bảo hiểm thì phạt bao nhiêu?,D168-A7-C2-Ph,D168-A7-C2-Ph,True,2,0.5653,8.52
+TEST_003,Đỗ xe ô tô giữa đường không bật đèn khẩn cấp bị phạt thế nào?,D168-A6-C1-Pc,D168-A6-C1-Pc,True,1,0.5229,9.53
+TEST_004,"Xe máy chạy vào đường cao tốc có bị phạt không, phạt bao nhiêu?",D168-A7-C7-Pb,,False,,,5.08
+TEST_005,Bấm còi ô tô lúc 11h đêm trong khu dân cư bị phạt bao nhiêu?,D168-A6-C1-Pđ,D168-A6-C3-Pb,False,1,0.6396,12.12
+TEST_006,Chở 3 người trên xe máy có bị phạt không?,D168-A7-C3-Pb,D168-A7-C3-Pb,True,2,0.599,8.64
+TEST_007,Chuyển làn ô tô mà không bật xi-nhan thì phạt bao nhiêu?,D168-A6-C2-Pa,,False,,,5.48
+TEST_008,Xe máy vượt đèn đỏ bị phạt bao nhiêu tiền hiện nay 2025?,D168-A7-C7-Pc,D168-A7-C7-Pc,True,2,0.5193,8.31
+TEST_009,Đỗ xe ô tô sát vỉa hè quá 25cm bị phạt không?,D168-A6-C3-Pe,,False,,,6.18
+TEST_010,Lái xe máy có nồng độ cồn chút xíu thôi có bị phạt nặng không?,D168-A7-C8-Pb,D168-A7-C6-Pa,False,1,0.5153,10.62
+TEST_011,Ô tô chạy quá tốc độ 7km/h thì phạt bao nhiêu?,D168-A6-C3-Pa,D168-A6-C7-Pa,False,4,0.5232,13.34
+TEST_012,Xe máy lạng lách đánh võng trên đường bị phạt thế nào?,D168-A7-C9-Pa,D168-A7-C9-Pa,True,1,0.6331,9.95
+TEST_013,Không thắt dây an toàn khi lái ô tô bị phạt bao nhiêu?,D168-A6-C3-Pk,D168-A6-C3-Pl,False,2,0.6347,9.71
+TEST_014,Rú ga nẹt pô xe máy trong khu dân cư lúc nửa đêm thì sao?,D168-A7-C9-Pk,,False,,,5.0
+TEST_015,Đỗ xe ô tô che khuất đèn giao thông bị phạt mức nào?,D168-A6-C3-Pđ,,False,,,4.22
+TEST_016,Lái xe máy mà trong người có ma túy thì bị phạt ra sao?,D168-A7-C9-Pe,,False,,,3.71
+TEST_017,Chở người ngồi sau ôm eo người lái có bị phạt không?,D168-A6-C3-Pl,D168-A7-C9-Ph,False,,,11.03
+TEST_018,Xe máy chạy quá tốc độ hơn 20km/h bị phạt bao nhiêu?,D168-A7-C8-Pa,D168-A7-C8-Pa,True,1,0.5874,10.17
+TEST_019,Kéo xe khác bằng ô tô mà không gắn biển báo hiệu thì phạt thế nào?,D168-A6-C1-Pd,D168-A6-C1-Pd,True,1,0.5319,10.36
+TEST_020,Gây tai nạn xe máy rồi bỏ chạy không cứu người bị phạt bao nhiêu?,D168-A7-C9-Pc,,False,1,0.531,5.46
+TEST_021,Chở bé dưới 10 tuổi ngồi ghế trước ô tô có bị phạt không?,D168-A6-C3-Pm,,False,2,0.5073,5.55
+TEST_022,Không chấp hành hiệu lệnh của CSGT khi lái xe máy thì phạt nặng không?,D168-A7-C7-Pd,D168-A7-C7-Pd,True,2,0.5848,10.36
+TEST_023,Ô tô đỗ trên miệng cống thoát nước bị phạt bao nhiêu tiền?,D168-A6-C3-Pe,,False,,,4.95
+TEST_024,Uống rượu bia lái xe máy thổi nồng độ cồn vượt quá 0.4mg/l thì bị gì?,D168-A7-C9-Pd,,False,3,0.5469,5.07
+TEST_025,Quên bật đèn pha ô tô lúc trời mưa to tầm nhìn kém bị phạt không?,D168-A6-C3-Pg,,False,,,5.75
+TEST_026,Từ chối thổi nồng độ cồn khi bị CSGT yêu cầu trên xe máy thì sao?,D168-A7-C9-Pđ,,False,,,6.01
+TEST_027,Chở người ngồi sau xe máy vòng tay qua người lái để điều khiển bị phạt thế nào?,D168-A7-C9-Ph,D168-A7-C9-Ph,True,1,0.6466,9.71
+TEST_028,Ô tô chạy trong hầm mà bật đèn chiếu xa bị phạt bao nhiêu?,D100-A6-C3-Pm,,False,,,5.74
+TEST_029,Nhóm 3-4 xe máy chạy thành đoàn rú ga gây cản trở giao thông bị phạt ra sao?,D168-A7-C9-Pi,,False,,,5.13
+TEST_030,Không nhường đường cho xe cứu thương đang hú còi trên xe máy thì phạt bao nhiêu?,D168-A7-C7-Pđ,,False,,,5.62
+TEST_031,Đỗ ô tô ngược chiều với dòng xe đang lưu thông bị phạt mức nào?,D168-A6-C2-Pd,,False,,,5.79
+TEST_032,Gây tai nạn giao thông vì chạy quá tốc độ trên xe máy thì phạt thế nào?,D168-A7-C10-Pa,,False,,,3.8
+TEST_033,Ô tô kéo xe khác mà chở thêm người trên xe được kéo bị phạt bao nhiêu?,D168-A6-C3-Pi,D168-A6-C3-Pi,True,1,0.5549,11.17
+TEST_034,Chuyển hướng xe ô tô mà không bật xi-nhan và không giảm tốc độ bị gì?,D168-A6-C3-Pc,,False,,,5.45
+TEST_035,Từ chối kiểm tra ma túy khi bị CSGT yêu cầu trên xe máy thì phạt ra sao?,D168-A7-C9-Pg,,False,,,4.34
+TEST_036,Đỗ xe ô tô trên phần đường dành cho người đi bộ qua đường bị phạt bao nhiêu?,D168-A6-C2-Pđ,,False,,,5.78
+TEST_037,Chạy xe máy thành nhóm quá tốc độ để đua bị phạt thế nào?,D168-A7-C9-Pb,D168-A7-C9-Pb,True,1,0.5706,8.61
+TEST_038,Ô tô dừng xe trên đường ray tàu hỏa bị phạt mức nào?,D168-A6-C3-Pd,,False,,,4.69
+TEST_039,Chở quá người trên buồng lái ô tô (ví dụ xe 5 chỗ chở 6 người) bị phạt bao nhiêu?,D168-A6-C2-Pb,D168-A6-C2-Pb,True,1,0.6451,10.84
+TEST_040,Không chấp hành đèn tín hiệu giao thông khi lái ô tô bị phạt ra sao?,D168-A6-C9-Pb,D168-A6-C9-Pb,True,1,0.6187,12.4
+TEST_041,Đi xe máy mà trong máu có chất ma túy thì bị xử lý thế nào?,D168-A7-C9-Pe,,False,,,4.8
+TEST_042,Ô tô đỗ xe trên dốc mà không chèn bánh bị phạt bao nhiêu tiền?,D168-A6-C2-Pd,,False,,,5.73
+TEST_043,Không tuân thủ hiệu lệnh của CSGT khi lái ô tô thì phạt nặng không?,D168-A6-C9-Pc,D168-A6-C9-Pc,True,4,0.5331,10.62
+TEST_044,Lái xe máy say xỉn thổi nồng độ cồn cao nhất thì bị tước bằng bao lâu?,D100-A6-C8-Pe,,False,,,6.74
+TEST_045,Đỗ xe ô tô ngay trước cổng cơ quan nhà nước bị phạt thế nào?,D168-A6-C3-Pđ,,False,,,4.34
+TEST_046,Chạy xe máy nhóm đông gây cản trở giao thông mà không có phép thì sao?,D168-A7-C9-Pi,D168-A7-C9-Pi,True,2,0.5249,11.28
+TEST_047,Ô tô kéo rơ-moóc mà không nối chắc chắn bị phạt bao nhiêu?,D168-A6-C3-Ph,,False,,,5.23
+TEST_048,Không nhường đường ở ngã tư khi lái ô tô bị phạt mức nào?,D168-A6-C2-Pc,,False,,,4.39
+TEST_049,Lái xe máy quẹt chân chống xuống đường khi đang chạy bị phạt ra sao?,D168-A7-C9-Pa,,False,,,5.73
+TEST_050,Gây tai nạn rồi bỏ trốn không trình báo công an khi lái xe máy thì phạt thế nào?,D168-A7-C9-Pc,D168-A7-C9-Pc,True,1,0.531,10.71

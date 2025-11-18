@@ -1,0 +1,1509 @@
+{
+  "test_info": {
+    "timestamp": "2025-11-18T00:13:14.473852",
+    "total_tests": 50,
+    "test_file": "/home/tungthanh/Master/Cong nghe tri thuc/Project/traffic_qa_system/data/violations_test.json"
+  },
+  "overall_metrics": {
+    "exact_match_accuracy": 32.0,
+    "exact_matches": 16,
+    "retrieval_success_rate": 46.0,
+    "retrieval_successes": 23,
+    "avg_response_time_seconds": 7.38,
+    "total_time_seconds": 368.87
+  },
+  "retrieval_metrics": {
+    "mean_reciprocal_rank": 0.3467,
+    "recall_at_1": 26.0,
+    "recall_at_3": 42.0,
+    "recall_at_5": 46.0
+  },
+  "results": [
+    {
+      "test_id": "TEST_001",
+      "question": "Chạy xe ô tô mà không để ý biển báo cấm thì bị phạt bao nhiêu tiền?",
+      "expected_violation_id": "D168-A6-C1-Pa",
+      "retrieved_violation_id": null,
+      "exact_match": false,
+      "response_time_seconds": 5.11,
+      "answer": "Hiện tại tôi không tìm thấy quy định nào phù hợp với mô tả của bạn. Bạn có thể thử diễn đạt lại không ạ?",
+      "citation": "",
+      "fine": null,
+      "legal_basis": null,
+      "retrieval_metrics": {
+        "expected_in_candidates": false,
+        "expected_rank": null,
+        "expected_similarity": null,
+        "total_candidates": 0,
+        "top_5_candidates": []
+      }
+    },
+    {
+      "test_id": "TEST_002",
+      "question": "Lái xe máy không đội mũ bảo hiểm thì phạt bao nhiêu?",
+      "expected_violation_id": "D168-A7-C2-Ph",
+      "retrieved_violation_id": "D168-A7-C2-Ph",
+      "exact_match": true,
+      "response_time_seconds": 8.52,
+      "answer": "Việc không đội mũ bảo hiểm khi lái xe máy (hoặc đội mũ nhưng không cài quai đúng quy cách) là hành vi vi phạm quy định giao thông. Đối tượng áp dụng là mọi người điều khiển xe máy trên đường bộ mà không mặc mũ bảo hiểm bảo vệ.\n\nTheo quy định hiện hành, người vi phạm sẽ bị phạt tiền từ 400.000 đồng đến 600.000 đồng và bị ghi điểm hỏng (điểm h) vào bằng lái.\n\nCăn cứ pháp lý: Khoản 2, Điều 7, Nghị định 168/2024/NĐ‑CP quy định về việc không đội mũ bảo hiểm cho người đi mô tô, xe máy.\n\nHiện không có hình phạt bổ sung nào khác được quy định cho hành vi này.",
+      "citation": "Điểm Điểm h, Khoản Khoản 2, Điều Điều 7, Nghị định 168/2024/NĐ-CP",
+      "fine": {
+        "min_vnd": 400000.0,
+        "max_vnd": 600000.0
+      },
+      "legal_basis": {
+        "decree": "168/2024/NĐ-CP",
+        "article": "Điều 7",
+        "clause": "Khoản 2",
+        "point": "Điểm h"
+      },
+      "retrieval_metrics": {
+        "expected_in_candidates": true,
+        "expected_rank": 2,
+        "expected_similarity": 0.5653,
+        "total_candidates": 4,
+        "top_5_candidates": [
+          {
+            "violation_id": "Loi_018",
+            "similarity": 0.6347
+          },
+          {
+            "violation_id": "D168-A7-C2-Ph",
+            "similarity": 0.5653
+          },
+          {
+            "violation_id": "D168-A7-C2-Pi",
+            "similarity": 0.5443
+          },
+          {
+            "violation_id": "Loi_025",
+            "similarity": 0.5329
+          }
+        ]
+      }
+    },
+    {
+      "test_id": "TEST_003",
+      "question": "Đỗ xe ô tô giữa đường không bật đèn khẩn cấp bị phạt thế nào?",
+      "expected_violation_id": "D168-A6-C1-Pc",
+      "retrieved_violation_id": "D168-A6-C1-Pc",
+      "exact_match": true,
+      "response_time_seconds": 9.53,
+      "answer": "Hành vi **đỗ xe ô tô giữa đường mà không bật đèn khẩn cấp** (hoặc không đặt biển “Chú ý xe đỗ”) khi gặp sự cố kỹ thuật, buộc phải dừng, đỗ chiếm một phần làn đường hoặc ở nơi cấm đỗ, được quy định là vi phạm quy tắc giao thông.\n\n**Mức phạt:**  \n- Phạt tiền từ **400.000 đồng** đến **600.000 đồng**.\n\n**Đối tượng áp dụng:**  \n- Tất cả các tài xế ô tô, xe máy gắn mô‑tơ, xe tải nhẹ… Khi thực hiện hành vi trên.\n\n**Căn cứ pháp lý:**  \n- Điều 6, khoản 1, điểm c của Nghị định 168/2024/NĐ‑CP quy định rằng việc không báo hiệu bằng đèn khẩn cấp hoặc không đặt biển cảnh báo “Chú ý xe đỗ” trong trường hợp khẩn cấp, buộc phải đỗ xe chiếm làn đường hoặc nơi cấm đỗ là hành vi vi phạm.\n\n**Hình phạt bổ sung:**  \n- Không có hình phạt bổ sung nào được quy định cho hành vi này (không có tước giấy phép lái, không có điểm xử phạt).\n\nVì vậy, nếu gặp sự cố kỹ thuật và phải dừng xe trên làn đường, tài xế cần bật đèn khẩn cấp (hoặc treo biển cảnh báo) để tránh bị xử phạt. Nếu không thực hiện, sẽ bị phạt tiền trong khoảng trên.",
+      "citation": "Điểm Điểm c, Khoản Khoản 1, Điều Điều 6, Nghị định 168/2024/NĐ-CP",
+      "fine": {
+        "min_vnd": 400000.0,
+        "max_vnd": 600000.0
+      },
+      "legal_basis": {
+        "decree": "168/2024/NĐ-CP",
+        "article": "Điều 6",
+        "clause": "Khoản 1",
+        "point": "Điểm c"
+      },
+      "retrieval_metrics": {
+        "expected_in_candidates": true,
+        "expected_rank": 1,
+        "expected_similarity": 0.5229,
+        "total_candidates": 1,
+        "top_5_candidates": [
+          {
+            "violation_id": "D168-A6-C1-Pc",
+            "similarity": 0.5229
+          }
+        ]
+      }
+    },
+    {
+      "test_id": "TEST_004",
+      "question": "Xe máy chạy vào đường cao tốc có bị phạt không, phạt bao nhiêu?",
+      "expected_violation_id": "D168-A7-C7-Pb",
+      "retrieved_violation_id": null,
+      "exact_match": false,
+      "response_time_seconds": 5.08,
+      "answer": "Hiện tại tôi không tìm thấy quy định nào phù hợp với mô tả của bạn. Bạn có thể thử diễn đạt lại không ạ?",
+      "citation": "",
+      "fine": null,
+      "legal_basis": null,
+      "retrieval_metrics": {
+        "expected_in_candidates": false,
+        "expected_rank": null,
+        "expected_similarity": null,
+        "total_candidates": 2,
+        "top_5_candidates": [
+          {
+            "violation_id": "D168-A6-C7-Pb",
+            "similarity": 0.5572
+          },
+          {
+            "violation_id": "Loi_022",
+            "similarity": 0.5007
+          }
+        ]
+      }
+    },
+    {
+      "test_id": "TEST_005",
+      "question": "Bấm còi ô tô lúc 11h đêm trong khu dân cư bị phạt bao nhiêu?",
+      "expected_violation_id": "D168-A6-C1-Pđ",
+      "retrieved_violation_id": "D168-A6-C3-Pb",
+      "exact_match": false,
+      "response_time_seconds": 12.12,
+      "answer": "Việc bấm còi ô tô liên tục vào lúc 23h trong khu dân cư thuộc hành vi **sử dụng còi, rú ga không đúng mục đích** khi gặp người đi bộ, khi di chuyển trên đoạn đường qua khu dân cư có hệ thống chiếu sáng đang hoạt động, hoặc khi chuyển hướng tại nơi giao nhau (trừ trường hợp xe ưu tiên thực hiện nhiệm vụ).  \n\n**Mức phạt**: tiền phạt từ **800.000 đến 1.000.000 VNĐ**.  \n\n**Đối tượng áp dụng**: tất cả các phương tiện ô tô (cả cá nhân và doanh nghiệp) vi phạm quy định trên.  \n\n**Căn cứ pháp lý**: Khoản 3, điểm b, Điều 6, Nghị định **168/2024/NĐ‑CP** quy định xử phạt hành vi sử dụng còi, rú ga không đúng quy định.  \n\nHiện không có hình phạt bổ sung (như tước giấy phép lái xe, tạm giữ phương tiện…) được quy định cho hành vi này.  \n\nDo đó, nếu bạn bấm còi ô tô vào lúc 11 giờ đêm trong khu dân cư, bạn sẽ phải chịu tiền phạt trong khoảng trên, dựa trên quy định của Nghị định 168/2024/NĐ‑CP.",
+      "citation": "Điểm Điểm b, Khoản Khoản 3, Điều Điều 6, Nghị định 168/2024/NĐ-CP",
+      "fine": {
+        "min_vnd": 800000.0,
+        "max_vnd": 1000000.0
+      },
+      "legal_basis": {
+        "decree": "168/2024/NĐ-CP",
+        "article": "Điều 6",
+        "clause": "Khoản 3",
+        "point": "Điểm b"
+      },
+      "retrieval_metrics": {
+        "expected_in_candidates": true,
+        "expected_rank": 1,
+        "expected_similarity": 0.6396,
+        "total_candidates": 3,
+        "top_5_candidates": [
+          {
+            "violation_id": "D168-A6-C1-Pđ",
+            "similarity": 0.6396
+          },
+          {
+            "violation_id": "D168-A7-C1-Pi",
+            "similarity": 0.6257
+          },
+          {
+            "violation_id": "D168-A6-C3-Pb",
+            "similarity": 0.5355
+          }
+        ]
+      }
+    },
+    {
+      "test_id": "TEST_006",
+      "question": "Chở 3 người trên xe máy có bị phạt không?",
+      "expected_violation_id": "D168-A7-C3-Pb",
+      "retrieved_violation_id": "D168-A7-C3-Pb",
+      "exact_match": true,
+      "response_time_seconds": 8.64,
+      "answer": "Việc chở **từ 03 người trở lên** trên một chiếc xe máy là hành vi vi phạm quy định giao thông đường bộ.  \n\n- **Căn cứ pháp lý:** Điều 7, khoản 3, điểm b của Nghị định 168/2024/NĐ‑CP.  \n- **Mức phạt tiền:** từ **600.000 đến 800.000 đồng** cho mỗi lần vi phạm.  \n- **Hình phạt bổ sung:** trừ **2 điểm** trên giấy phép lái xe (GPLX).  \n\nÁp dụng cho mọi người điều khiển xe máy mà không tuân thủ quy định về số người ngồi trên xe. Nếu bị phát hiện, người lái sẽ phải nộp tiền phạt trong khoảng trên và chịu giảm điểm GPLX tương ứng.",
+      "citation": "Điểm Điểm b, Khoản Khoản 3, Điều Điều 7, Nghị định 168/2024/NĐ-CP",
+      "fine": {
+        "min_vnd": 600000.0,
+        "max_vnd": 800000.0
+      },
+      "legal_basis": {
+        "decree": "168/2024/NĐ-CP",
+        "article": "Điều 7",
+        "clause": "Khoản 3",
+        "point": "Điểm b"
+      },
+      "retrieval_metrics": {
+        "expected_in_candidates": true,
+        "expected_rank": 2,
+        "expected_similarity": 0.599,
+        "total_candidates": 4,
+        "top_5_candidates": [
+          {
+            "violation_id": "Loi_053",
+            "similarity": 0.709
+          },
+          {
+            "violation_id": "D168-A7-C3-Pb",
+            "similarity": 0.599
+          },
+          {
+            "violation_id": "Loi_043",
+            "similarity": 0.5821
+          },
+          {
+            "violation_id": "D168-A6-C2-Pb",
+            "similarity": 0.5766
+          }
+        ]
+      }
+    },
+    {
+      "test_id": "TEST_007",
+      "question": "Chuyển làn ô tô mà không bật xi-nhan thì phạt bao nhiêu?",
+      "expected_violation_id": "D168-A6-C2-Pa",
+      "retrieved_violation_id": null,
+      "exact_match": false,
+      "response_time_seconds": 5.48,
+      "answer": "Hiện tại tôi không tìm thấy quy định nào phù hợp với mô tả của bạn. Bạn có thể thử diễn đạt lại không ạ?",
+      "citation": "",
+      "fine": null,
+      "legal_basis": null,
+      "retrieval_metrics": {
+        "expected_in_candidates": false,
+        "expected_rank": null,
+        "expected_similarity": null,
+        "total_candidates": 2,
+        "top_5_candidates": [
+          {
+            "violation_id": "Loi_040",
+            "similarity": 0.5555
+          },
+          {
+            "violation_id": "Loi_041",
+            "similarity": 0.5451
+          }
+        ]
+      }
+    },
+    {
+      "test_id": "TEST_008",
+      "question": "Xe máy vượt đèn đỏ bị phạt bao nhiêu tiền hiện nay 2025?",
+      "expected_violation_id": "D168-A7-C7-Pc",
+      "retrieved_violation_id": "D168-A7-C7-Pc",
+      "exact_match": true,
+      "response_time_seconds": 8.31,
+      "answer": "Việc không chấp hành hiệu lệnh của đèn tín hiệu giao thông (vượt đèn đỏ hoặc đèn vàng) trên xe máy là hành vi vi phạm quy định giao thông đường bộ.  \n\n**Mức phạt tiền**: từ 4.000.000 đồng đến 6.000.000 đồng, tùy theo mức độ vi phạm và quyết định của cơ quan chức năng.  \n\n**Hình phạt bổ sung**: bị trừ 04 điểm trên giấy phép lái xe.  \n\n**Đối tượng áp dụng**: tất cả người điều khiển xe máy khi vi phạm quy định trên.  \n\n**Căn cứ pháp lý**: Khoản 7, Điều 7, điểm c của Nghị định số 168/2024/NĐ‑CP.  \n\nDo vậy, nếu bạn bị bắt gặp vượt đèn đỏ/đèn vàng trên xe máy, bạn sẽ phải nộp tiền phạt trong khoảng 4‑6 triệu đồng và mất 4 điểm giấy phép lái xe. Việc tuân thủ tín hiệu đèn giao thông không chỉ giúp tránh xử phạt mà còn bảo đảm an toàn cho bản thân và những người tham gia giao thông khác.",
+      "citation": "Điểm Điểm c, Khoản Khoản 7, Điều Điều 7, Nghị định 168/2024/NĐ-CP",
+      "fine": {
+        "min_vnd": 4000000.0,
+        "max_vnd": 6000000.0
+      },
+      "legal_basis": {
+        "decree": "168/2024/NĐ-CP",
+        "article": "Điều 7",
+        "clause": "Khoản 7",
+        "point": "Điểm c"
+      },
+      "retrieval_metrics": {
+        "expected_in_candidates": true,
+        "expected_rank": 2,
+        "expected_similarity": 0.5193,
+        "total_candidates": 4,
+        "top_5_candidates": [
+          {
+            "violation_id": "D168-A6-C9-Pb",
+            "similarity": 0.5193
+          },
+          {
+            "violation_id": "D168-A7-C7-Pc",
+            "similarity": 0.5193
+          },
+          {
+            "violation_id": "Loi_002",
+            "similarity": 0.5189
+          },
+          {
+            "violation_id": "Loi_036",
+            "similarity": 0.5043
+          }
+        ]
+      }
+    },
+    {
+      "test_id": "TEST_009",
+      "question": "Đỗ xe ô tô sát vỉa hè quá 25cm bị phạt không?",
+      "expected_violation_id": "D168-A6-C3-Pe",
+      "retrieved_violation_id": null,
+      "exact_match": false,
+      "response_time_seconds": 6.18,
+      "answer": "Hiện tại tôi không tìm thấy quy định nào phù hợp với mô tả của bạn. Bạn có thể thử diễn đạt lại không ạ?",
+      "citation": "",
+      "fine": null,
+      "legal_basis": null,
+      "retrieval_metrics": {
+        "expected_in_candidates": false,
+        "expected_rank": null,
+        "expected_similarity": null,
+        "total_candidates": 0,
+        "top_5_candidates": []
+      }
+    },
+    {
+      "test_id": "TEST_010",
+      "question": "Lái xe máy có nồng độ cồn chút xíu thôi có bị phạt nặng không?",
+      "expected_violation_id": "D168-A7-C8-Pb",
+      "retrieved_violation_id": "D168-A7-C6-Pa",
+      "exact_match": false,
+      "response_time_seconds": 10.62,
+      "answer": "Việc lái xe máy khi nồng độ cồn trong máu chưa vượt quá 50 mg/100 ml (hoặc hơi thở chưa vượt quá 0,25 mg/l) được coi là **vi phạm nồng độ cồn** theo quy định hiện hành.\n\n**Mức phạt**  \n- **Tiền phạt**: từ 2.000.000 đồng đến 3.000.000 đồng.  \n- **Hình phạt bổ sung**: trừ **04 điểm** trên giấy phép lái xe.\n\n**Đối tượng áp dụng**  \nÁp dụng cho mọi người điều khiển **xe máy** trên đường công cộng mà có nồng độ cồn ở mức trên dù chỉ “chút xíu”.\n\n**Căn cứ pháp lý**  \n- Khoản 6, Điều 7, Điểm a, Nghị định 168/2024/NĐ‑CP.  \n\nDo vậy, ngay cả khi nồng độ cồn chỉ ở mức thấp, việc lái xe vẫn bị xử phạt nặng về tài chính và giảm điểm giấy phép lái xe. Để tránh các hậu quả này, người tham gia giao thông nên không uống rượu trước khi lái xe.",
+      "citation": "Điểm Điểm a, Khoản Khoản 6, Điều Điều 7, Nghị định 168/2024/NĐ-CP",
+      "fine": {
+        "min_vnd": 2000000.0,
+        "max_vnd": 3000000.0
+      },
+      "legal_basis": {
+        "decree": "168/2024/NĐ-CP",
+        "article": "Điều 7",
+        "clause": "Khoản 6",
+        "point": "Điểm a"
+      },
+      "retrieval_metrics": {
+        "expected_in_candidates": true,
+        "expected_rank": 1,
+        "expected_similarity": 0.5153,
+        "total_candidates": 5,
+        "top_5_candidates": [
+          {
+            "violation_id": "D168-A7-C8-Pb",
+            "similarity": 0.5153
+          },
+          {
+            "violation_id": "D168-A6-C6-Pc",
+            "similarity": 0.5074
+          },
+          {
+            "violation_id": "D168-A7-C6-Pa",
+            "similarity": 0.5074
+          },
+          {
+            "violation_id": "Loi_025",
+            "similarity": 0.5054
+          },
+          {
+            "violation_id": "Loi_015",
+            "similarity": 0.5036
+          }
+        ]
+      }
+    },
+    {
+      "test_id": "TEST_011",
+      "question": "Ô tô chạy quá tốc độ 7km/h thì phạt bao nhiêu?",
+      "expected_violation_id": "D168-A6-C3-Pa",
+      "retrieved_violation_id": "D168-A6-C7-Pa",
+      "exact_match": false,
+      "response_time_seconds": 13.34,
+      "answer": "Việc điều khiển ô tô chạy nhanh hơn tốc độ quy định **trên 35 km/h** được quy định là hành vi vi phạm. Khi vi phạm này xảy ra, người điều khiển sẽ phải chịu:\n\n* **Mức phạt tiền:** từ 12 .000.000 đồng đến 14 .000.000 đồng.  \n* **Hình phạt bổ sung:** bị trừ 06 điểm trên giấy phép lái xe.\n\nCơ sở pháp lý: Khoản 7, Điều 6, điểm a của Nghị định 168/2024/NĐ‑CP.\n\nNếu ô tô chỉ vượt quá tốc độ quy định **7 km/h** (không đạt mức “trên 35 km/h”), thì mức phạt sẽ thuộc nhóm vi phạm nhẹ hơn và không nằm trong quy định trên. Trong trường hợp này, người lái xe sẽ phải chịu mức phạt theo các quy định về vi phạm tốc độ dưới 35 km/h, thường là mức tiền phạt thấp hơn và có thể không bị trừ điểm. Để biết mức phạt cụ thể, cần tham khảo bảng mức phạt tương ứng với mức vượt tốc độ dưới 35 km/h trong Nghị định hiện hành.",
+      "citation": "Điểm Điểm a, Khoản Khoản 7, Điều Điều 6, Nghị định 168/2024/NĐ-CP",
+      "fine": {
+        "min_vnd": 12000000.0,
+        "max_vnd": 14000000.0
+      },
+      "legal_basis": {
+        "decree": "168/2024/NĐ-CP",
+        "article": "Điều 6",
+        "clause": "Khoản 7",
+        "point": "Điểm a"
+      },
+      "retrieval_metrics": {
+        "expected_in_candidates": true,
+        "expected_rank": 4,
+        "expected_similarity": 0.5232,
+        "total_candidates": 10,
+        "top_5_candidates": [
+          {
+            "violation_id": "D168-A7-C9-Pb",
+            "similarity": 0.5401
+          },
+          {
+            "violation_id": "Loi_008",
+            "similarity": 0.5343
+          },
+          {
+            "violation_id": "D168-A6-C7-Pa",
+            "similarity": 0.5295
+          },
+          {
+            "violation_id": "D168-A6-C3-Pa",
+            "similarity": 0.5232
+          },
+          {
+            "violation_id": "D168-A7-C2-Pb",
+            "similarity": 0.5232
+          }
+        ]
+      }
+    },
+    {
+      "test_id": "TEST_012",
+      "question": "Xe máy lạng lách đánh võng trên đường bị phạt thế nào?",
+      "expected_violation_id": "D168-A7-C9-Pa",
+      "retrieved_violation_id": "D168-A7-C9-Pa",
+      "exact_match": true,
+      "response_time_seconds": 9.95,
+      "answer": "**Hành vi vi phạm**  \nĐiều khiển xe máy lạng lách, đánh võng trên đường bộ, bao gồm việc dùng chân hoặc vật gì đó chạm xuống mặt đường khi xe đang chạy, là hành vi nguy hiểm gây mất ổn định, dễ gây tai nạn giao thông.\n\n**Mức phạt**  \n- **Phạt tiền**: từ 8 triệu đồng đến 10 triệu đồng.  \n- **Tước quyền sử dụng giấy phép lái xe**: từ 10 tháng đến 12 tháng.  \n\n**Đối tượng áp dụng**  \nÁp dụng cho tất cả người điều khiển xe máy thực hiện hành vi trên, bất kể là lái mới hay có kinh nghiệm.\n\n**Căn cứ pháp lý**  \n- Nghị định 168/2024/NĐ‑CP, Điều 7, khoản 9, điểm a.  \n\n**Hình phạt bổ sung (đối với người tái phạm)**  \n- **Tịch thu phương tiện**: nếu người điều khiển đã từng bị xử phạt vì hành vi lạng lách, đánh võng, cơ quan quản lý giao thông sẽ tịch thu xe máy.  \n\nNhững hình phạt này nhằm ngăn ngừa nguy cơ tai nạn nghiêm trọng do hành vi lạng lách, bảo vệ an toàn cho bản thân người lái và những người tham gia giao thông khác. Khi gặp cảnh báo hoặc vi phạm, người lái nên giảm tốc độ, giữ thẳng tay lái và không dùng chân hoặc vật nào chạm vào mặt đường.",
+      "citation": "Điểm Điểm a, Khoản Khoản 9, Điều Điều 7, Nghị định 168/2024/NĐ-CP",
+      "fine": {
+        "min_vnd": 8000000.0,
+        "max_vnd": 10000000.0
+      },
+      "legal_basis": {
+        "decree": "168/2024/NĐ-CP",
+        "article": "Điều 7",
+        "clause": "Khoản 9",
+        "point": "Điểm a"
+      },
+      "retrieval_metrics": {
+        "expected_in_candidates": true,
+        "expected_rank": 1,
+        "expected_similarity": 0.6331,
+        "total_candidates": 2,
+        "top_5_candidates": [
+          {
+            "violation_id": "D168-A7-C9-Pa",
+            "similarity": 0.6331
+          },
+          {
+            "violation_id": "D168-A6-C12",
+            "similarity": 0.6245
+          }
+        ]
+      }
+    },
+    {
+      "test_id": "TEST_013",
+      "question": "Không thắt dây an toàn khi lái ô tô bị phạt bao nhiêu?",
+      "expected_violation_id": "D168-A6-C3-Pk",
+      "retrieved_violation_id": "D168-A6-C3-Pl",
+      "exact_match": false,
+      "response_time_seconds": 9.71,
+      "answer": "Hành vi không thắt dây an toàn khi lái ô tô là vi phạm quy định giao thông đường bộ. Theo quy định hiện hành, người điều khiển hoặc hành khách trên xe ô tô có trang bị dây đai an toàn phải thắt dây khi xe đang lưu thông. Nếu không thực hiện, bạn sẽ bị phạt tiền từ 800.000 đồng đến 1.000.000 đồng. Ngoài mức phạt tiền, hành vi này còn bị tính “Điểm l” theo quy định về xử phạt vi phạm hành chính giao thông. Cơ sở pháp lý: Khoản 3, Điều 6, Nghị định 168/2024/NĐ‑CP. Hiện không có hình phạt bổ sung khác cho hành vi này.",
+      "citation": "Điểm Điểm l, Khoản Khoản 3, Điều Điều 6, Nghị định 168/2024/NĐ-CP",
+      "fine": {
+        "min_vnd": 800000.0,
+        "max_vnd": 1000000.0
+      },
+      "legal_basis": {
+        "decree": "168/2024/NĐ-CP",
+        "article": "Điều 6",
+        "clause": "Khoản 3",
+        "point": "Điểm l"
+      },
+      "retrieval_metrics": {
+        "expected_in_candidates": true,
+        "expected_rank": 2,
+        "expected_similarity": 0.6347,
+        "total_candidates": 3,
+        "top_5_candidates": [
+          {
+            "violation_id": "D168-A6-C3-Pl",
+            "similarity": 0.6507
+          },
+          {
+            "violation_id": "D168-A6-C3-Pk",
+            "similarity": 0.6347
+          },
+          {
+            "violation_id": "Loi_042",
+            "similarity": 0.6095
+          }
+        ]
+      }
+    },
+    {
+      "test_id": "TEST_014",
+      "question": "Rú ga nẹt pô xe máy trong khu dân cư lúc nửa đêm thì sao?",
+      "expected_violation_id": "D168-A7-C9-Pk",
+      "retrieved_violation_id": null,
+      "exact_match": false,
+      "response_time_seconds": 5.0,
+      "answer": "Hiện tại tôi không tìm thấy quy định nào phù hợp với mô tả của bạn. Bạn có thể thử diễn đạt lại không ạ?",
+      "citation": "",
+      "fine": null,
+      "legal_basis": null,
+      "retrieval_metrics": {
+        "expected_in_candidates": false,
+        "expected_rank": null,
+        "expected_similarity": null,
+        "total_candidates": 0,
+        "top_5_candidates": []
+      }
+    },
+    {
+      "test_id": "TEST_015",
+      "question": "Đỗ xe ô tô che khuất đèn giao thông bị phạt mức nào?",
+      "expected_violation_id": "D168-A6-C3-Pđ",
+      "retrieved_violation_id": null,
+      "exact_match": false,
+      "response_time_seconds": 4.22,
+      "answer": "Hiện tại tôi không tìm thấy quy định nào phù hợp với mô tả của bạn. Bạn có thể thử diễn đạt lại không ạ?",
+      "citation": "",
+      "fine": null,
+      "legal_basis": null,
+      "retrieval_metrics": {
+        "expected_in_candidates": false,
+        "expected_rank": null,
+        "expected_similarity": null,
+        "total_candidates": 0,
+        "top_5_candidates": []
+      }
+    },
+    {
+      "test_id": "TEST_016",
+      "question": "Lái xe máy mà trong người có ma túy thì bị phạt ra sao?",
+      "expected_violation_id": "D168-A7-C9-Pe",
+      "retrieved_violation_id": null,
+      "exact_match": false,
+      "response_time_seconds": 3.71,
+      "answer": "Hiện tại tôi không tìm thấy quy định nào phù hợp với mô tả của bạn. Bạn có thể thử diễn đạt lại không ạ?",
+      "citation": "",
+      "fine": null,
+      "legal_basis": null,
+      "retrieval_metrics": {
+        "expected_in_candidates": false,
+        "expected_rank": null,
+        "expected_similarity": null,
+        "total_candidates": 0,
+        "top_5_candidates": []
+      }
+    },
+    {
+      "test_id": "TEST_017",
+      "question": "Chở người ngồi sau ôm eo người lái có bị phạt không?",
+      "expected_violation_id": "D168-A6-C3-Pl",
+      "retrieved_violation_id": "D168-A7-C9-Ph",
+      "exact_match": false,
+      "response_time_seconds": 11.03,
+      "answer": "Việc người ngồi sau ôm eo người lái xe máy để “giúp” lái xe là hành vi vi phạm quy định giao thông. Theo quy định hiện hành, trên xe máy không được cho người ngồi phía sau vượt vòng tay qua người ngồi trước khi điều khiển xe, trừ trường hợp đặc biệt là trẻ em dưới 6 tuổi được phép ngồi phía trước.\n\n**Hình phạt**  \n- Phạt tiền từ 8 .000.000 đ đến 10 .000.000 đ.  \n- Ngoài ra, người vi phạm còn có thể bị tước quyền sử dụng giấy phép lái xe trong thời gian từ 10 tháng đến 12 tháng.\n\n**Căn cứ pháp lý**  \n- Nghị định 168/2024/NĐ‑CP, Điều 7, Khoản 9, điểm h.\n\nQuy định này áp dụng cho mọi tài xế và hành khách trên xe máy. Vì vậy, nếu người ngồi sau ôm eo người lái, họ sẽ bị xử phạt theo mức trên và có thể mất giấy phép lái xe trong thời gian quy định. Hãy tuân thủ quy tắc ngồi đúng vị trí và không can thiệp vào việc điều khiển xe để đảm bảo an toàn cho cả người lái và hành khách.",
+      "citation": "Điểm Điểm h, Khoản Khoản 9, Điều Điều 7, Nghị định 168/2024/NĐ-CP",
+      "fine": {
+        "min_vnd": 8000000.0,
+        "max_vnd": 10000000.0
+      },
+      "legal_basis": {
+        "decree": "168/2024/NĐ-CP",
+        "article": "Điều 7",
+        "clause": "Khoản 9",
+        "point": "Điểm h"
+      },
+      "retrieval_metrics": {
+        "expected_in_candidates": false,
+        "expected_rank": null,
+        "expected_similarity": null,
+        "total_candidates": 2,
+        "top_5_candidates": [
+          {
+            "violation_id": "D168-A7-C9-Ph",
+            "similarity": 0.6393
+          },
+          {
+            "violation_id": "D168-A7-C3-Pb",
+            "similarity": 0.5164
+          }
+        ]
+      }
+    },
+    {
+      "test_id": "TEST_018",
+      "question": "Xe máy chạy quá tốc độ hơn 20km/h bị phạt bao nhiêu?",
+      "expected_violation_id": "D168-A7-C8-Pa",
+      "retrieved_violation_id": "D168-A7-C8-Pa",
+      "exact_match": true,
+      "response_time_seconds": 10.17,
+      "answer": "Việc điều khiển xe máy vượt quá tốc độ quy định hơn 20 km/h là hành vi vi phạm quy định giao thông. Theo Nghị định 168/2024/NĐ‑CP, Khoản 8, Điều 7, điểm a, người vi phạm sẽ bị áp dụng các hình phạt sau:\n\n- **Mức phạt tiền:** từ 6.000.000 đ đến 8.000.000 đồng, tùy vào mức độ vi phạm và quyết định của cơ quan chức năng.  \n- **Hình phạt bổ sung:** trừ 4 điểm trên giấy phép lái xe.\n\nCác hình phạt này áp dụng cho mọi người lái xe máy vi phạm tốc độ quá 20 km/h, bất kể địa điểm hay thời gian. Nếu có các trường hợp đặc biệt (ví dụ: gây tai nạn, vi phạm lặp lại), cơ quan quản lý có thể xem xét tăng mức phạt hoặc áp dụng các biện pháp xử lý khác theo quy định hiện hành.",
+      "citation": "Điểm Điểm a, Khoản Khoản 8, Điều Điều 7, Nghị định 168/2024/NĐ-CP",
+      "fine": {
+        "min_vnd": 6000000.0,
+        "max_vnd": 8000000.0
+      },
+      "legal_basis": {
+        "decree": "168/2024/NĐ-CP",
+        "article": "Điều 7",
+        "clause": "Khoản 8",
+        "point": "Điểm a"
+      },
+      "retrieval_metrics": {
+        "expected_in_candidates": true,
+        "expected_rank": 1,
+        "expected_similarity": 0.5874,
+        "total_candidates": 8,
+        "top_5_candidates": [
+          {
+            "violation_id": "D168-A7-C8-Pa",
+            "similarity": 0.5874
+          },
+          {
+            "violation_id": "Loi_011",
+            "similarity": 0.5689
+          },
+          {
+            "violation_id": "Loi_006",
+            "similarity": 0.5583
+          },
+          {
+            "violation_id": "D168-A6-C5-Pđ",
+            "similarity": 0.5563
+          },
+          {
+            "violation_id": "D168-A7-C4-Pa",
+            "similarity": 0.5563
+          }
+        ]
+      }
+    },
+    {
+      "test_id": "TEST_019",
+      "question": "Kéo xe khác bằng ô tô mà không gắn biển báo hiệu thì phạt thế nào?",
+      "expected_violation_id": "D168-A6-C1-Pd",
+      "retrieved_violation_id": "D168-A6-C1-Pd",
+      "exact_match": true,
+      "response_time_seconds": 10.36,
+      "answer": "Hành vi không gắn biển báo hiệu ở phía trước xe kéo và phía sau xe được kéo, đồng thời điều khiển xe kéo rơ moóc mà không có biển báo theo quy định, là vi phạm quy tắc an toàn giao thông.  \n\n- **Đối tượng áp dụng**: Chủ sở hữu, người điều khiển ô tô thực hiện việc kéo xe khác mà không gắn biển báo hiệu.  \n- **Mức phạt**: Phạt tiền từ 400.000 đồng đến 600.000 đồng.  \n- **Căn cứ pháp lý**: Điều 6, khoản 1, điểm d của Nghị định 168/2024/NĐ‑CP quy định về việc gắn biển báo hiệu khi kéo xe.  \n\nHiện không có hình phạt bổ sung nào được quy định cho hành vi này. Vì vậy, nếu bạn kéo xe khác bằng ô tô mà không gắn biển báo, sẽ bị xử phạt hành chính trong khoảng trên và cần tuân thủ quy định gắn biển báo đúng vị trí để tránh vi phạm.",
+      "citation": "Điểm Điểm d, Khoản Khoản 1, Điều Điều 6, Nghị định 168/2024/NĐ-CP",
+      "fine": {
+        "min_vnd": 400000.0,
+        "max_vnd": 600000.0
+      },
+      "legal_basis": {
+        "decree": "168/2024/NĐ-CP",
+        "article": "Điều 6",
+        "clause": "Khoản 1",
+        "point": "Điểm d"
+      },
+      "retrieval_metrics": {
+        "expected_in_candidates": true,
+        "expected_rank": 1,
+        "expected_similarity": 0.5319,
+        "total_candidates": 3,
+        "top_5_candidates": [
+          {
+            "violation_id": "D168-A6-C1-Pd",
+            "similarity": 0.5319
+          },
+          {
+            "violation_id": "D168-A7-C3-Pg",
+            "similarity": 0.5103
+          },
+          {
+            "violation_id": "D168-A6-C3-Ph",
+            "similarity": 0.5021
+          }
+        ]
+      }
+    },
+    {
+      "test_id": "TEST_020",
+      "question": "Gây tai nạn xe máy rồi bỏ chạy không cứu người bị phạt bao nhiêu?",
+      "expected_violation_id": "D168-A7-C9-Pc",
+      "retrieved_violation_id": null,
+      "exact_match": false,
+      "response_time_seconds": 5.46,
+      "answer": "Hiện tại tôi không tìm thấy quy định nào phù hợp với mô tả của bạn. Bạn có thể thử diễn đạt lại không ạ?",
+      "citation": "",
+      "fine": null,
+      "legal_basis": null,
+      "retrieval_metrics": {
+        "expected_in_candidates": true,
+        "expected_rank": 1,
+        "expected_similarity": 0.531,
+        "total_candidates": 3,
+        "top_5_candidates": [
+          {
+            "violation_id": "D168-A7-C9-Pc",
+            "similarity": 0.531
+          },
+          {
+            "violation_id": "D168-A6-C8",
+            "similarity": 0.5111
+          },
+          {
+            "violation_id": "D168-A7-C5-Pa",
+            "similarity": 0.5106
+          }
+        ]
+      }
+    },
+    {
+      "test_id": "TEST_021",
+      "question": "Chở bé dưới 10 tuổi ngồi ghế trước ô tô có bị phạt không?",
+      "expected_violation_id": "D168-A6-C3-Pm",
+      "retrieved_violation_id": null,
+      "exact_match": false,
+      "response_time_seconds": 5.55,
+      "answer": "Hiện tại tôi không tìm thấy quy định nào phù hợp với mô tả của bạn. Bạn có thể thử diễn đạt lại không ạ?",
+      "citation": "",
+      "fine": null,
+      "legal_basis": null,
+      "retrieval_metrics": {
+        "expected_in_candidates": true,
+        "expected_rank": 2,
+        "expected_similarity": 0.5073,
+        "total_candidates": 2,
+        "top_5_candidates": [
+          {
+            "violation_id": "D168-A7-C9-Ph",
+            "similarity": 0.5587
+          },
+          {
+            "violation_id": "D168-A6-C3-Pm",
+            "similarity": 0.5073
+          }
+        ]
+      }
+    },
+    {
+      "test_id": "TEST_022",
+      "question": "Không chấp hành hiệu lệnh của CSGT khi lái xe máy thì phạt nặng không?",
+      "expected_violation_id": "D168-A7-C7-Pd",
+      "retrieved_violation_id": "D168-A7-C7-Pd",
+      "exact_match": true,
+      "response_time_seconds": 10.36,
+      "answer": "Hành vi không chấp hành hiệu lệnh, hướng dẫn của người điều khiển giao thông (CSGT) khi lái xe máy là hành vi vi phạm quy định giao thông đường bộ.  \n\n**Mức phạt:**  \n- Tiền phạt từ 4.000.000 đ đến 6.000.000 đồng.  \n- Bị trừ 4 điểm trên giấy phép lái xe.  \n\n**Đối tượng áp dụng:** Tất cả người điều khiển xe máy khi không thực hiện đúng chỉ thị, lệnh hoặc hướng dẫn của CSGT trên đường.  \n\n**Căn cứ pháp lý:** Điều 7, Khoản 7, điểm d, Nghị định 168/2024/NĐ‑CP quy định xử phạt hành vi “Không chấp hành hiệu lệnh, hướng dẫn của người điều khiển giao thông hoặc người kiểm soát giao thông”.  \n\n**Hình phạt bổ sung:** Ngoài tiền phạt, việc trừ 4 điểm GPLX sẽ được ghi nhận vào hồ sơ lái xe, ảnh hưởng đến khả năng duy trì hoặc gia hạn giấy phép lái xe trong tương lai.  \n\nVì vậy, không tuân thủ lệnh của CSGT khi lái xe máy sẽ bị xử phạt nặng về tiền và điểm, theo quy định hiện hành.",
+      "citation": "Điểm Điểm d, Khoản Khoản 7, Điều Điều 7, Nghị định 168/2024/NĐ-CP",
+      "fine": {
+        "min_vnd": 4000000.0,
+        "max_vnd": 6000000.0
+      },
+      "legal_basis": {
+        "decree": "168/2024/NĐ-CP",
+        "article": "Điều 7",
+        "clause": "Khoản 7",
+        "point": "Điểm d"
+      },
+      "retrieval_metrics": {
+        "expected_in_candidates": true,
+        "expected_rank": 2,
+        "expected_similarity": 0.5848,
+        "total_candidates": 6,
+        "top_5_candidates": [
+          {
+            "violation_id": "D168-A6-C9-Pc",
+            "similarity": 0.5848
+          },
+          {
+            "violation_id": "D168-A7-C7-Pd",
+            "similarity": 0.5848
+          },
+          {
+            "violation_id": "D168-A6-C1-Pa",
+            "similarity": 0.5664
+          },
+          {
+            "violation_id": "D168-A7-C1-Pa",
+            "similarity": 0.5664
+          },
+          {
+            "violation_id": "Loi_036",
+            "similarity": 0.525
+          }
+        ]
+      }
+    },
+    {
+      "test_id": "TEST_023",
+      "question": "Ô tô đỗ trên miệng cống thoát nước bị phạt bao nhiêu tiền?",
+      "expected_violation_id": "D168-A6-C3-Pe",
+      "retrieved_violation_id": null,
+      "exact_match": false,
+      "response_time_seconds": 4.95,
+      "answer": "Hiện tại tôi không tìm thấy quy định nào phù hợp với mô tả của bạn. Bạn có thể thử diễn đạt lại không ạ?",
+      "citation": "",
+      "fine": null,
+      "legal_basis": null,
+      "retrieval_metrics": {
+        "expected_in_candidates": false,
+        "expected_rank": null,
+        "expected_similarity": null,
+        "total_candidates": 0,
+        "top_5_candidates": []
+      }
+    },
+    {
+      "test_id": "TEST_024",
+      "question": "Uống rượu bia lái xe máy thổi nồng độ cồn vượt quá 0.4mg/l thì bị gì?",
+      "expected_violation_id": "D168-A7-C9-Pd",
+      "retrieved_violation_id": null,
+      "exact_match": false,
+      "response_time_seconds": 5.07,
+      "answer": "Hiện tại tôi không tìm thấy quy định nào phù hợp với mô tả của bạn. Bạn có thể thử diễn đạt lại không ạ?",
+      "citation": "",
+      "fine": null,
+      "legal_basis": null,
+      "retrieval_metrics": {
+        "expected_in_candidates": true,
+        "expected_rank": 3,
+        "expected_similarity": 0.5469,
+        "total_candidates": 6,
+        "top_5_candidates": [
+          {
+            "violation_id": "D168-A6-C9-Pa",
+            "similarity": 0.55
+          },
+          {
+            "violation_id": "D168-A6-C11-Pa",
+            "similarity": 0.5469
+          },
+          {
+            "violation_id": "D168-A7-C9-Pd",
+            "similarity": 0.5469
+          },
+          {
+            "violation_id": "D168-A7-C8-Pb",
+            "similarity": 0.5315
+          },
+          {
+            "violation_id": "D168-A6-C6-Pc",
+            "similarity": 0.5257
+          }
+        ]
+      }
+    },
+    {
+      "test_id": "TEST_025",
+      "question": "Quên bật đèn pha ô tô lúc trời mưa to tầm nhìn kém bị phạt không?",
+      "expected_violation_id": "D168-A6-C3-Pg",
+      "retrieved_violation_id": null,
+      "exact_match": false,
+      "response_time_seconds": 5.75,
+      "answer": "Hiện tại tôi không tìm thấy quy định nào phù hợp với mô tả của bạn. Bạn có thể thử diễn đạt lại không ạ?",
+      "citation": "",
+      "fine": null,
+      "legal_basis": null,
+      "retrieval_metrics": {
+        "expected_in_candidates": false,
+        "expected_rank": null,
+        "expected_similarity": null,
+        "total_candidates": 0,
+        "top_5_candidates": []
+      }
+    },
+    {
+      "test_id": "TEST_026",
+      "question": "Từ chối thổi nồng độ cồn khi bị CSGT yêu cầu trên xe máy thì sao?",
+      "expected_violation_id": "D168-A7-C9-Pđ",
+      "retrieved_violation_id": null,
+      "exact_match": false,
+      "response_time_seconds": 6.01,
+      "answer": "Hiện tại tôi không tìm thấy quy định nào phù hợp với mô tả của bạn. Bạn có thể thử diễn đạt lại không ạ?",
+      "citation": "",
+      "fine": null,
+      "legal_basis": null,
+      "retrieval_metrics": {
+        "expected_in_candidates": false,
+        "expected_rank": null,
+        "expected_similarity": null,
+        "total_candidates": 0,
+        "top_5_candidates": []
+      }
+    },
+    {
+      "test_id": "TEST_027",
+      "question": "Chở người ngồi sau xe máy vòng tay qua người lái để điều khiển bị phạt thế nào?",
+      "expected_violation_id": "D168-A7-C9-Ph",
+      "retrieved_violation_id": "D168-A7-C9-Ph",
+      "exact_match": true,
+      "response_time_seconds": 9.71,
+      "answer": "Hành vi “ngồi phía sau vòng tay qua người ngồi trước để điều khiển xe máy” (trừ trường hợp chở trẻ em dưới 6 tuổi ngồi phía trước) là vi phạm quy định về cách chở người trên xe máy. Khi người ngồi sau kéo vòng tay qua người ngồi trước để giúp lái xe, người điều khiển không còn kiểm soát được xe an toàn, gây nguy cơ tai nạn nghiêm trọng.\n\n**Mức phạt**  \n- Phạt tiền từ 8.000.000 đ đến 10.000.000 đồng.  \n\n**Hình phạt bổ sung**  \n- Tước quyền sử dụng giấy phép lái xe trong thời gian từ 10 tháng đến 12 tháng.  \n\n**Đối tượng áp dụng**  \n- Tất cả người lái xe máy, bất kể là người mới hay đã có kinh nghiệm, nếu thực hiện hành vi trên (ngoại trừ trường hợp hợp pháp khi chở trẻ em dưới 6 tuổi ngồi phía trước).\n\n**Căn cứ pháp lý**  \n- Nghị định số 168/2024/NĐ‑CP, Điều 7, Khoản 9, điểm h, quy định về “Chở người sai quy định”.  \n\nVì vậy, nếu bạn hoặc người khác thực hiện việc này, sẽ phải chịu phạt tiền nặng và mất quyền lái xe trong thời gian dài. Để tránh vi phạm, hãy luôn chở người đúng vị trí quy định và không để người ngồi sau can thiệp vào việc điều khiển xe.",
+      "citation": "Điểm Điểm h, Khoản Khoản 9, Điều Điều 7, Nghị định 168/2024/NĐ-CP",
+      "fine": {
+        "min_vnd": 8000000.0,
+        "max_vnd": 10000000.0
+      },
+      "legal_basis": {
+        "decree": "168/2024/NĐ-CP",
+        "article": "Điều 7",
+        "clause": "Khoản 9",
+        "point": "Điểm h"
+      },
+      "retrieval_metrics": {
+        "expected_in_candidates": true,
+        "expected_rank": 1,
+        "expected_similarity": 0.6466,
+        "total_candidates": 1,
+        "top_5_candidates": [
+          {
+            "violation_id": "D168-A7-C9-Ph",
+            "similarity": 0.6466
+          }
+        ]
+      }
+    },
+    {
+      "test_id": "TEST_028",
+      "question": "Ô tô chạy trong hầm mà bật đèn chiếu xa bị phạt bao nhiêu?",
+      "expected_violation_id": "D100-A6-C3-Pm",
+      "retrieved_violation_id": null,
+      "exact_match": false,
+      "response_time_seconds": 5.74,
+      "answer": "Hiện tại tôi không tìm thấy quy định nào phù hợp với mô tả của bạn. Bạn có thể thử diễn đạt lại không ạ?",
+      "citation": "",
+      "fine": null,
+      "legal_basis": null,
+      "retrieval_metrics": {
+        "expected_in_candidates": false,
+        "expected_rank": null,
+        "expected_similarity": null,
+        "total_candidates": 0,
+        "top_5_candidates": []
+      }
+    },
+    {
+      "test_id": "TEST_029",
+      "question": "Nhóm 3-4 xe máy chạy thành đoàn rú ga gây cản trở giao thông bị phạt ra sao?",
+      "expected_violation_id": "D168-A7-C9-Pi",
+      "retrieved_violation_id": null,
+      "exact_match": false,
+      "response_time_seconds": 5.13,
+      "answer": "Hiện tại tôi không tìm thấy quy định nào phù hợp với mô tả của bạn. Bạn có thể thử diễn đạt lại không ạ?",
+      "citation": "",
+      "fine": null,
+      "legal_basis": null,
+      "retrieval_metrics": {
+        "expected_in_candidates": false,
+        "expected_rank": null,
+        "expected_similarity": null,
+        "total_candidates": 0,
+        "top_5_candidates": []
+      }
+    },
+    {
+      "test_id": "TEST_030",
+      "question": "Không nhường đường cho xe cứu thương đang hú còi trên xe máy thì phạt bao nhiêu?",
+      "expected_violation_id": "D168-A7-C7-Pđ",
+      "retrieved_violation_id": null,
+      "exact_match": false,
+      "response_time_seconds": 5.62,
+      "answer": "Hiện tại tôi không tìm thấy quy định nào phù hợp với mô tả của bạn. Bạn có thể thử diễn đạt lại không ạ?",
+      "citation": "",
+      "fine": null,
+      "legal_basis": null,
+      "retrieval_metrics": {
+        "expected_in_candidates": false,
+        "expected_rank": null,
+        "expected_similarity": null,
+        "total_candidates": 0,
+        "top_5_candidates": []
+      }
+    },
+    {
+      "test_id": "TEST_031",
+      "question": "Đỗ ô tô ngược chiều với dòng xe đang lưu thông bị phạt mức nào?",
+      "expected_violation_id": "D168-A6-C2-Pd",
+      "retrieved_violation_id": null,
+      "exact_match": false,
+      "response_time_seconds": 5.79,
+      "answer": "Hiện tại tôi không tìm thấy quy định nào phù hợp với mô tả của bạn. Bạn có thể thử diễn đạt lại không ạ?",
+      "citation": "",
+      "fine": null,
+      "legal_basis": null,
+      "retrieval_metrics": {
+        "expected_in_candidates": false,
+        "expected_rank": null,
+        "expected_similarity": null,
+        "total_candidates": 0,
+        "top_5_candidates": []
+      }
+    },
+    {
+      "test_id": "TEST_032",
+      "question": "Gây tai nạn giao thông vì chạy quá tốc độ trên xe máy thì phạt thế nào?",
+      "expected_violation_id": "D168-A7-C10-Pa",
+      "retrieved_violation_id": null,
+      "exact_match": false,
+      "response_time_seconds": 3.8,
+      "answer": "Hiện tại tôi không tìm thấy quy định nào phù hợp với mô tả của bạn. Bạn có thể thử diễn đạt lại không ạ?",
+      "citation": "",
+      "fine": null,
+      "legal_basis": null,
+      "retrieval_metrics": {
+        "expected_in_candidates": false,
+        "expected_rank": null,
+        "expected_similarity": null,
+        "total_candidates": 0,
+        "top_5_candidates": []
+      }
+    },
+    {
+      "test_id": "TEST_033",
+      "question": "Ô tô kéo xe khác mà chở thêm người trên xe được kéo bị phạt bao nhiêu?",
+      "expected_violation_id": "D168-A6-C3-Pi",
+      "retrieved_violation_id": "D168-A6-C3-Pi",
+      "exact_match": true,
+      "response_time_seconds": 11.17,
+      "answer": "Hành vi **kéo xe khác mà trên xe được kéo còn chở người (trừ người lái)** là vi phạm quy định giao thông. Theo Nghị định 168/2024/NĐ‑CP, Điều 6, khoản 3, điểm i, người vi phạm sẽ bị:\n\n- **Phạt tiền:** từ 800.000 đồng đến 1.000.000 đồng.\n- **Trừ điểm bằng lái:** 2 điểm.\n\nÁp dụng cho mọi loại ô tô thực hiện hành vi này, bất kể mục đích sử dụng (cá nhân hay kinh doanh). Các hình phạt trên được quy định cụ thể trong pháp luật và không có thời gian tước quyền lái xe hoặc tước giấy phép, chỉ có việc giảm điểm GPLX và nộp tiền phạt. Nếu không thực hiện nộp phạt hoặc kháng cáo, có thể bị xử lý thêm theo quy định của pháp luật về vi phạm giao thông.",
+      "citation": "Điểm Điểm i, Khoản Khoản 3, Điều Điều 6, Nghị định 168/2024/NĐ-CP",
+      "fine": {
+        "min_vnd": 800000.0,
+        "max_vnd": 1000000.0
+      },
+      "legal_basis": {
+        "decree": "168/2024/NĐ-CP",
+        "article": "Điều 6",
+        "clause": "Khoản 3",
+        "point": "Điểm i"
+      },
+      "retrieval_metrics": {
+        "expected_in_candidates": true,
+        "expected_rank": 1,
+        "expected_similarity": 0.5549,
+        "total_candidates": 3,
+        "top_5_candidates": [
+          {
+            "violation_id": "D168-A6-C3-Pi",
+            "similarity": 0.5549
+          },
+          {
+            "violation_id": "D168-A7-C3-Pb",
+            "similarity": 0.5238
+          },
+          {
+            "violation_id": "D168-A7-C3-Pg",
+            "similarity": 0.5093
+          }
+        ]
+      }
+    },
+    {
+      "test_id": "TEST_034",
+      "question": "Chuyển hướng xe ô tô mà không bật xi-nhan và không giảm tốc độ bị gì?",
+      "expected_violation_id": "D168-A6-C3-Pc",
+      "retrieved_violation_id": null,
+      "exact_match": false,
+      "response_time_seconds": 5.45,
+      "answer": "Hiện tại tôi không tìm thấy quy định nào phù hợp với mô tả của bạn. Bạn có thể thử diễn đạt lại không ạ?",
+      "citation": "",
+      "fine": null,
+      "legal_basis": null,
+      "retrieval_metrics": {
+        "expected_in_candidates": false,
+        "expected_rank": null,
+        "expected_similarity": null,
+        "total_candidates": 1,
+        "top_5_candidates": [
+          {
+            "violation_id": "Loi_041",
+            "similarity": 0.5685
+          }
+        ]
+      }
+    },
+    {
+      "test_id": "TEST_035",
+      "question": "Từ chối kiểm tra ma túy khi bị CSGT yêu cầu trên xe máy thì phạt ra sao?",
+      "expected_violation_id": "D168-A7-C9-Pg",
+      "retrieved_violation_id": null,
+      "exact_match": false,
+      "response_time_seconds": 4.34,
+      "answer": "Hiện tại tôi không tìm thấy quy định nào phù hợp với mô tả của bạn. Bạn có thể thử diễn đạt lại không ạ?",
+      "citation": "",
+      "fine": null,
+      "legal_basis": null,
+      "retrieval_metrics": {
+        "expected_in_candidates": false,
+        "expected_rank": null,
+        "expected_similarity": null,
+        "total_candidates": 0,
+        "top_5_candidates": []
+      }
+    },
+    {
+      "test_id": "TEST_036",
+      "question": "Đỗ xe ô tô trên phần đường dành cho người đi bộ qua đường bị phạt bao nhiêu?",
+      "expected_violation_id": "D168-A6-C2-Pđ",
+      "retrieved_violation_id": null,
+      "exact_match": false,
+      "response_time_seconds": 5.78,
+      "answer": "Hiện tại tôi không tìm thấy quy định nào phù hợp với mô tả của bạn. Bạn có thể thử diễn đạt lại không ạ?",
+      "citation": "",
+      "fine": null,
+      "legal_basis": null,
+      "retrieval_metrics": {
+        "expected_in_candidates": false,
+        "expected_rank": null,
+        "expected_similarity": null,
+        "total_candidates": 0,
+        "top_5_candidates": []
+      }
+    },
+    {
+      "test_id": "TEST_037",
+      "question": "Chạy xe máy thành nhóm quá tốc độ để đua bị phạt thế nào?",
+      "expected_violation_id": "D168-A7-C9-Pb",
+      "retrieved_violation_id": "D168-A7-C9-Pb",
+      "exact_match": true,
+      "response_time_seconds": 8.61,
+      "answer": "Hành vi **điều khiển xe máy thành nhóm (từ 2 xe trở lên) chạy quá tốc độ quy định** được quy định là “đua xe trái phép”.  \n\n**Mức phạt tiền**: từ 8 000 000 đồng đến 10 000 000 đồng.  \n\n**Căn cứ pháp lý**: khoản 9, Điều 7, điểm b của Nghị định 168/2024/NĐ‑CP.  \n\n**Hình phạt bổ sung**: ngoài tiền phạt, người vi phạm còn bị **tước quyền sử dụng giấy phép lái xe** trong thời gian từ 10 tháng đến 12 tháng. Không có việc trừ điểm trên bằng lái.  \n\nÁp dụng cho mọi tài xế xe máy tham gia nhóm chạy quá tốc độ, bất kể địa điểm hay thời điểm. Nếu bị bắt, cơ quan công an giao thông sẽ lập biên bản, thu tiền phạt và quyết định thời hạn tước GPLX theo quy định trên.  \n\nDo vậy, để tránh các hình phạt nặng nề này, người lái xe máy cần tuân thủ tốc độ giới hạn và không tham gia các cuộc đua, đặc biệt là khi di chuyển theo nhóm.",
+      "citation": "Điểm Điểm b, Khoản Khoản 9, Điều Điều 7, Nghị định 168/2024/NĐ-CP",
+      "fine": {
+        "min_vnd": 8000000.0,
+        "max_vnd": 10000000.0
+      },
+      "legal_basis": {
+        "decree": "168/2024/NĐ-CP",
+        "article": "Điều 7",
+        "clause": "Khoản 9",
+        "point": "Điểm b"
+      },
+      "retrieval_metrics": {
+        "expected_in_candidates": true,
+        "expected_rank": 1,
+        "expected_similarity": 0.5706,
+        "total_candidates": 1,
+        "top_5_candidates": [
+          {
+            "violation_id": "D168-A7-C9-Pb",
+            "similarity": 0.5706
+          }
+        ]
+      }
+    },
+    {
+      "test_id": "TEST_038",
+      "question": "Ô tô dừng xe trên đường ray tàu hỏa bị phạt mức nào?",
+      "expected_violation_id": "D168-A6-C3-Pd",
+      "retrieved_violation_id": null,
+      "exact_match": false,
+      "response_time_seconds": 4.69,
+      "answer": "Hiện tại tôi không tìm thấy quy định nào phù hợp với mô tả của bạn. Bạn có thể thử diễn đạt lại không ạ?",
+      "citation": "",
+      "fine": null,
+      "legal_basis": null,
+      "retrieval_metrics": {
+        "expected_in_candidates": false,
+        "expected_rank": null,
+        "expected_similarity": null,
+        "total_candidates": 0,
+        "top_5_candidates": []
+      }
+    },
+    {
+      "test_id": "TEST_039",
+      "question": "Chở quá người trên buồng lái ô tô (ví dụ xe 5 chỗ chở 6 người) bị phạt bao nhiêu?",
+      "expected_violation_id": "D168-A6-C2-Pb",
+      "retrieved_violation_id": "D168-A6-C2-Pb",
+      "exact_match": true,
+      "response_time_seconds": 10.84,
+      "answer": "Việc chở người trên buồng lái ô tô vượt quá số lượng quy định (ví dụ: xe 5 chỗ chở 6 người) là hành vi vi phạm quy định về tải trọng người ngồi trên buồng lái.  \n\n**Mức phạt:**  \n- Phạt tiền từ **600.000 đồng đến 800.000 đồng**.  \n\n**Đối tượng áp dụng:**  \n- Chủ phương tiện, người điều khiển hoặc người chịu trách nhiệm quản lý, bảo quản xe ô tô khi có hành vi này.  \n\n**Căn cứ pháp lý:**  \n- Điều 6, khoản 2, điểm b, Nghị định số 168/2024/NĐ‑CP quy định mức phạt tiền cho hành vi “chở người trên buồng lái quá số lượng quy định”.  \n\n**Hình phạt bổ sung:**  \n- Không có hình phạt bổ sung nào được quy định cho vi phạm này.  \n\nDo vậy, nếu phát hiện chở quá số người cho phép trên buồng lái, người vi phạm sẽ bị xử phạt tiền trong khoảng nêu trên theo quy định của pháp luật.",
+      "citation": "Điểm Điểm b, Khoản Khoản 2, Điều Điều 6, Nghị định 168/2024/NĐ-CP",
+      "fine": {
+        "min_vnd": 600000.0,
+        "max_vnd": 800000.0
+      },
+      "legal_basis": {
+        "decree": "168/2024/NĐ-CP",
+        "article": "Điều 6",
+        "clause": "Khoản 2",
+        "point": "Điểm b"
+      },
+      "retrieval_metrics": {
+        "expected_in_candidates": true,
+        "expected_rank": 1,
+        "expected_similarity": 0.6451,
+        "total_candidates": 3,
+        "top_5_candidates": [
+          {
+            "violation_id": "D168-A6-C2-Pb",
+            "similarity": 0.6451
+          },
+          {
+            "violation_id": "D168-A7-C3-Pb",
+            "similarity": 0.5428
+          },
+          {
+            "violation_id": "Loi_043",
+            "similarity": 0.5104
+          }
+        ]
+      }
+    },
+    {
+      "test_id": "TEST_040",
+      "question": "Không chấp hành đèn tín hiệu giao thông khi lái ô tô bị phạt ra sao?",
+      "expected_violation_id": "D168-A6-C9-Pb",
+      "retrieved_violation_id": "D168-A6-C9-Pb",
+      "exact_match": true,
+      "response_time_seconds": 12.4,
+      "answer": "Hành vi không chấp hành hiệu lệnh của đèn tín hiệu giao thông (ví dụ vượt đèn đỏ hoặc đèn vàng) khi điều khiển ô tô là vi phạm quy định giao thông đường bộ.  \n\n**Mức phạt:**  \n- Tiền phạt từ 18 000 000 đồng đến 20 000 000 đồng.  \n- Bị trừ 4 điểm trên giấy phép lái xe.  \n\n**Đối tượng áp dụng:** Tất cả người điều khiển ô tô tham gia giao thông trên các tuyến đường công cộng.  \n\n**Căn cứ pháp lý:** Khoản 9, Điều 6, điểm b của Nghị định 168/2024/NĐ‑CP quy định xử phạt đối với hành vi không tuân thủ tín hiệu đèn giao thông.  \n\n**Hình phạt bổ sung:** Ngoài tiền phạt, việc bị trừ 4 điểm GPLX sẽ ảnh hưởng đến khả năng duy trì giấy phép lái xe; nếu điểm số còn lại giảm xuống dưới mức tối thiểu quy định, giấy phép có thể bị tạm ngừng hoặc thu hồi theo quy định hiện hành.  \n\nVì vậy, khi gặp đèn tín hiệu, người lái xe cần dừng lại, chờ tín hiệu xanh mới tiếp tục di chuyển để tránh các hình phạt nêu trên.",
+      "citation": "Điểm Điểm b, Khoản Khoản 9, Điều Điều 6, Nghị định 168/2024/NĐ-CP",
+      "fine": {
+        "min_vnd": 18000000.0,
+        "max_vnd": 20000000.0
+      },
+      "legal_basis": {
+        "decree": "168/2024/NĐ-CP",
+        "article": "Điều 6",
+        "clause": "Khoản 9",
+        "point": "Điểm b"
+      },
+      "retrieval_metrics": {
+        "expected_in_candidates": true,
+        "expected_rank": 1,
+        "expected_similarity": 0.6187,
+        "total_candidates": 10,
+        "top_5_candidates": [
+          {
+            "violation_id": "D168-A6-C9-Pb",
+            "similarity": 0.6187
+          },
+          {
+            "violation_id": "D168-A7-C7-Pc",
+            "similarity": 0.6187
+          },
+          {
+            "violation_id": "Loi_036",
+            "similarity": 0.6159
+          },
+          {
+            "violation_id": "D168-A6-C1-Pa",
+            "similarity": 0.6006
+          },
+          {
+            "violation_id": "D168-A7-C1-Pa",
+            "similarity": 0.6006
+          }
+        ]
+      }
+    },
+    {
+      "test_id": "TEST_041",
+      "question": "Đi xe máy mà trong máu có chất ma túy thì bị xử lý thế nào?",
+      "expected_violation_id": "D168-A7-C9-Pe",
+      "retrieved_violation_id": null,
+      "exact_match": false,
+      "response_time_seconds": 4.8,
+      "answer": "Hiện tại tôi không tìm thấy quy định nào phù hợp với mô tả của bạn. Bạn có thể thử diễn đạt lại không ạ?",
+      "citation": "",
+      "fine": null,
+      "legal_basis": null,
+      "retrieval_metrics": {
+        "expected_in_candidates": false,
+        "expected_rank": null,
+        "expected_similarity": null,
+        "total_candidates": 0,
+        "top_5_candidates": []
+      }
+    },
+    {
+      "test_id": "TEST_042",
+      "question": "Ô tô đỗ xe trên dốc mà không chèn bánh bị phạt bao nhiêu tiền?",
+      "expected_violation_id": "D168-A6-C2-Pd",
+      "retrieved_violation_id": null,
+      "exact_match": false,
+      "response_time_seconds": 5.73,
+      "answer": "Hiện tại tôi không tìm thấy quy định nào phù hợp với mô tả của bạn. Bạn có thể thử diễn đạt lại không ạ?",
+      "citation": "",
+      "fine": null,
+      "legal_basis": null,
+      "retrieval_metrics": {
+        "expected_in_candidates": false,
+        "expected_rank": null,
+        "expected_similarity": null,
+        "total_candidates": 0,
+        "top_5_candidates": []
+      }
+    },
+    {
+      "test_id": "TEST_043",
+      "question": "Không tuân thủ hiệu lệnh của CSGT khi lái ô tô thì phạt nặng không?",
+      "expected_violation_id": "D168-A6-C9-Pc",
+      "retrieved_violation_id": "D168-A6-C9-Pc",
+      "exact_match": true,
+      "response_time_seconds": 10.62,
+      "answer": "Hành vi **không chấp hành hiệu lệnh, hướng dẫn của người điều khiển giao thông (CSGT) khi lái ô tô** là một vi phạm quy định giao thông nghiêm trọng. Khi người lái xe không thực hiện đúng chỉ thị, dừng lại, quay đầu, nhường đường hoặc bất kỳ lệnh nào do CSGT ra, sẽ bị xử phạt theo quy định hiện hành.\n\n**Mức phạt tiền:**  \n- Từ 18 triệu đồng đến 20 triệu đồng (phụ thuộc vào mức độ vi phạm và hoàn cảnh cụ thể).\n\n**Hình phạt bổ sung:**  \n- Bị trừ **04 điểm** trên giấy phép lái xe.\n\n**Đối tượng áp dụng:**  \n- Tất cả tài xế điều khiển ô tô trên mọi loại đường bộ khi không tuân thủ chỉ thị của CSGT hoặc người kiểm soát giao thông.\n\n**Căn cứ pháp lý:**  \n- Khoản 9, Điều 6, điểm c của Nghị định 168/2024/NĐ‑CP quy định về việc xử phạt các hành vi không chấp hành hiệu lệnh của người điều khiển giao thông.\n\nVì vậy, nếu bạn hoặc người khác không tuân thủ lệnh của CSGT khi lái ô tô, sẽ phải chịu mức phạt tiền lên tới 20 triệu đồng cùng với việc mất 4 điểm giấy phép lái xe. Hãy luôn chấp hành chỉ thị của CSGT để đảm bảo an toàn giao thông và tránh các hình phạt nặng.",
+      "citation": "Điểm Điểm c, Khoản Khoản 9, Điều Điều 6, Nghị định 168/2024/NĐ-CP",
+      "fine": {
+        "min_vnd": 18000000.0,
+        "max_vnd": 20000000.0
+      },
+      "legal_basis": {
+        "decree": "168/2024/NĐ-CP",
+        "article": "Điều 6",
+        "clause": "Khoản 9",
+        "point": "Điểm c"
+      },
+      "retrieval_metrics": {
+        "expected_in_candidates": true,
+        "expected_rank": 4,
+        "expected_similarity": 0.5331,
+        "total_candidates": 6,
+        "top_5_candidates": [
+          {
+            "violation_id": "D168-A6-C1-Pa",
+            "similarity": 0.5508
+          },
+          {
+            "violation_id": "D168-A7-C1-Pa",
+            "similarity": 0.5508
+          },
+          {
+            "violation_id": "Loi_002",
+            "similarity": 0.5336
+          },
+          {
+            "violation_id": "D168-A6-C9-Pc",
+            "similarity": 0.5331
+          },
+          {
+            "violation_id": "D168-A7-C7-Pd",
+            "similarity": 0.5331
+          }
+        ]
+      }
+    },
+    {
+      "test_id": "TEST_044",
+      "question": "Lái xe máy say xỉn thổi nồng độ cồn cao nhất thì bị tước bằng bao lâu?",
+      "expected_violation_id": "D100-A6-C8-Pe",
+      "retrieved_violation_id": null,
+      "exact_match": false,
+      "response_time_seconds": 6.74,
+      "answer": "Hiện tại tôi không tìm thấy quy định nào phù hợp với mô tả của bạn. Bạn có thể thử diễn đạt lại không ạ?",
+      "citation": "",
+      "fine": null,
+      "legal_basis": null,
+      "retrieval_metrics": {
+        "expected_in_candidates": false,
+        "expected_rank": null,
+        "expected_similarity": null,
+        "total_candidates": 0,
+        "top_5_candidates": []
+      }
+    },
+    {
+      "test_id": "TEST_045",
+      "question": "Đỗ xe ô tô ngay trước cổng cơ quan nhà nước bị phạt thế nào?",
+      "expected_violation_id": "D168-A6-C3-Pđ",
+      "retrieved_violation_id": null,
+      "exact_match": false,
+      "response_time_seconds": 4.34,
+      "answer": "Hiện tại tôi không tìm thấy quy định nào phù hợp với mô tả của bạn. Bạn có thể thử diễn đạt lại không ạ?",
+      "citation": "",
+      "fine": null,
+      "legal_basis": null,
+      "retrieval_metrics": {
+        "expected_in_candidates": false,
+        "expected_rank": null,
+        "expected_similarity": null,
+        "total_candidates": 0,
+        "top_5_candidates": []
+      }
+    },
+    {
+      "test_id": "TEST_046",
+      "question": "Chạy xe máy nhóm đông gây cản trở giao thông mà không có phép thì sao?",
+      "expected_violation_id": "D168-A7-C9-Pi",
+      "retrieved_violation_id": "D168-A7-C9-Pi",
+      "exact_match": true,
+      "response_time_seconds": 11.28,
+      "answer": "Việc điều khiển xe máy thành đoàn gầy, gây cản trở giao thông mà không được cơ quan có thẩm quyền cấp phép là hành vi vi phạm quy định giao thông đường bộ.  \n\n**Mức phạt tiền**  \n- Phạt tiền từ 8 triệu đồng đến 10 triệu đồng cho mỗi người vi phạm.  \n\n**Hình phạt bổ sung**  \n- Tước quyền sử dụng giấy phép lái xe trong thời gian từ 10 tháng đến 12 tháng.  \n\n**Đối tượng áp dụng**  \n- Áp dụng cho người điều khiển xe máy (cả người lái và chủ phương tiện) tham gia vào đoàn gầy mà không có giấy phép cho phép.  \n\n**Căn cứ pháp lý**  \n- Điều 7, Khoản 9, Điểm i, Nghị định 168/2024/NĐ‑CP quy định: “Điều khiển xe thành đoàn gầy cản trở giao thông, trừ trường hợp được cơ quan có thẩm quyền cấp phép.”  \n\nVì vậy, nếu bạn hoặc người khác tham gia vào nhóm xe máy di chuyển đồng loạt trên đường mà không có giấy phép, sẽ bị xử phạt tiền theo mức trên và có thể bị tước quyền lái xe trong khoảng 10‑12 tháng. Để tránh vi phạm, hãy luôn tuân thủ quy định về việc không tạo thành đoàn gầy khi không có sự cho phép của cơ quan chức năng.",
+      "citation": "Điểm Điểm i, Khoản Khoản 9, Điều Điều 7, Nghị định 168/2024/NĐ-CP",
+      "fine": {
+        "min_vnd": 8000000.0,
+        "max_vnd": 10000000.0
+      },
+      "legal_basis": {
+        "decree": "168/2024/NĐ-CP",
+        "article": "Điều 7",
+        "clause": "Khoản 9",
+        "point": "Điểm i"
+      },
+      "retrieval_metrics": {
+        "expected_in_candidates": true,
+        "expected_rank": 2,
+        "expected_similarity": 0.5249,
+        "total_candidates": 2,
+        "top_5_candidates": [
+          {
+            "violation_id": "D168-A7-C9-Pb",
+            "similarity": 0.527
+          },
+          {
+            "violation_id": "D168-A7-C9-Pi",
+            "similarity": 0.5249
+          }
+        ]
+      }
+    },
+    {
+      "test_id": "TEST_047",
+      "question": "Ô tô kéo rơ-moóc mà không nối chắc chắn bị phạt bao nhiêu?",
+      "expected_violation_id": "D168-A6-C3-Ph",
+      "retrieved_violation_id": null,
+      "exact_match": false,
+      "response_time_seconds": 5.23,
+      "answer": "Hiện tại tôi không tìm thấy quy định nào phù hợp với mô tả của bạn. Bạn có thể thử diễn đạt lại không ạ?",
+      "citation": "",
+      "fine": null,
+      "legal_basis": null,
+      "retrieval_metrics": {
+        "expected_in_candidates": false,
+        "expected_rank": null,
+        "expected_similarity": null,
+        "total_candidates": 0,
+        "top_5_candidates": []
+      }
+    },
+    {
+      "test_id": "TEST_048",
+      "question": "Không nhường đường ở ngã tư khi lái ô tô bị phạt mức nào?",
+      "expected_violation_id": "D168-A6-C2-Pc",
+      "retrieved_violation_id": null,
+      "exact_match": false,
+      "response_time_seconds": 4.39,
+      "answer": "Hiện tại tôi không tìm thấy quy định nào phù hợp với mô tả của bạn. Bạn có thể thử diễn đạt lại không ạ?",
+      "citation": "",
+      "fine": null,
+      "legal_basis": null,
+      "retrieval_metrics": {
+        "expected_in_candidates": false,
+        "expected_rank": null,
+        "expected_similarity": null,
+        "total_candidates": 2,
+        "top_5_candidates": [
+          {
+            "violation_id": "D168-A7-C1-Pđ",
+            "similarity": 0.505
+          },
+          {
+            "violation_id": "D168-A7-C7-Pđ",
+            "similarity": 0.5028
+          }
+        ]
+      }
+    },
+    {
+      "test_id": "TEST_049",
+      "question": "Lái xe máy quẹt chân chống xuống đường khi đang chạy bị phạt ra sao?",
+      "expected_violation_id": "D168-A7-C9-Pa",
+      "retrieved_violation_id": null,
+      "exact_match": false,
+      "response_time_seconds": 5.73,
+      "answer": "Hiện tại tôi không tìm thấy quy định nào phù hợp với mô tả của bạn. Bạn có thể thử diễn đạt lại không ạ?",
+      "citation": "",
+      "fine": null,
+      "legal_basis": null,
+      "retrieval_metrics": {
+        "expected_in_candidates": false,
+        "expected_rank": null,
+        "expected_similarity": null,
+        "total_candidates": 0,
+        "top_5_candidates": []
+      }
+    },
+    {
+      "test_id": "TEST_050",
+      "question": "Gây tai nạn rồi bỏ trốn không trình báo công an khi lái xe máy thì phạt thế nào?",
+      "expected_violation_id": "D168-A7-C9-Pc",
+      "retrieved_violation_id": "D168-A7-C9-Pc",
+      "exact_match": true,
+      "response_time_seconds": 10.71,
+      "answer": "Hành vi: Khi gây tai nạn giao thông bằng xe máy, nếu không dừng lại ngay, không giữ nguyên hiện trường, không trợ giúp người bị nạn và không trình báo ngay cho cơ quan công an hoặc UBND nơi gần nhất, sẽ bị coi là “gây tai nạn giao thông không dừng ngay phương tiện, không giữ nguyên hiện trường, không trợ giúp người bị nạn, không ở lại hiện trường hoặc không đến trình báo”.\n\nMức phạt:  \n- **Phạt tiền** từ 8.000.000 đồng đến 10.000.000 đồng.  \n- **Trừ 6 điểm** trên giấy phép lái xe.\n\nCăn cứ pháp lý: Điều 7, khoản 9, điểm c của Nghị định 168/2024/NĐ‑CP quy định chế tài đối với hành vi trên.\n\nĐối tượng áp dụng: Tất cả người điều khiển xe máy (có giấy phép lái xe) gây tai nạn và không thực hiện các nghĩa vụ bắt buộc (dừng lại, giữ hiện trường, trợ giúp, trình báo).\n\nCác hình phạt bổ sung: Ngoài việc nộp tiền phạt, việc bị trừ 6 điểm GPLX sẽ ảnh hưởng đến khả năng duy trì và gia hạn giấy phép lái xe; nếu điểm còn lại dưới ngưỡng quy định, giấy phép có thể bị tạm thu hoặc đình chỉ theo quy định hiện hành.",
+      "citation": "Điểm Điểm c, Khoản Khoản 9, Điều Điều 7, Nghị định 168/2024/NĐ-CP",
+      "fine": {
+        "min_vnd": 8000000.0,
+        "max_vnd": 10000000.0
+      },
+      "legal_basis": {
+        "decree": "168/2024/NĐ-CP",
+        "article": "Điều 7",
+        "clause": "Khoản 9",
+        "point": "Điểm c"
+      },
+      "retrieval_metrics": {
+        "expected_in_candidates": true,
+        "expected_rank": 1,
+        "expected_similarity": 0.531,
+        "total_candidates": 2,
+        "top_5_candidates": [
+          {
+            "violation_id": "D168-A7-C9-Pc",
+            "similarity": 0.531
+          },
+          {
+            "violation_id": "D168-A6-C8",
+            "similarity": 0.5004
+          }
+        ]
+      }
+    }
+  ]
+}
